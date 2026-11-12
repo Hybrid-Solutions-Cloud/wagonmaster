@@ -2,7 +2,7 @@
 # Regenerates the Word copies of the Manifest docs under docs/public/downloads.
 # Requires pandoc and python3 with python-docx. Run from the repo root.
 set -euo pipefail
-site='https://labs.hybridsolutions.cloud/Wagonmaster'
+site='https://labs.hybridsolutions.cloud/wagonmaster'
 out='docs/public/downloads'
 mkdir -p "$out"
 for page in usage security api-reference; do
