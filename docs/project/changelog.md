@@ -1,6 +1,6 @@
 # Changelog
 
-The full history is in [CHANGELOG.md](https://github.com/Hybrid-Solutions-Cloud/Wagonmaster/blob/main/CHANGELOG.md).
+The full history is in [CHANGELOG.md](https://github.com/Hybrid-Solutions-Cloud/wagonmaster/blob/main/CHANGELOG.md).
 
 ## Wagonmaster Manifest
 

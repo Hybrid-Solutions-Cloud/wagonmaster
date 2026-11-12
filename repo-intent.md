@@ -10,7 +10,7 @@ Wagonmaster is a family of tools that work with any Azure Migrate project, whate
 
 - `src/<tool>/`: one folder per tool
 - `tests/<tool>/`: Pester tests per tool
-- `docs/`: VitePress documentation, published at labs.hybridsolutions.cloud/Wagonmaster/
+- `docs/`: VitePress documentation, published at labs.hybridsolutions.cloud/wagonmaster/
 - `tools/`: repo and docs maintenance helpers
 
 ## Status

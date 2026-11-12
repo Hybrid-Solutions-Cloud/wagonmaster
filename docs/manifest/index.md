@@ -37,4 +37,4 @@ Agentless dependency data is not included. Export it from the Azure portal.
 
 ## Source
 
-The script lives at [`src/manifest/Export-WagonmasterManifest.ps1`](https://github.com/Hybrid-Solutions-Cloud/Wagonmaster/blob/main/src/manifest/Export-WagonmasterManifest.ps1).
+The script lives at [`src/manifest/Export-WagonmasterManifest.ps1`](https://github.com/Hybrid-Solutions-Cloud/wagonmaster/blob/main/src/manifest/Export-WagonmasterManifest.ps1).

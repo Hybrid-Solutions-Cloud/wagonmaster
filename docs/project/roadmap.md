@@ -16,4 +16,4 @@ Wagonmaster starts with one tool and grows from the data it produces.
 - Add dependency data if Microsoft publishes a supported API for it
 - Publish to the PowerShell Gallery
 
-Have an idea for a tool? [Open an issue](https://github.com/Hybrid-Solutions-Cloud/Wagonmaster/issues).
+Have an idea for a tool? [Open an issue](https://github.com/Hybrid-Solutions-Cloud/wagonmaster/issues).

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
-const repositoryUrl = 'https://github.com/Hybrid-Solutions-Cloud/Wagonmaster'
-const base = '/Wagonmaster/'
+const repositoryUrl = 'https://github.com/Hybrid-Solutions-Cloud/wagonmaster'
+const base = '/wagonmaster/'
 
 // ---------------------------------------------------------------------------
 // Sidebar building blocks
@@ -63,7 +63,7 @@ export default defineConfig({
   ],
 
   sitemap: {
-    hostname: 'https://labs.hybridsolutions.cloud/Wagonmaster/',
+    hostname: 'https://labs.hybridsolutions.cloud/wagonmaster/',
   },
 
   themeConfig: {

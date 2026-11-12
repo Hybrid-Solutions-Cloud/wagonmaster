@@ -6,7 +6,7 @@
 
 Open source tools for planning and running Azure migrations. Wagonmaster works with any Azure Migrate project, whatever the source platform: VMware, Hyper-V, physical servers or other clouds.
 
-**Documentation:** [labs.hybridsolutions.cloud/Wagonmaster](https://labs.hybridsolutions.cloud/Wagonmaster/)
+**Documentation:** [labs.hybridsolutions.cloud/wagonmaster](https://labs.hybridsolutions.cloud/wagonmaster/)
 
 ## Tools
 
@@ -21,8 +21,8 @@ Open source tools for planning and running Azure migrations. Wagonmaster works w
 You need PowerShell 7 and the Reader role on the resource group that holds your Azure Migrate project.
 
 ```powershell
-git clone https://github.com/Hybrid-Solutions-Cloud/Wagonmaster.git
-cd Wagonmaster/src/manifest
+git clone https://github.com/Hybrid-Solutions-Cloud/wagonmaster.git
+cd wagonmaster/src/manifest
 ./Export-WagonmasterManifest.ps1 -DryRun
 ```
 

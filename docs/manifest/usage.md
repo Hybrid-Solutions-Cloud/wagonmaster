@@ -24,7 +24,7 @@ You need PowerShell 7 and Reader access to the project's resource group. Everyth
 - **PowerShell 7 or later** (`pwsh`). Windows PowerShell 5.1 is refused with a clear error.
 - **Modules:** `Az.Accounts`, `Az.Resources`, `Az.ResourceGraph`, and `powershell-yaml` when a config file is used. Missing modules are installed for the current user from the PowerShell Gallery.
 - **Access:** the Reader role on the resource group that holds the Azure Migrate project. See [Security and access](./security) for details.
-- **Files:** clone or download the [repository](https://github.com/Hybrid-Solutions-Cloud/Wagonmaster). The script and its `config` folder live in `src/manifest`. Keep them together.
+- **Files:** clone or download the [repository](https://github.com/Hybrid-Solutions-Cloud/wagonmaster). The script and its `config` folder live in `src/manifest`. Keep them together.
 - **If Windows blocks the script** because it was downloaded, run `Unblock-File .\Export-WagonmasterManifest.ps1` once.
 
 Status: this script has been reviewed but not yet run against a live project. Run it with `-DryRun` first.

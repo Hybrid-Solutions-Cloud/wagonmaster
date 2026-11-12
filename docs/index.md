@@ -19,7 +19,7 @@ hero:
       link: /manifest/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/Hybrid-Solutions-Cloud/Wagonmaster
+      link: https://github.com/Hybrid-Solutions-Cloud/wagonmaster
 features:
   - title: Manifest
     details: Export everything an Azure Migrate project knows to CSV and JSON. Discovery, assessments, business cases and migration status, in one read only run.

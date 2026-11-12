@@ -21,4 +21,4 @@ Wagonmaster is a family of open source tools for Azure migrations, published by 
 
 ## Contributing
 
-Issues and pull requests are welcome. See [CONTRIBUTING.md](https://github.com/Hybrid-Solutions-Cloud/Wagonmaster/blob/main/CONTRIBUTING.md).
+Issues and pull requests are welcome. See [CONTRIBUTING.md](https://github.com/Hybrid-Solutions-Cloud/wagonmaster/blob/main/CONTRIBUTING.md).

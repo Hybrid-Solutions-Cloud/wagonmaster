@@ -20,8 +20,8 @@ Manifest has been code reviewed but has not yet been run against a live Azure Mi
 You need PowerShell 7 and the Reader role on the resource group that holds your Azure Migrate project.
 
 ```powershell
-git clone https://github.com/Hybrid-Solutions-Cloud/Wagonmaster.git
-cd Wagonmaster/src/manifest
+git clone https://github.com/Hybrid-Solutions-Cloud/wagonmaster.git
+cd wagonmaster/src/manifest
 ./Export-WagonmasterManifest.ps1 -DryRun
 ```
 
