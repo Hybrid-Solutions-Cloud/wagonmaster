@@ -1,0 +1,39 @@
+# Wagonmaster Manifest: example config
+# Copy this file to wagonmaster-manifest.yml (same folder) and fill in your values.
+# wagonmaster-manifest.yml is gitignored. Never commit it.
+#
+# Every value is optional. Anything left blank is taken from the matching
+# environment variable, or the script prompts for it when run interactively.
+# Command-line parameters always override this file.
+#
+# Never put a client secret in this file. Use -ClientSecret, the
+# AZURE_CLIENT_SECRET environment variable, or a certificate thumbprint.
+
+# Interactive | ManagedIdentity | ServicePrincipal          (env: WAGONMASTER_AUTH_METHOD)
+auth_method: Interactive
+
+# Entra ID tenant. Required for ServicePrincipal.          (env: AZURE_TENANT_ID)
+tenant_id: ""
+
+# Subscription that holds the Azure Migrate project        (env: AZURE_SUBSCRIPTION_ID)
+subscription_id: ""
+
+# Resource group of the Azure Migrate project              (env: WAGONMASTER_RESOURCE_GROUP)
+resource_group_name: ""
+
+# Azure Migrate project name                               (env: WAGONMASTER_PROJECT_NAME)
+project_name: ""
+
+# Export folder. A timestamped subfolder is created per run (env: WAGONMASTER_OUTPUT_PATH)
+output_path: ""
+
+# ServicePrincipal only: application (client) ID           (env: AZURE_CLIENT_ID)
+client_id: ""
+
+# ServicePrincipal only: certificate thumbprint, used instead of a secret
+#                                                          (env: AZURE_CLIENT_CERTIFICATE_THUMBPRINT)
+certificate_thumbprint: ""
+
+# ManagedIdentity only: client ID of a user-assigned identity.
+# Leave blank for the system-assigned identity.            (env: WAGONMASTER_MI_CLIENT_ID)
+managed_identity_client_id: ""

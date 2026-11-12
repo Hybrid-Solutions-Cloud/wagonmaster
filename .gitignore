@@ -1,0 +1,33 @@
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.vs/
+
+# Claude Code
+.claude/settings.local.json
+
+# Wagonmaster output and local config. Exports hold customer data: never commit them.
+WagonmasterManifest/
+src/**/config/*.yml
+!src/**/config/*.example.yml
+*.log
+
+# PowerShell
+TestResults/
+testResults.xml
+coverage.xml
+
+# Node
+node_modules/
+npm-debug.log
+dist/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/.vitepress/.temp/

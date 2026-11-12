@@ -1,0 +1,28 @@
+# Changelog
+
+All notable changes to this repository are recorded here. Each tool is versioned on its own.
+
+## Wagonmaster Manifest
+
+### 1.2.0 (2026-11-12)
+
+- Renamed to Wagonmaster Manifest. The script is now `Export-WagonmasterManifest.ps1`.
+- Config file, environment variables (`WAGONMASTER_*`) and default output folder renamed to match.
+
+### 1.1.0 (2026-11-12)
+
+- Stop with a clear error when the project cannot be read.
+- Prompt for service principal tenant and client ID in interactive runs.
+- Process scoped sign in for managed identity and service principal.
+- CSV: formula guard, UTF-8 byte order mark, column name collision fix.
+- Validate subscription, resource group and project values.
+
+### 1.0.0 (2026-11-12)
+
+- Initial implementation.
+
+## Repository
+
+### 2026-11-12
+
+- Repository created with the VitePress documentation site, logo and icons.

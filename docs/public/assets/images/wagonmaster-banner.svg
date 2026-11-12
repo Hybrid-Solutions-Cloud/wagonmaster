@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-label="A covered wagon heading toward the cloud">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b2a4a"/>
+      <stop offset="1" stop-color="#0078d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="260" rx="24" fill="url(#sky)"/>
+  <!-- cloud destination -->
+  <g fill="#ffffff" opacity="0.95">
+    <circle cx="272" cy="70" r="20"/>
+    <circle cx="296" cy="62" r="26"/>
+    <circle cx="320" cy="74" r="17"/>
+    <rect x="256" y="70" width="80" height="22" rx="11"/>
+  </g>
+  <!-- trail -->
+  <path d="M20 214 C110 204 230 222 340 208" fill="none" stroke="#f2c46d" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 12"/>
+  <!-- canvas cover -->
+  <path d="M84 150 C84 84 116 62 168 62 C220 62 252 84 252 150 Z" fill="#f7f1e3" stroke="#d9cdb0" stroke-width="3"/>
+  <path d="M126 150 C126 96 136 72 150 64 M168 150 L168 62 M210 150 C210 96 200 72 186 64" fill="none" stroke="#d9cdb0" stroke-width="3"/>
+  <!-- wagon box -->
+  <rect x="76" y="148" width="184" height="34" rx="5" fill="#8a5a2b"/>
+  <rect x="76" y="148" width="184" height="9" rx="4" fill="#a8733b"/>
+  <!-- tongue -->
+  <path d="M260 170 L312 178" stroke="#8a5a2b" stroke-width="6" stroke-linecap="round"/>
+  <!-- wheels -->
+  <g fill="none" stroke="#f2c46d" stroke-linecap="round">
+    <g>
+      <circle cx="116" cy="198" r="28" stroke-width="6"/>
+      <g stroke-width="3.5">
+        <line x1="116" y1="170" x2="116" y2="226"/><line x1="88" y1="198" x2="144" y2="198"/>
+        <line x1="96.2" y1="178.2" x2="135.8" y2="217.8"/><line x1="135.8" y1="178.2" x2="96.2" y2="217.8"/>
+      </g>
+    </g>
+    <g>
+      <circle cx="222" cy="198" r="28" stroke-width="6"/>
+      <g stroke-width="3.5">
+        <line x1="222" y1="170" x2="222" y2="226"/><line x1="194" y1="198" x2="250" y2="198"/>
+        <line x1="202.2" y1="178.2" x2="241.8" y2="217.8"/><line x1="241.8" y1="178.2" x2="202.2" y2="217.8"/>
+      </g>
+    </g>
+  </g>
+  <circle cx="116" cy="198" r="7" fill="#0b2a4a" stroke="#f2c46d" stroke-width="3"/>
+  <circle cx="222" cy="198" r="7" fill="#0b2a4a" stroke="#f2c46d" stroke-width="3"/>
+</svg>
