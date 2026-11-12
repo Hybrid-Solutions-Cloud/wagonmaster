@@ -1,0 +1,29 @@
+[
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-vmware-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site",
+  "name": "iic-vmware-site",
+  "type": "Microsoft.OffAzure/VMwareSites",
+  "location": "eastus",
+  "properties": {
+   "applianceName": "iic-appliance-vmware",
+   "provisioningState": "Succeeded",
+   "serviceEndpoint": "https://example.invalid",
+   "discoverySolutionId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-azurelocal-migrate/solutions/Servers-Discovery-ServerDiscovery"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site",
+  "name": "iic-master-site",
+  "type": "Microsoft.OffAzure/MasterSites",
+  "properties": {
+   "sites": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site"
+   ],
+   "provisioningState": "Succeeded"
+  }
+ }
+]

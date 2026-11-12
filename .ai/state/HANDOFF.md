@@ -10,6 +10,8 @@ Last updated: 2026-11-12
 
 - Wagonmaster Waypoint 0.1.0 (`src/waypoint/`) builds a one file HTML dashboard from a Manifest export. It was built and tested against the fictional sample export in `samples/manifest-export`, with jsdom tests for the template and Pester tests for the script. It has never read a real export.
 
+- Waypoint 0.2.0 adds Azure Local: readiness rules and a cluster sizing estimate computed by Waypoint (Azure Migrate has no Azure Local assessment), plus tracking of `Microsoft.DataReplication` protected items. The Azure Local replication record shape in the sample is from memory of the API and is unverified.
+
 ## Open work, in order
 
 1. Static validation is in CI (`validate` workflow: Pester static tests, then PSScriptAnalyzer). Still to do: confirm `Get-Help -Full` renders, and review the analyzer warnings excluded in `PSScriptAnalyzerSettings.psd1`.

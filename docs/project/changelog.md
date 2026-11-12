@@ -6,6 +6,7 @@ The full history is in [CHANGELOG.md](https://github.com/Hybrid-Solutions-Cloud/
 
 | Version | Date | Changes |
 | --- | --- | --- |
+| 0.2.0 | 2026-11-12 | Azure Local support: readiness rules, adjustable cluster sizing estimate, replication tracking for Azure Local targets, and a second live demo. |
 | 0.1.0 | 2026-11-12 | Initial preview. One file HTML dashboard with overview, servers, assessments, SQL Server, web apps, software, migration, project, data explorer and data quality views. Built on sample data. |
 
 ## Wagonmaster Manifest

@@ -1,0 +1,11 @@
+[
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site",
+  "name": "iic-webapp-site",
+  "properties": {
+   "provisioningState": "Succeeded"
+  }
+ }
+]

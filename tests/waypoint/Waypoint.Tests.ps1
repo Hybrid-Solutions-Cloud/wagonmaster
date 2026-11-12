@@ -45,6 +45,17 @@ Describe 'New-WagonmasterWaypoint.ps1' {
         @($data.summary).Count | Should -BeGreaterThan 30
     }
 
+    It 'builds a report from the Azure Local sample export' {
+        $azureLocalSample = (Resolve-Path (Join-Path $PSScriptRoot '../../samples/manifest-export-azure-local')).Path
+        $out = Join-Path $TestDrive 'waypoint-azure-local.html'
+        & $script:scriptPath -ExportPath $azureLocalSample -OutputPath $out -NonInteractive
+        $data = Get-EmbeddedData -Path $out
+        $data.manifest.Target | Should -Be 'Azure Local'
+        $data.datasets['Discovery_VMware_Machines'].Count | Should -Be 180
+        $data.datasets['Migration_DataReplication_ProtectedItems'].Count | Should -Be 64
+        $data.datasets.Keys | Should -Not -Contain 'Assessment_AzureVM'
+    }
+
     It 'honors -ExcludeDataset with wildcards' {
         $out = Join-Path $TestDrive 'waypoint-excluded.html'
         & $script:scriptPath -ExportPath $script:samplePath -OutputPath $out -ExcludeDataset 'Discovery_SoftwareInventory', 'BusinessCase*' -NonInteractive

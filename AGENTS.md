@@ -28,7 +28,7 @@ Waypoint (`src/waypoint/`) is a preview built on the sample export in `samples/`
 - Lint: `Invoke-ScriptAnalyzer -Path src -Recurse -Settings ./PSScriptAnalyzerSettings.psd1`
 - Tests: `Invoke-Pester -Path tests`
 - Waypoint template tests: `cd tests/waypoint && npm ci && npm test`
-- Sample data: `python3 tools/New-SampleExport.py samples/manifest-export`
+- Sample data: `python3 tools/New-SampleExport.py samples/manifest-export azure` and `python3 tools/New-SampleExport.py samples/manifest-export-azure-local azure-local`
 - Word downloads: `bash tools/Build-WordDocs.sh`
 
 ## Confirm with the owner before

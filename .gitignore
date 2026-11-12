@@ -26,6 +26,7 @@ coverage.xml
 
 # Generated in CI from the sample export
 docs/public/waypoint-demo/
+docs/public/waypoint-demo-azure-local/
 
 # Node
 node_modules/

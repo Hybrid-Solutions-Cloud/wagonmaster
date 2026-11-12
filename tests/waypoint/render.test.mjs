@@ -7,6 +7,7 @@ import { buildReport } from './build-report.mjs';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const template = root + 'src/waypoint/template/waypoint.html';
 const sample = root + 'samples/manifest-export';
+const sampleAzl = root + 'samples/manifest-export-azure-local';
 
 async function load(html) {
   const errors = [];
@@ -99,4 +100,50 @@ test('an empty export still renders', async () => {
   assert.equal(win.WagonmasterWaypoint.machines, 0);
   for (const id of win.WagonmasterWaypoint.tabs) win.WagonmasterWaypoint.show(id);
   assert.doesNotMatch(doc.querySelector('main').textContent, /could not be drawn/);
+});
+
+test('Azure sample: Azure Local tab works as a what-if and offers utilization sizing', async () => {
+  const { win, doc } = await load(buildReport(sample, template));
+  assert.equal(win.WagonmasterWaypoint.azureLocal.target, false);
+  win.WagonmasterWaypoint.show('azurelocal');
+  const main = doc.querySelector('main');
+  assert.match(main.textContent, /Cluster sizing estimate/);
+  assert.ok(doc.querySelector('main select[aria-label="Size from"]'), 'utilization basis offered when assessment data exists');
+  assert.match(main.textContent, /Not supported/, 'physical servers are flagged');
+  const size = win.WagonmasterWaypoint.azureLocal.size(win.WagonmasterWaypoint.azureLocal.defaults);
+  assert.equal(size.servers, 220, 'physical servers are left out of sizing');
+  assert.ok(size.nodes >= 4);
+});
+
+test('Azure Local sample: target detected, migration tracked, estimate recalculates', async () => {
+  const { win, doc, errors } = await load(buildReport(sampleAzl, template));
+  assert.deepEqual(errors, []);
+  const wm = win.WagonmasterWaypoint;
+  assert.equal(wm.machines, 180);
+  assert.equal(wm.azureLocal.target, true);
+  assert.equal(wm.model.migrations, 64);
+  assert.match(doc.querySelector('header .meta').textContent, /target Azure Local/);
+  assert.match(tileValue(doc, 'Azure Local nodes'), /^\d+$/);
+  assert.equal(tileValue(doc, 'Estimated monthly cost'), null, 'no Azure cost tile without an assessment');
+  for (const id of wm.tabs) {
+    wm.show(id);
+    assert.doesNotMatch(doc.querySelector('main').textContent, /could not be drawn/, `tab ${id} drew`);
+  }
+  wm.show('migration');
+  assert.match(doc.querySelector('main').textContent, /iic-azl-clus01/);
+  assert.match(doc.querySelector('main').textContent, /Migration completed/);
+  wm.show('azurelocal');
+  assert.equal(doc.querySelector('main select[aria-label="Size from"]'), null, 'no utilization basis without assessment data');
+  const before = tileValue(doc, 'Nodes needed');
+  const ratio = doc.querySelector('main input[aria-label="Virtual CPUs per physical core"]');
+  ratio.value = '1';
+  ratio.dispatchEvent(new win.Event('input'));
+  const after = tileValue(doc, 'Nodes needed');
+  assert.ok(Number(after) > Number(before), `nodes rise when the CPU ratio drops (${before} -> ${after})`);
+  const base = wm.azureLocal.size(wm.azureLocal.defaults);
+  const two = wm.azureLocal.size({ ...wm.azureLocal.defaults, resiliency: 'two' });
+  assert.ok(two.needRawTb < base.needRawTb, 'two way mirror needs less raw storage');
+  for (const key of ['migration.name', 'migration.state', 'migration.targetCluster', 'migration.instanceType']) {
+    assert.equal(wm.coverage[key].hit, wm.coverage[key].seen, `${key} matched every record`);
+  }
 });

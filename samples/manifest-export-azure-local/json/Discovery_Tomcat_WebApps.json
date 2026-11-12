@@ -1,0 +1,596 @@
+[
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-053-reports-1",
+  "name": "iic-api-053-reports-1",
+  "properties": {
+   "displayName": "reports-1",
+   "webServerName": "iic-api-053-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-053-22a4c8"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-082-auth-1",
+  "name": "iic-api-082-auth-1",
+  "properties": {
+   "displayName": "auth-1",
+   "webServerName": "iic-api-082-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-082-c21d2c"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "17"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-082-intranet-2",
+  "name": "iic-api-082-intranet-2",
+  "properties": {
+   "displayName": "intranet-2",
+   "webServerName": "iic-api-082-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-082-c21d2c"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "11"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-082-checkout-3",
+  "name": "iic-api-082-checkout-3",
+  "properties": {
+   "displayName": "checkout-3",
+   "webServerName": "iic-api-082-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-082-c21d2c"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "17"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-089-intranet-1",
+  "name": "iic-api-089-intranet-1",
+  "properties": {
+   "displayName": "intranet-1",
+   "webServerName": "iic-api-089-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-089-009b0c"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-089-checkout-2",
+  "name": "iic-api-089-checkout-2",
+  "properties": {
+   "displayName": "checkout-2",
+   "webServerName": "iic-api-089-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-089-009b0c"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-089-auth-3",
+  "name": "iic-api-089-auth-3",
+  "properties": {
+   "displayName": "auth-3",
+   "webServerName": "iic-api-089-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-089-009b0c"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "17"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-web-095-partner-api-1",
+  "name": "iic-web-095-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-web-095-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-095-0b40db"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-web-097-portal-1",
+  "name": "iic-web-097-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-web-097-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-097-8f581a"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "17"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-web-097-checkout-2",
+  "name": "iic-web-097-checkout-2",
+  "properties": {
+   "displayName": "checkout-2",
+   "webServerName": "iic-web-097-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-097-8f581a"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-136-portal-1",
+  "name": "iic-api-136-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-api-136-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-136-b513d9"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "11"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-136-reports-2",
+  "name": "iic-api-136-reports-2",
+  "properties": {
+   "displayName": "reports-2",
+   "webServerName": "iic-api-136-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-136-b513d9"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-143-auth-1",
+  "name": "iic-api-143-auth-1",
+  "properties": {
+   "displayName": "auth-1",
+   "webServerName": "iic-api-143-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-143-7b7b77"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "11"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-143-auth-2",
+  "name": "iic-api-143-auth-2",
+  "properties": {
+   "displayName": "auth-2",
+   "webServerName": "iic-api-143-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-143-7b7b77"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-143-auth-3",
+  "name": "iic-api-143-auth-3",
+  "properties": {
+   "displayName": "auth-3",
+   "webServerName": "iic-api-143-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-143-7b7b77"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "11"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-157-portal-1",
+  "name": "iic-api-157-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-api-157-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-157-8dde7a"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "17"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-157-intranet-2",
+  "name": "iic-api-157-intranet-2",
+  "properties": {
+   "displayName": "intranet-2",
+   "webServerName": "iic-api-157-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-157-8dde7a"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "11"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-157-catalog-3",
+  "name": "iic-api-157-catalog-3",
+  "properties": {
+   "displayName": "catalog-3",
+   "webServerName": "iic-api-157-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-157-8dde7a"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "17"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-163-auth-1",
+  "name": "iic-api-163-auth-1",
+  "properties": {
+   "displayName": "auth-1",
+   "webServerName": "iic-api-163-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-163-e10590"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "11"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-163-intranet-2",
+  "name": "iic-api-163-intranet-2",
+  "properties": {
+   "displayName": "intranet-2",
+   "webServerName": "iic-api-163-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-163-e10590"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-api-163-reports-3",
+  "name": "iic-api-163-reports-3",
+  "properties": {
+   "displayName": "reports-3",
+   "webServerName": "iic-api-163-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-163-e10590"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "8"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/tomcatWebApplications/iic-web-175-reports-1",
+  "name": "iic-web-175-reports-1",
+  "properties": {
+   "displayName": "reports-1",
+   "webServerName": "iic-web-175-tomcat",
+   "serverType": "Tomcat",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-175-139236"
+   ],
+   "frameworks": [
+    {
+     "name": "Java",
+     "version": "11"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "http",
+     "port": "8080"
+    }
+   ]
+  }
+ }
+]

@@ -13,7 +13,7 @@ Open source tools for planning and running Azure migrations. Wagonmaster works w
 | Tool | What it does | Status |
 | --- | --- | --- |
 | [Manifest](src/manifest/) | Exports all the data in an Azure Migrate project to CSV and JSON | Available, early release |
-| [Waypoint](src/waypoint/) | One file HTML dashboard built from a Manifest export | Preview, built on sample data |
+| [Waypoint](src/waypoint/) | One file HTML dashboard built from a Manifest export, for migrations to Azure or Azure Local | Preview, built on sample data |
 | Muster | Move group and wave planning | Planned |
 
 ## Quick start: Manifest
@@ -43,7 +43,7 @@ cd wagonmaster/src/waypoint
 ./New-WagonmasterWaypoint.ps1 -ExportPath ../../samples/manifest-export -OutputPath ./demo.html -Open
 ```
 
-See the [live demo](https://labs.hybridsolutions.cloud/wagonmaster/waypoint-demo/index.html) and the [Waypoint docs](docs/waypoint/index.md).
+Live demos: [migrating to Azure](https://labs.hybridsolutions.cloud/wagonmaster/waypoint-demo/index.html) and [migrating to Azure Local](https://labs.hybridsolutions.cloud/wagonmaster/waypoint-demo-azure-local/index.html). See the [Waypoint docs](docs/waypoint/index.md).
 
 ## Repository layout
 

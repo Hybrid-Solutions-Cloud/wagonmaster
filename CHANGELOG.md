@@ -4,6 +4,13 @@ All notable changes to this repository are recorded here. Each tool is versioned
 
 ## Wagonmaster Waypoint
 
+### 0.2.0 (2026-11-12)
+
+- Azure Local tab: readiness per server from Microsoft's published migration requirements, checks to do by hand, and an adjustable cluster sizing estimate.
+- Replication items for Azure Local (`Microsoft.DataReplication`) are tracked in the Migration tab, with target instance and target VM.
+- The overview adapts when the export targets Azure Local.
+- Second sample export and live demo for a VMware to Azure Local migration.
+
 ### 0.1.0 (2026-11-12)
 
 - Initial preview: `New-WagonmasterWaypoint.ps1` builds one self contained HTML dashboard from a Manifest export.

@@ -37,7 +37,8 @@ const waypointSidebar = [
     text: 'Wagonmaster Waypoint',
     items: [
       { text: 'Overview', link: '/waypoint/' },
-      { text: 'Live demo', link: '/waypoint-demo/index.html', target: '_blank' },
+      { text: 'Live demo: migrating to Azure', link: '/waypoint-demo/index.html', target: '_blank' },
+      { text: 'Live demo: migrating to Azure Local', link: '/waypoint-demo-azure-local/index.html', target: '_blank' },
     ],
   },
 ]
@@ -91,6 +92,8 @@ export default defineConfig({
         items: [
           { text: 'Manifest: project data export', link: '/manifest/' },
           { text: 'Waypoint: dashboard report', link: '/waypoint/' },
+          { text: 'Demo: migrating to Azure', link: '/waypoint-demo/index.html', target: '_blank' },
+          { text: 'Demo: migrating to Azure Local', link: '/waypoint-demo-azure-local/index.html', target: '_blank' },
           { text: 'Planned tools', link: '/project/roadmap' },
         ],
       },

@@ -14,6 +14,7 @@ Manifest has been code reviewed but has not yet been run against a live Azure Mi
 | Know what access to grant, and how to set up a managed identity or service principal | [Security and access](/manifest/security) |
 | See every API call the tool makes | [API reference](/manifest/api-reference) |
 | Turn an export into a dashboard | [Waypoint](/waypoint/) |
+| See a finished dashboard | <a href="/wagonmaster/waypoint-demo/index.html" target="_blank" rel="noopener">Demo: migrating to Azure</a> or <a href="/wagonmaster/waypoint-demo-azure-local/index.html" target="_blank" rel="noopener">demo: migrating to Azure Local</a> |
 | See what is planned next | [Roadmap](/project/roadmap) |
 
 ## Quick start

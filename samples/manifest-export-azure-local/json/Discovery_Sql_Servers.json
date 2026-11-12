@@ -1,0 +1,326 @@
+[
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-003-mssqlserver",
+  "name": "iic-sql-003-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-003",
+   "version": "11.0.7001.0",
+   "sqlServerVersion": "SQL Server 2012",
+   "edition": "Standard",
+   "numberOfUserDatabases": 2,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-003-7746f0"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "maxServerMemoryInUseInMb": 16384,
+   "logicalCpuCount": 4
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-010-mssqlserver",
+  "name": "iic-sql-010-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-010",
+   "version": "15.0.2000.5",
+   "sqlServerVersion": "SQL Server 2019",
+   "edition": "Standard",
+   "numberOfUserDatabases": 7,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-010-4df9f7"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "maxServerMemoryInUseInMb": 8192,
+   "logicalCpuCount": 4
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-019-mssqlserver",
+  "name": "iic-sql-019-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-019",
+   "version": "13.0.5026.0",
+   "sqlServerVersion": "SQL Server 2016",
+   "edition": "Enterprise",
+   "numberOfUserDatabases": 1,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-019-614604"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "maxServerMemoryInUseInMb": 8192,
+   "logicalCpuCount": 8
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-040-mssqlserver",
+  "name": "iic-sql-040-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-040",
+   "version": "15.0.2000.5",
+   "sqlServerVersion": "SQL Server 2019",
+   "edition": "Standard",
+   "numberOfUserDatabases": 4,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-040-75937c"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "maxServerMemoryInUseInMb": 16384,
+   "logicalCpuCount": 4
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-054-mssqlserver",
+  "name": "iic-sql-054-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-054",
+   "version": "11.0.7001.0",
+   "sqlServerVersion": "SQL Server 2012",
+   "edition": "Enterprise",
+   "numberOfUserDatabases": 5,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-054-ea6a2b"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "maxServerMemoryInUseInMb": 8192,
+   "logicalCpuCount": 8
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-080-mssqlserver",
+  "name": "iic-sql-080-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-080",
+   "version": "13.0.5026.0",
+   "sqlServerVersion": "SQL Server 2016",
+   "edition": "Standard",
+   "numberOfUserDatabases": 7,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-080-c44933"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "maxServerMemoryInUseInMb": 16384,
+   "logicalCpuCount": 16
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-092-mssqlserver",
+  "name": "iic-sql-092-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-092",
+   "version": "15.0.2000.5",
+   "sqlServerVersion": "SQL Server 2019",
+   "edition": "Standard",
+   "numberOfUserDatabases": 6,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-092-47af62"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "maxServerMemoryInUseInMb": 8192,
+   "logicalCpuCount": 8
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-099-mssqlserver",
+  "name": "iic-sql-099-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-099",
+   "version": "14.0.2037.2",
+   "sqlServerVersion": "SQL Server 2017",
+   "edition": "Enterprise",
+   "numberOfUserDatabases": 4,
+   "isHighAvailabilityEnabled": true,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-099-602949"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "maxServerMemoryInUseInMb": 32768,
+   "logicalCpuCount": 16
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-126-mssqlserver",
+  "name": "iic-sql-126-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-126",
+   "version": "11.0.7001.0",
+   "sqlServerVersion": "SQL Server 2012",
+   "edition": "Standard",
+   "numberOfUserDatabases": 1,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-126-ff7874"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "maxServerMemoryInUseInMb": 16384,
+   "logicalCpuCount": 2
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-128-mssqlserver",
+  "name": "iic-sql-128-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-128",
+   "version": "14.0.2037.2",
+   "sqlServerVersion": "SQL Server 2017",
+   "edition": "Developer",
+   "numberOfUserDatabases": 6,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-128-1a98ec"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "maxServerMemoryInUseInMb": 8192,
+   "logicalCpuCount": 8
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-146-mssqlserver",
+  "name": "iic-sql-146-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-146",
+   "version": "15.0.2000.5",
+   "sqlServerVersion": "SQL Server 2019",
+   "edition": "Standard",
+   "numberOfUserDatabases": 4,
+   "isHighAvailabilityEnabled": false,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-146-016307"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "maxServerMemoryInUseInMb": 16384,
+   "logicalCpuCount": 4
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlServers/iic-sql-159-mssqlserver",
+  "name": "iic-sql-159-mssqlserver",
+  "type": "Microsoft.OffAzure/MasterSites/SqlSites/sqlServers",
+  "properties": {
+   "sqlServerName": "MSSQLSERVER",
+   "hostName": "iic-sql-159",
+   "version": "13.0.5026.0",
+   "sqlServerVersion": "SQL Server 2016",
+   "edition": "Enterprise",
+   "numberOfUserDatabases": 3,
+   "isHighAvailabilityEnabled": true,
+   "isClustered": false,
+   "status": "Running",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-159-8a4860"
+   ],
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "maxServerMemoryInUseInMb": 32768,
+   "logicalCpuCount": 4
+  }
+ }
+]

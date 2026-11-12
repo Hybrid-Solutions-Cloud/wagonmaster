@@ -1,0 +1,17 @@
+[
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-azurelocal-migrate",
+  "name": "iic-azurelocal-migrate",
+  "type": "Microsoft.Migrate/migrateProjects",
+  "location": "eastus",
+  "properties": {
+   "provisioningState": "Succeeded",
+   "registeredTools": [
+    "ServerDiscovery",
+    "ServerMigration_DataReplication"
+   ],
+   "lastSummaryRefreshedTime": "2026-11-10T14:00:00Z"
+  }
+ }
+]

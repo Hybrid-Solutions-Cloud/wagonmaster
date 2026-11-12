@@ -1,0 +1,752 @@
+[
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-003-Ledger01",
+  "name": "iic-sql-003-Ledger01",
+  "properties": {
+   "databaseName": "Ledger01",
+   "sqlServerName": "iic-sql-003\\MSSQLSERVER",
+   "hostName": "iic-sql-003",
+   "sizeMb": 51453.7,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-003-Identity02",
+  "name": "iic-sql-003-Identity02",
+  "properties": {
+   "databaseName": "Identity02",
+   "sqlServerName": "iic-sql-003\\MSSQLSERVER",
+   "hostName": "iic-sql-003",
+   "sizeMb": 93538.9,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-010-Billing01",
+  "name": "iic-sql-010-Billing01",
+  "properties": {
+   "databaseName": "Billing01",
+   "sqlServerName": "iic-sql-010\\MSSQLSERVER",
+   "hostName": "iic-sql-010",
+   "sizeMb": 20521.5,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-010-Billing02",
+  "name": "iic-sql-010-Billing02",
+  "properties": {
+   "databaseName": "Billing02",
+   "sqlServerName": "iic-sql-010\\MSSQLSERVER",
+   "hostName": "iic-sql-010",
+   "sizeMb": 39841.5,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-010-Identity03",
+  "name": "iic-sql-010-Identity03",
+  "properties": {
+   "databaseName": "Identity03",
+   "sqlServerName": "iic-sql-010\\MSSQLSERVER",
+   "hostName": "iic-sql-010",
+   "sizeMb": 167083.5,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-010-HR04",
+  "name": "iic-sql-010-HR04",
+  "properties": {
+   "databaseName": "HR04",
+   "sqlServerName": "iic-sql-010\\MSSQLSERVER",
+   "hostName": "iic-sql-010",
+   "sizeMb": 116802.5,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-010-Inventory05",
+  "name": "iic-sql-010-Inventory05",
+  "properties": {
+   "databaseName": "Inventory05",
+   "sqlServerName": "iic-sql-010\\MSSQLSERVER",
+   "hostName": "iic-sql-010",
+   "sizeMb": 123382.4,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-010-Billing06",
+  "name": "iic-sql-010-Billing06",
+  "properties": {
+   "databaseName": "Billing06",
+   "sqlServerName": "iic-sql-010\\MSSQLSERVER",
+   "hostName": "iic-sql-010",
+   "sizeMb": 120965.2,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-010-Ledger07",
+  "name": "iic-sql-010-Ledger07",
+  "properties": {
+   "databaseName": "Ledger07",
+   "sqlServerName": "iic-sql-010\\MSSQLSERVER",
+   "hostName": "iic-sql-010",
+   "sizeMb": 108415.4,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-019-Telemetry01",
+  "name": "iic-sql-019-Telemetry01",
+  "properties": {
+   "databaseName": "Telemetry01",
+   "sqlServerName": "iic-sql-019\\MSSQLSERVER",
+   "hostName": "iic-sql-019",
+   "sizeMb": 91664.3,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-040-HR01",
+  "name": "iic-sql-040-HR01",
+  "properties": {
+   "databaseName": "HR01",
+   "sqlServerName": "iic-sql-040\\MSSQLSERVER",
+   "hostName": "iic-sql-040",
+   "sizeMb": 136428.4,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-040-Telemetry02",
+  "name": "iic-sql-040-Telemetry02",
+  "properties": {
+   "databaseName": "Telemetry02",
+   "sqlServerName": "iic-sql-040\\MSSQLSERVER",
+   "hostName": "iic-sql-040",
+   "sizeMb": 107220.6,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-040-Catalog03",
+  "name": "iic-sql-040-Catalog03",
+  "properties": {
+   "databaseName": "Catalog03",
+   "sqlServerName": "iic-sql-040\\MSSQLSERVER",
+   "hostName": "iic-sql-040",
+   "sizeMb": 7659.7,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-040-Inventory04",
+  "name": "iic-sql-040-Inventory04",
+  "properties": {
+   "databaseName": "Inventory04",
+   "sqlServerName": "iic-sql-040\\MSSQLSERVER",
+   "hostName": "iic-sql-040",
+   "sizeMb": 26906.1,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-054-Orders01",
+  "name": "iic-sql-054-Orders01",
+  "properties": {
+   "databaseName": "Orders01",
+   "sqlServerName": "iic-sql-054\\MSSQLSERVER",
+   "hostName": "iic-sql-054",
+   "sizeMb": 136609.8,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-054-HR02",
+  "name": "iic-sql-054-HR02",
+  "properties": {
+   "databaseName": "HR02",
+   "sqlServerName": "iic-sql-054\\MSSQLSERVER",
+   "hostName": "iic-sql-054",
+   "sizeMb": 135758.1,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-054-Reporting03",
+  "name": "iic-sql-054-Reporting03",
+  "properties": {
+   "databaseName": "Reporting03",
+   "sqlServerName": "iic-sql-054\\MSSQLSERVER",
+   "hostName": "iic-sql-054",
+   "sizeMb": 30672.1,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-054-Telemetry04",
+  "name": "iic-sql-054-Telemetry04",
+  "properties": {
+   "databaseName": "Telemetry04",
+   "sqlServerName": "iic-sql-054\\MSSQLSERVER",
+   "hostName": "iic-sql-054",
+   "sizeMb": 18551.8,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-054-Reporting05",
+  "name": "iic-sql-054-Reporting05",
+  "properties": {
+   "databaseName": "Reporting05",
+   "sqlServerName": "iic-sql-054\\MSSQLSERVER",
+   "hostName": "iic-sql-054",
+   "sizeMb": 105578.9,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-080-Ledger01",
+  "name": "iic-sql-080-Ledger01",
+  "properties": {
+   "databaseName": "Ledger01",
+   "sqlServerName": "iic-sql-080\\MSSQLSERVER",
+   "hostName": "iic-sql-080",
+   "sizeMb": 83969.6,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-080-Billing02",
+  "name": "iic-sql-080-Billing02",
+  "properties": {
+   "databaseName": "Billing02",
+   "sqlServerName": "iic-sql-080\\MSSQLSERVER",
+   "hostName": "iic-sql-080",
+   "sizeMb": 138878.9,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-080-Identity03",
+  "name": "iic-sql-080-Identity03",
+  "properties": {
+   "databaseName": "Identity03",
+   "sqlServerName": "iic-sql-080\\MSSQLSERVER",
+   "hostName": "iic-sql-080",
+   "sizeMb": 78429.0,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-080-Reporting04",
+  "name": "iic-sql-080-Reporting04",
+  "properties": {
+   "databaseName": "Reporting04",
+   "sqlServerName": "iic-sql-080\\MSSQLSERVER",
+   "hostName": "iic-sql-080",
+   "sizeMb": 26369.3,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-080-Orders05",
+  "name": "iic-sql-080-Orders05",
+  "properties": {
+   "databaseName": "Orders05",
+   "sqlServerName": "iic-sql-080\\MSSQLSERVER",
+   "hostName": "iic-sql-080",
+   "sizeMb": 157771.6,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-080-Identity06",
+  "name": "iic-sql-080-Identity06",
+  "properties": {
+   "databaseName": "Identity06",
+   "sqlServerName": "iic-sql-080\\MSSQLSERVER",
+   "hostName": "iic-sql-080",
+   "sizeMb": 44507.8,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-080-HR07",
+  "name": "iic-sql-080-HR07",
+  "properties": {
+   "databaseName": "HR07",
+   "sqlServerName": "iic-sql-080\\MSSQLSERVER",
+   "hostName": "iic-sql-080",
+   "sizeMb": 174892.9,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-092-Telemetry01",
+  "name": "iic-sql-092-Telemetry01",
+  "properties": {
+   "databaseName": "Telemetry01",
+   "sqlServerName": "iic-sql-092\\MSSQLSERVER",
+   "hostName": "iic-sql-092",
+   "sizeMb": 121236.9,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-092-Catalog02",
+  "name": "iic-sql-092-Catalog02",
+  "properties": {
+   "databaseName": "Catalog02",
+   "sqlServerName": "iic-sql-092\\MSSQLSERVER",
+   "hostName": "iic-sql-092",
+   "sizeMb": 122130.4,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-092-Telemetry03",
+  "name": "iic-sql-092-Telemetry03",
+  "properties": {
+   "databaseName": "Telemetry03",
+   "sqlServerName": "iic-sql-092\\MSSQLSERVER",
+   "hostName": "iic-sql-092",
+   "sizeMb": 73906.6,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-092-Billing04",
+  "name": "iic-sql-092-Billing04",
+  "properties": {
+   "databaseName": "Billing04",
+   "sqlServerName": "iic-sql-092\\MSSQLSERVER",
+   "hostName": "iic-sql-092",
+   "sizeMb": 90184.3,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-092-Inventory05",
+  "name": "iic-sql-092-Inventory05",
+  "properties": {
+   "databaseName": "Inventory05",
+   "sqlServerName": "iic-sql-092\\MSSQLSERVER",
+   "hostName": "iic-sql-092",
+   "sizeMb": 41835.5,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-092-Telemetry06",
+  "name": "iic-sql-092-Telemetry06",
+  "properties": {
+   "databaseName": "Telemetry06",
+   "sqlServerName": "iic-sql-092\\MSSQLSERVER",
+   "hostName": "iic-sql-092",
+   "sizeMb": 80413.2,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-099-Ledger01",
+  "name": "iic-sql-099-Ledger01",
+  "properties": {
+   "databaseName": "Ledger01",
+   "sqlServerName": "iic-sql-099\\MSSQLSERVER",
+   "hostName": "iic-sql-099",
+   "sizeMb": 145841.8,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-099-HR02",
+  "name": "iic-sql-099-HR02",
+  "properties": {
+   "databaseName": "HR02",
+   "sqlServerName": "iic-sql-099\\MSSQLSERVER",
+   "hostName": "iic-sql-099",
+   "sizeMb": 147550.0,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-099-Orders03",
+  "name": "iic-sql-099-Orders03",
+  "properties": {
+   "databaseName": "Orders03",
+   "sqlServerName": "iic-sql-099\\MSSQLSERVER",
+   "hostName": "iic-sql-099",
+   "sizeMb": 165617.5,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-099-Ledger04",
+  "name": "iic-sql-099-Ledger04",
+  "properties": {
+   "databaseName": "Ledger04",
+   "sqlServerName": "iic-sql-099\\MSSQLSERVER",
+   "hostName": "iic-sql-099",
+   "sizeMb": 171002.2,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-126-HR01",
+  "name": "iic-sql-126-HR01",
+  "properties": {
+   "databaseName": "HR01",
+   "sqlServerName": "iic-sql-126\\MSSQLSERVER",
+   "hostName": "iic-sql-126",
+   "sizeMb": 154533.2,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-128-Telemetry01",
+  "name": "iic-sql-128-Telemetry01",
+  "properties": {
+   "databaseName": "Telemetry01",
+   "sqlServerName": "iic-sql-128\\MSSQLSERVER",
+   "hostName": "iic-sql-128",
+   "sizeMb": 152089.9,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-128-HR02",
+  "name": "iic-sql-128-HR02",
+  "properties": {
+   "databaseName": "HR02",
+   "sqlServerName": "iic-sql-128\\MSSQLSERVER",
+   "hostName": "iic-sql-128",
+   "sizeMb": 113611.0,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-128-Reporting03",
+  "name": "iic-sql-128-Reporting03",
+  "properties": {
+   "databaseName": "Reporting03",
+   "sqlServerName": "iic-sql-128\\MSSQLSERVER",
+   "hostName": "iic-sql-128",
+   "sizeMb": 137294.4,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-128-Inventory04",
+  "name": "iic-sql-128-Inventory04",
+  "properties": {
+   "databaseName": "Inventory04",
+   "sqlServerName": "iic-sql-128\\MSSQLSERVER",
+   "hostName": "iic-sql-128",
+   "sizeMb": 46394.6,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-128-Identity05",
+  "name": "iic-sql-128-Identity05",
+  "properties": {
+   "databaseName": "Identity05",
+   "sqlServerName": "iic-sql-128\\MSSQLSERVER",
+   "hostName": "iic-sql-128",
+   "sizeMb": 95731.8,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-128-Orders06",
+  "name": "iic-sql-128-Orders06",
+  "properties": {
+   "databaseName": "Orders06",
+   "sqlServerName": "iic-sql-128\\MSSQLSERVER",
+   "hostName": "iic-sql-128",
+   "sizeMb": 13291.7,
+   "compatibilityLevel": "Compatibility110",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-146-Identity01",
+  "name": "iic-sql-146-Identity01",
+  "properties": {
+   "databaseName": "Identity01",
+   "sqlServerName": "iic-sql-146\\MSSQLSERVER",
+   "hostName": "iic-sql-146",
+   "sizeMb": 133804.8,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-146-Reporting02",
+  "name": "iic-sql-146-Reporting02",
+  "properties": {
+   "databaseName": "Reporting02",
+   "sqlServerName": "iic-sql-146\\MSSQLSERVER",
+   "hostName": "iic-sql-146",
+   "sizeMb": 16789.6,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-146-Inventory03",
+  "name": "iic-sql-146-Inventory03",
+  "properties": {
+   "databaseName": "Inventory03",
+   "sqlServerName": "iic-sql-146\\MSSQLSERVER",
+   "hostName": "iic-sql-146",
+   "sizeMb": 79794.5,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-146-Catalog04",
+  "name": "iic-sql-146-Catalog04",
+  "properties": {
+   "databaseName": "Catalog04",
+   "sqlServerName": "iic-sql-146\\MSSQLSERVER",
+   "hostName": "iic-sql-146",
+   "sizeMb": 166120.0,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-159-Ledger01",
+  "name": "iic-sql-159-Ledger01",
+  "properties": {
+   "databaseName": "Ledger01",
+   "sqlServerName": "iic-sql-159\\MSSQLSERVER",
+   "hostName": "iic-sql-159",
+   "sizeMb": 119662.1,
+   "compatibilityLevel": "Compatibility130",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-159-Identity02",
+  "name": "iic-sql-159-Identity02",
+  "properties": {
+   "databaseName": "Identity02",
+   "sqlServerName": "iic-sql-159\\MSSQLSERVER",
+   "hostName": "iic-sql-159",
+   "sizeMb": 59015.8,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Site": "iic-master-site",
+  "_SqlSite": "iic-sql-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/SqlSites/iic-sql-site/sqlDatabases/iic-sql-159-Inventory03",
+  "name": "iic-sql-159-Inventory03",
+  "properties": {
+   "databaseName": "Inventory03",
+   "sqlServerName": "iic-sql-159\\MSSQLSERVER",
+   "hostName": "iic-sql-159",
+   "sizeMb": 35333.0,
+   "compatibilityLevel": "Compatibility150",
+   "status": "Online"
+  }
+ }
+]

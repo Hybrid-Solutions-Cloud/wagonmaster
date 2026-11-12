@@ -1,0 +1,2 @@
+﻿_Project,id,name,type,location,provisioningState,registeredTools,lastSummaryRefreshedTime
+iic-azurelocal-migrate,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-azurelocal-migrate,iic-azurelocal-migrate,Microsoft.Migrate/migrateProjects,eastus,Succeeded,ServerDiscovery; ServerMigration_DataReplication,2026-11-10T14:00:00Z

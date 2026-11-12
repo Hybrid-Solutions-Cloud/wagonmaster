@@ -1,0 +1,3516 @@
+[
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-001-976c73",
+  "name": "iic-file-001-976c73",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-001",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-001",
+    "targetVmName": "iic-file-001",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2022 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29fa4f0322",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C295aa77273",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29f71f2f1d",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C296ffb2a5f",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-004-15df82",
+  "name": "iic-app-004-15df82",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-004",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-004",
+    "targetVmName": "iic-app-004",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Linux",
+    "osName": "CentOS Linux 7",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C296bafe98c",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29d8cb8fab",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-008-858926",
+  "name": "iic-batch-008-858926",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-008",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-008",
+    "targetVmName": "iic-batch-008",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2022 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C299f2fa560",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29d9abab80",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29f20cd912",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-011-fad503",
+  "name": "iic-api-011-fad503",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-011",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-011",
+    "targetVmName": "iic-api-011",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 4096,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C295c770392",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2962cfa6ec",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-012-cdc7cf",
+  "name": "iic-batch-012-cdc7cf",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "InitialReplicationInProgress",
+   "protectionStateDescription": "Initial replication in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-012",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-012",
+    "targetVmName": "iic-batch-012",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2981faa226",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2908e5fcde",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C290b539321",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-014-7e2f6f",
+  "name": "iic-file-014-7e2f6f",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-014",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-014",
+    "targetVmName": "iic-file-014",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2942f05465",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-017-98c6f8",
+  "name": "iic-file-017-98c6f8",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-017",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-017",
+    "targetVmName": "iic-file-017",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29e980322a",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-022-ddd7d7",
+  "name": "iic-app-022-ddd7d7",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-022",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-022",
+    "targetVmName": "iic-app-022",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "Ubuntu 20.04 LTS",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29f8aca150",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2989bd38ca",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-023-195638",
+  "name": "iic-file-023-195638",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-023",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-023",
+    "targetVmName": "iic-file-023",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29ac438b44",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-024-d33e58",
+  "name": "iic-app-024-d33e58",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-024",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-024",
+    "targetVmName": "iic-app-024",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2022 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29aa785dd4",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29146e1744",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29b2ad5e0b",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2933c9aa6a",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-025-06651e",
+  "name": "iic-app-025-06651e",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-025",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-025",
+    "targetVmName": "iic-app-025",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 16,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "CentOS Linux 7",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C295bbba506",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-026-70d0f8",
+  "name": "iic-file-026-70d0f8",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-026",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-026",
+    "targetVmName": "iic-file-026",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Linux",
+    "osName": "Red Hat Enterprise Linux 8.8",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29fce862c6",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29ec747e34",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29129a95d6",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-027-b1c949",
+  "name": "iic-web-027-b1c949",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-027",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-027",
+    "targetVmName": "iic-web-027",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 16,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C293b7d65ba",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29d42678de",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C295f619bac",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-028-6c687f",
+  "name": "iic-web-028-6c687f",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-028",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-028",
+    "targetVmName": "iic-web-028",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2016 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2965c048ff",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C296a3406b9",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-029-dab364",
+  "name": "iic-app-029-dab364",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-029",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-029",
+    "targetVmName": "iic-app-029",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29a99c8648",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29bd7a195a",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29ebafd30b",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-031-3f9d94",
+  "name": "iic-web-031-3f9d94",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-031",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-031",
+    "targetVmName": "iic-web-031",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C293360f402",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29bc9697d8",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29b0263b6d",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C298481567c",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-032-4f80ea",
+  "name": "iic-api-032-4f80ea",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-032",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-032",
+    "targetVmName": "iic-api-032",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C295549fb9a",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C299015d970",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29e0cd49a1",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-033-c0ec5d",
+  "name": "iic-app-033-c0ec5d",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-033",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-033",
+    "targetVmName": "iic-app-033",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "CentOS Linux 7",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29b8329f88",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C299c80a0b8",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2962c5efd9",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-036-c0e9d9",
+  "name": "iic-api-036-c0e9d9",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-036",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-036",
+    "targetVmName": "iic-api-036",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 16,
+    "targetMemoryInMegaBytes": 131072,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2911bda101",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C297f80f566",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-045-611671",
+  "name": "iic-app-045-611671",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-045",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-045",
+    "targetVmName": "iic-app-045",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "SUSE Linux Enterprise Server 15 SP4",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C290c0c8f48",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-047-10ac6a",
+  "name": "iic-file-047-10ac6a",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-047",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-047",
+    "targetVmName": "iic-file-047",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C296a4dfc5d",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C299c2bb7de",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-053-22a4c8",
+  "name": "iic-api-053-22a4c8",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-053",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-053",
+    "targetVmName": "iic-api-053",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Linux",
+    "osName": "CentOS Linux 7",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2998a71c59",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2929d3fc47",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29c2205494",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C299d147041",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-055-39c880",
+  "name": "iic-api-055-39c880",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "InitialReplicationInProgress",
+   "protectionStateDescription": "Initial replication in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-055",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-055",
+    "targetVmName": "iic-api-055",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29c50bb383",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C296acbe26f",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-056-730c79",
+  "name": "iic-api-056-730c79",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-056",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-056",
+    "targetVmName": "iic-api-056",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C290a2877ae",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29709f6b73",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2947a7d90f",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-060-fb003d",
+  "name": "iic-file-060-fb003d",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-060",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-060",
+    "targetVmName": "iic-file-060",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2022 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2950a755f9",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29f595c464",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-061-29e021",
+  "name": "iic-web-061-29e021",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-061",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-061",
+    "targetVmName": "iic-web-061",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29c951c8bd",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2986a900e1",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29d78b1cc7",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C293d0aca73",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-063-494445",
+  "name": "iic-batch-063-494445",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-063",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-063",
+    "targetVmName": "iic-batch-063",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "CentOS Linux 7",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C293f2fa54a",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C299ffff228",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29a878769d",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-064-44bbbd",
+  "name": "iic-api-064-44bbbd",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-064",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-064",
+    "targetVmName": "iic-api-064",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29d0f57f15",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29d1741a89",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-066-b160d7",
+  "name": "iic-batch-066-b160d7",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-066",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-066",
+    "targetVmName": "iic-batch-066",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29530c2406",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29b3711c69",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-071-a950ab",
+  "name": "iic-api-071-a950ab",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-071",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-071",
+    "targetVmName": "iic-api-071",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29054001f2",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-072-c32ca1",
+  "name": "iic-app-072-c32ca1",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-072",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-072",
+    "targetVmName": "iic-app-072",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C290cceb8da",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2938560469",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C295369ffba",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29df323161",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-073-47529b",
+  "name": "iic-api-073-47529b",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-073",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-073",
+    "targetVmName": "iic-api-073",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2016 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C298faf3a0a",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29e034c525",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2921377494",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29e88cab33",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-074-19eb8f",
+  "name": "iic-api-074-19eb8f",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-074",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-074",
+    "targetVmName": "iic-api-074",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29b7e0bb60",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29a967310f",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2934dcd0f0",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-076-241f4d",
+  "name": "iic-web-076-241f4d",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-076",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-076",
+    "targetVmName": "iic-web-076",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C297419560a",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29dd109079",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2916f90a75",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-081-521905",
+  "name": "iic-app-081-521905",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-081",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-081",
+    "targetVmName": "iic-app-081",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "SUSE Linux Enterprise Server 15 SP4",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2978733d62",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29abe501ec",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-082-c21d2c",
+  "name": "iic-api-082-c21d2c",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-082",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-082",
+    "targetVmName": "iic-api-082",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "CentOS Linux 7",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C298360c986",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29087b6cc6",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29244f4290",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29bfa34cf7",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-083-547173",
+  "name": "iic-file-083-547173",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "InitialReplicationInProgress",
+   "protectionStateDescription": "Initial replication in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-083",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-083",
+    "targetVmName": "iic-file-083",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2016 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29e1b090ad",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29b8c3e99b",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-086-0a6cd0",
+  "name": "iic-app-086-0a6cd0",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-086",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-086",
+    "targetVmName": "iic-app-086",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Linux",
+    "osName": "Ubuntu 22.04 LTS",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2977cdb39e",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2911700516",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C292576a1e3",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-087-1834c5",
+  "name": "iic-app-087-1834c5",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "InitialReplicationInProgress",
+   "protectionStateDescription": "Initial replication in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-087",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-087",
+    "targetVmName": "iic-app-087",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2922274cd6",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29708c91d0",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29ebcc3aae",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-089-009b0c",
+  "name": "iic-api-089-009b0c",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-089",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-089",
+    "targetVmName": "iic-api-089",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "Red Hat Enterprise Linux 8.8",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C292200fc24",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C294c56362e",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-090-13c550",
+  "name": "iic-api-090-13c550",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-090",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-090",
+    "targetVmName": "iic-api-090",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C294b461bcb",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C295aadfcf2",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-094-84badc",
+  "name": "iic-batch-094-84badc",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-094",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-094",
+    "targetVmName": "iic-batch-094",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C292b9fd688",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C293da1442d",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-095-0b40db",
+  "name": "iic-web-095-0b40db",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-095",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-095",
+    "targetVmName": "iic-web-095",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 16,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Linux",
+    "osName": "CentOS Linux 7",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29090bb1c5",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C295a9ef6d9",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-097-8f581a",
+  "name": "iic-web-097-8f581a",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-097",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-097",
+    "targetVmName": "iic-web-097",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 16,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "SUSE Linux Enterprise Server 15 SP4",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29fb92f933",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29a6572fcf",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C292c4d543b",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29a2b4e287",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-101-c3cdd0",
+  "name": "iic-api-101-c3cdd0",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-101",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-101",
+    "targetVmName": "iic-api-101",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2942601f5f",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29d6261ea2",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-104-9a3834",
+  "name": "iic-file-104-9a3834",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "InitialReplicationInProgress",
+   "protectionStateDescription": "Initial replication in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-104",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-104",
+    "targetVmName": "iic-file-104",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2016 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C299ee03a20",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29608b5879",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2991b3546e",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29e113351d",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-105-97d2e4",
+  "name": "iic-api-105-97d2e4",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-105",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-105",
+    "targetVmName": "iic-api-105",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2984b846c1",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2905c488e3",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-109-6e78c6",
+  "name": "iic-web-109-6e78c6",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-109",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-109",
+    "targetVmName": "iic-web-109",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29f1347cc6",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29241fa36a",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C296e994348",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2906d0d194",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-110-6f95db",
+  "name": "iic-batch-110-6f95db",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-110",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-110",
+    "targetVmName": "iic-batch-110",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2016 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29be3352bc",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2961b5688a",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C295547c0d3",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-app-111-dddc29",
+  "name": "iic-app-111-dddc29",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-app-111",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-app-111",
+    "targetVmName": "iic-app-111",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2012 R2 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C297799d36b",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-113-350123",
+  "name": "iic-batch-113-350123",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-113",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-113",
+    "targetVmName": "iic-batch-113",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 16,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "Ubuntu 22.04 LTS",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C293752b09d",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C299e4caf02",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-114-cd37a2",
+  "name": "iic-batch-114-cd37a2",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-114",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-114",
+    "targetVmName": "iic-batch-114",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29b2fc1427",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29fc5f739c",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29f25d7d22",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29445b8a8c",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-115-8ea5ef",
+  "name": "iic-api-115-8ea5ef",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-115",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-115",
+    "targetVmName": "iic-api-115",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29cbcf337e",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C297eb22eb6",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C299533b1cf",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2973ef777b",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-116-7189fe",
+  "name": "iic-batch-116-7189fe",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverCompleted",
+   "protectionStateDescription": "Migration completed",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-116",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": "2026-11-10T03:40:00Z",
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-116",
+    "targetVmName": "iic-batch-116",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "SUSE Linux Enterprise Server 15 SP4",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2939e16d31",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29d7e9ad13",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29cf49d803",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-122-edb2bf",
+  "name": "iic-web-122-edb2bf",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "PlannedFailoverInProgress",
+   "protectionStateDescription": "Migration in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-122",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-122",
+    "targetVmName": "iic-web-122",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 16,
+    "targetMemoryInMegaBytes": 131072,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29a68b8554",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-123-d5cf2b",
+  "name": "iic-api-123-d5cf2b",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-123",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-123",
+    "targetVmName": "iic-api-123",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Standard",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C299183abaf",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-127-e20ef0",
+  "name": "iic-api-127-e20ef0",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-127",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-127",
+    "targetVmName": "iic-api-127",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 65536,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29170145c4",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C298e4a3463",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-129-6fdaa0",
+  "name": "iic-file-129-6fdaa0",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-129",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-129",
+    "targetVmName": "iic-file-129",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Windows",
+    "osName": "Windows Server 2022 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C294598b9c5",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2960a98325",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-batch-130-4b7f6f",
+  "name": "iic-batch-130-4b7f6f",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-batch-130",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-batch-130",
+    "targetVmName": "iic-batch-130",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 8,
+    "targetMemoryInMegaBytes": 32768,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2920cfc337",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29958f49e6",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-131-7a1ea0",
+  "name": "iic-web-131-7a1ea0",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "InitialReplicationInProgress",
+   "protectionStateDescription": "Initial replication in progress",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-131",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-131",
+    "targetVmName": "iic-web-131",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C291ed7a376",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29c042b718",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-web-133-0ad74b",
+  "name": "iic-web-133-0ad74b",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-web-133",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-web-133",
+    "targetVmName": "iic-web-133",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 4096,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2022 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29ef0e2e5a",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-134-4c3d5e",
+  "name": "iic-api-134-4c3d5e",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "EnablingFailed",
+   "protectionStateDescription": "Enabling replication failed",
+   "replicationHealth": "Critical",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-134",
+   "allowedJobs": [
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [
+    {
+     "code": "EnableProtectionFailed",
+     "severity": "Error",
+     "message": "The disk could not be read from the source."
+    }
+   ],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-134",
+    "targetVmName": "iic-api-134",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 4,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2022 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C291c77be31",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C290d368baa",
+      "capacityInBytes": 68719476736,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2914fd016d",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-api-136-b513d9",
+  "name": "iic-api-136-b513d9",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-api-136",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-api-136",
+    "targetVmName": "iic-api-136",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 16384,
+    "isDynamicRam": false,
+    "hyperVGeneration": "1",
+    "osType": "Linux",
+    "osName": "Red Hat Enterprise Linux 7.9",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C29c722113a",
+      "capacityInBytes": 137438953472,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2916f8b417",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "_Project": "iic-azurelocal-migrate",
+  "_Vault": "iic-azl-replicationvault",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-migrate-01/providers/Microsoft.DataReplication/replicationVaults/iic-azl-replicationvault/protectedItems/iic-file-138-8de893",
+  "name": "iic-file-138-8de893",
+  "type": "Microsoft.DataReplication/replicationVaults/protectedItems",
+  "properties": {
+   "policyName": "iic-azl-replicationvaultVMwareToAzStackHCIpolicy",
+   "provisioningState": "Succeeded",
+   "protectionState": "Protected",
+   "protectionStateDescription": "Ready to migrate",
+   "replicationHealth": "Normal",
+   "testFailoverState": "None",
+   "resynchronizationState": "None",
+   "fabricObjectName": "iic-file-138",
+   "allowedJobs": [
+    "PlannedFailover",
+    "DisableProtection"
+   ],
+   "lastSuccessfulPlannedFailoverTime": null,
+   "healthErrors": [],
+   "customProperties": {
+    "instanceType": "VMwareToAzStackHCI",
+    "sourceVmName": "iic-file-138",
+    "targetVmName": "iic-file-138",
+    "targetHciClusterId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/clusters/iic-azl-clus01",
+    "targetAzStackHciClusterName": "iic-azl-clus01",
+    "targetArcClusterCustomLocationId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.ExtendedLocation/customLocations/iic-azl-cl01",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-workloads-01",
+    "customLocationRegion": "eastus",
+    "targetCpuCores": 2,
+    "targetMemoryInMegaBytes": 8192,
+    "isDynamicRam": false,
+    "hyperVGeneration": "2",
+    "osType": "Windows",
+    "osName": "Windows Server 2019 Datacenter",
+    "storageContainerId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-azl-prd-01/providers/Microsoft.AzureStackHCI/storageContainers/iic-azl-csv01",
+    "protectedDisks": [
+     {
+      "sourceDiskId": "6000C2971526362",
+      "capacityInBytes": 1099511627776,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C29343117a9",
+      "capacityInBytes": 274877906944,
+      "diskFileFormat": "VHDX"
+     },
+     {
+      "sourceDiskId": "6000C2934c0ba48",
+      "capacityInBytes": 549755813888,
+      "diskFileFormat": "VHDX"
+     }
+    ]
+   }
+  }
+ }
+]

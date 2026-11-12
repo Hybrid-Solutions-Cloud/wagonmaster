@@ -45,9 +45,11 @@ jobs:
         working-directory: docs
         run: npm ci
 
-      - name: Build the Waypoint demo from the sample export
+      - name: Build the Waypoint demos from the sample exports
         shell: pwsh
-        run: ./src/waypoint/New-WagonmasterWaypoint.ps1 -ExportPath ./samples/manifest-export -OutputPath ./docs/public/waypoint-demo/index.html -NonInteractive
+        run: |
+          ./src/waypoint/New-WagonmasterWaypoint.ps1 -ExportPath ./samples/manifest-export -OutputPath ./docs/public/waypoint-demo/index.html -NonInteractive
+          ./src/waypoint/New-WagonmasterWaypoint.ps1 -ExportPath ./samples/manifest-export-azure-local -OutputPath ./docs/public/waypoint-demo-azure-local/index.html -NonInteractive
 
       - name: Build site
         working-directory: docs

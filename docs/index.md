@@ -18,6 +18,9 @@ hero:
       text: Wagonmaster Manifest
       link: /manifest/
     - theme: alt
+      text: Wagonmaster Waypoint
+      link: /waypoint/
+    - theme: alt
       text: View on GitHub
       link: https://github.com/Hybrid-Solutions-Cloud/wagonmaster
 features:
@@ -30,7 +33,7 @@ features:
     link: /manifest/security
     linkText: Security and access
   - title: Waypoint
-    details: Turn a Manifest export into one HTML dashboard. Readiness, cost, SQL, web apps, software and migration progress, plus a data explorer for every field. No server needed.
+    details: Turn a Manifest export into one HTML dashboard for migrations to Azure or to Azure Local. Readiness, cost, cluster sizing, SQL, web apps, software and migration progress. Two live demos.
     link: /waypoint/
     linkText: Explore Waypoint
 ---

@@ -51,14 +51,15 @@
 .NOTES
     Author: Kristopher Turner
     Contact: kris@hybridsolutions.cloud
-    Version: 0.1.0
+    Version: 0.2.0
 
-    ScriptVersion    = "0.1.0"
+    ScriptVersion    = "0.2.0"
     TaskReference    = "wagonmaster/waypoint"
     DocumentationRef = "docs/waypoint/index.md"
     LastUpdated      = "2026-11-12"
     UpdatedBy        = "Kristopher Turner"
     ChangeLog        = @(
+        "0.2.0 - 2026-11-12 - Azure Local: readiness rules, cluster sizing estimate and replication tracking in the report"
         "0.1.0 - 2026-11-12 - Initial implementation, built against sample data"
     )
 #>
@@ -77,7 +78,7 @@ $ErrorActionPreference = 'Stop'
 
 # === Settings ===
 
-$WaypointVersion = '0.1.0'
+$WaypointVersion = '0.2.0'
 $TemplatePath    = Join-Path $PSScriptRoot 'template/waypoint.html'
 $Placeholder     = '__WAGONMASTER_DATA__'
 $WarnSizeMb      = 50

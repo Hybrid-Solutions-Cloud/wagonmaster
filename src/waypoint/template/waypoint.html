@@ -179,10 +179,20 @@ var MAP = {
     frameworks: ['properties.frameworks'], bindings: ['properties.bindings'], machineIds: ['properties.machineArmIds']
   },
   migration: {
-    name: ['properties.machineName', 'properties.friendlyName', 'name'], state: ['properties.migrationState', 'properties.protectionState'],
-    description: ['properties.migrationStateDescription', 'properties.protectionStateDescription'], test: ['properties.testMigrateState'],
-    health: ['properties.health', 'properties.replicationHealth'], lastTest: ['properties.lastTestMigrationTime'], lastMigration: ['properties.lastMigrationTime'],
-    targetSize: ['properties.providerSpecificDetails.targetVmSize'], targetLocation: ['properties.providerSpecificDetails.targetLocation'], vault: ['_Vault']
+    name: ['properties.machineName', 'properties.customProperties.sourceVmName', 'properties.fabricObjectName', 'properties.friendlyName', 'name'],
+    state: ['properties.migrationState', 'properties.protectionState'],
+    description: ['properties.migrationStateDescription', 'properties.protectionStateDescription'],
+    test: ['properties.testMigrateState', 'properties.testFailoverState'],
+    health: ['properties.health', 'properties.replicationHealth'],
+    lastTest: ['properties.lastTestMigrationTime', 'properties.lastSuccessfulTestFailoverTime'],
+    lastMigration: ['properties.lastMigrationTime', 'properties.lastSuccessfulPlannedFailoverTime'],
+    targetSize: ['properties.providerSpecificDetails.targetVmSize'],
+    targetLocation: ['properties.providerSpecificDetails.targetLocation', 'properties.customProperties.customLocationRegion'],
+    instanceType: ['properties.customProperties.instanceType', 'properties.providerSpecificDetails.instanceType'],
+    targetCluster: ['properties.customProperties.targetAzStackHciClusterName', 'properties.customProperties.targetHciClusterId'],
+    targetVm: ['properties.customProperties.targetVmName'],
+    targetCores: ['properties.customProperties.targetCpuCores'], targetMemoryMb: ['properties.customProperties.targetMemoryInMegaBytes'],
+    vault: ['_Vault']
   },
   software: {
     machine: ['_Machine'], machineId: ['_MachineId'],
@@ -544,7 +554,12 @@ var migrations = [];
   ds(name).forEach(function (rec) {
     var g = { rec: rec, dataset: name, name: F(rec, 'migration', 'name'), state: F(rec, 'migration', 'state') || 'Unknown', description: F(rec, 'migration', 'description'),
       test: F(rec, 'migration', 'test'), health: F(rec, 'migration', 'health'), lastTest: F(rec, 'migration', 'lastTest'), lastMigration: F(rec, 'migration', 'lastMigration'),
-      targetSize: F(rec, 'migration', 'targetSize'), targetLocation: F(rec, 'migration', 'targetLocation'), vault: F(rec, 'migration', 'vault') };
+      targetSize: F(rec, 'migration', 'targetSize'), targetLocation: F(rec, 'migration', 'targetLocation'), vault: F(rec, 'migration', 'vault'),
+      instanceType: F(rec, 'migration', 'instanceType'), targetCluster: F(rec, 'migration', 'targetCluster'), targetVm: F(rec, 'migration', 'targetVm'),
+      targetCores: F(rec, 'migration', 'targetCores'), targetMemoryMb: F(rec, 'migration', 'targetMemoryMb') };
+    if (g.targetCluster) g.targetCluster = String(g.targetCluster).split('/').pop();
+    g.azureLocal = /azstackhci|azurelocal|azurestackhci/i.test(g.instanceType || '') || name.indexOf('DataReplication') !== -1;
+    if (!g.targetSize && g.targetCores) g.targetSize = g.targetCores + ' vCPU, ' + fmt1(num(g.targetMemoryMb) / 1024) + ' GB';
     migrations.push(g);
     var m = machineByName[lower(g.name)]; if (m && !m.migration) m.migration = g;
   });
@@ -561,7 +576,65 @@ ds('Discovery_SoftwareInventory').forEach(function (rec) {
 });
 softwareRows = Object.keys(softwareIndex).map(function (k) { return softwareIndex[k]; }).sort(function (a, b) { return b.servers - a.servers; });
 
-function isMigrated(g) { return /succe|complete|migrated/i.test(g.state) && /migrat/i.test(g.state + ' ' + (g.description || '')); }
+function isMigrated(g) {
+  var s = g.state + ' ' + (g.description || '');
+  return (/succe|complete|migrated/i.test(g.state) && /migrat/i.test(s)) || /plannedfailovercompleted|failovercommitted|migrationcompleted/i.test(g.state);
+}
+
+// ---------------------------------------------------------------------------
+// Azure Local
+//
+// Azure Migrate has no assessment type for Azure Local, so Waypoint works out
+// readiness and a cluster sizing estimate itself from the discovery data.
+// The rules follow Microsoft's published requirements for migrating VMware and
+// Hyper-V VMs to Azure Local with Azure Migrate.
+// ---------------------------------------------------------------------------
+var azlMigrations = migrations.filter(function (g) { return g.azureLocal; });
+var azlTarget = azlMigrations.length > 0;
+function azlCheck(m) {
+  var level = 'good', reasons = [], notes = [], os = lower(m.osName);
+  function raise(l, why) { var rank = { good: 0, unknown: 1, warning: 2, critical: 3 }; if (rank[l] > rank[level]) level = l; reasons.push(why); }
+  if (m.source !== 'VMware' && m.source !== 'Hyper-V') raise('critical', 'Azure Migrate moves only VMware and Hyper-V VMs to Azure Local');
+  if (!os || os === 'unknown') raise('unknown', 'Operating system was not discovered');
+  else if (/windows server 2008 r2/.test(os)) raise('warning', 'Windows Server 2008 R2 needs SP1 and update KB3138612 before migration');
+  else if (/windows server (2008|2003)/.test(os)) raise('warning', 'Old Windows Server release: confirm it is a supported Hyper-V guest');
+  else if (m.osFamily === 'Linux') {
+    if (/(centos|red hat|rhel|oracle)[^0-9]*[456](\.|\s|$)/.test(os)) raise('warning', 'Old Linux release: confirm Hyper-V drivers are in the boot image');
+    else notes.push('Linux: confirm Hyper-V drivers (Linux Integration Services) are in the boot image');
+  } else if (m.osFamily !== 'Windows') raise('unknown', 'Operating system family not recognized');
+  if (m.osFamily === 'Windows' && /windows server (2003|2008|2012)/.test(os)) notes.push('Guest management is supported only on Windows Server 2016 or later');
+  if (/off/i.test(m.power || '')) notes.push('Powered off at discovery');
+  return { level: level, label: { good: 'Ready', warning: 'Ready with conditions', critical: 'Not supported', unknown: 'Unknown' }[level], reasons: reasons, notes: notes };
+}
+machines.forEach(function (m) { m.azl = azlCheck(m); });
+function azlSegments(rows) {
+  var c = { good: 0, warning: 0, critical: 0, unknown: 0 };
+  rows.forEach(function (m) { c[m.azl.level]++; });
+  return [['Ready', 'good'], ['Ready with conditions', 'warning'], ['Not supported', 'critical'], ['Unknown', 'unknown']]
+    .map(function (x) { return { label: x[0], value: c[x[1]], level: x[1], color: STATUS[x[1]].color }; });
+}
+var AZL_DEFAULTS = { basis: 'allocated', ratio: 4, growth: 20, coresPerNode: 32, memPerNode: 512, memReserve: 32, rawPerNode: 60, resiliency: 'three', fill: 80, spare: true };
+function azlSize(opt) {
+  var rows = machines.filter(function (m) { return m.azl.level !== 'critical'; });
+  var used = opt.basis === 'utilized';
+  var vcpu = 0, mem = 0, disk = 0;
+  rows.forEach(function (m) {
+    var r = used ? primaryRow(m) : null;
+    vcpu += r && r.cpuPct != null ? m.cores * num(r.cpuPct) / 100 : m.cores;
+    mem += r && r.memPct != null ? m.memoryGb * num(r.memPct) / 100 : m.memoryGb;
+    disk += m.diskGb;
+  });
+  var g = 1 + num(opt.growth) / 100, eff = opt.resiliency === 'two' ? 0.5 : 1 / 3;
+  var needCores = vcpu * g / Math.max(1, num(opt.ratio)), needMem = mem * g, needUsableTb = disk * g / 1024;
+  var usablePerNode = num(opt.rawPerNode) * eff * num(opt.fill) / 100, memAvail = Math.max(1, num(opt.memPerNode) - num(opt.memReserve));
+  var byCpu = Math.ceil(needCores / Math.max(1, num(opt.coresPerNode))), byMem = Math.ceil(needMem / memAvail), bySto = usablePerNode > 0 ? Math.ceil(needUsableTb / usablePerNode) : 0;
+  var minNodes = opt.resiliency === 'two' ? 2 : 3;
+  var base = Math.max(byCpu, byMem, bySto, rows.length ? minNodes : 0), nodes = base + (opt.spare && base > 0 ? 1 : 0);
+  var constraint = base === bySto && bySto >= byCpu && bySto >= byMem ? 'storage' : base === byMem && byMem >= byCpu ? 'memory' : base === byCpu ? 'CPU' : 'the minimum node count';
+  return { servers: rows.length, vcpu: vcpu, mem: mem, diskTb: disk / 1024, needCores: needCores, needMem: needMem, needUsableTb: needUsableTb, needRawTb: needUsableTb / eff,
+    byCpu: byCpu, byMem: byMem, bySto: bySto, nodes: nodes, instances: Math.ceil(nodes / 16), constraint: constraint,
+    hasUtilization: machines.some(function (m) { var r = primaryRow(m); return r && r.cpuPct != null; }) };
+}
 
 // ---------------------------------------------------------------------------
 // Views
@@ -594,10 +667,12 @@ function viewOverview() {
     tile('SQL Server instances', fmtInt(sqlServers.length), fmtInt(sqlDatabases.length) + ' databases'),
     tile('Web apps', fmtInt(webApps.length)),
     tile('Assessments', fmtInt(assessments.length + ds('Assessment_AVS').length + ds('Assessment_SQL').length + ds('Assessment_WebApp').length)),
-    primary ? tile('Estimated monthly cost', fmtMoney(primary.total, primary.currency), 'Assessment: ' + primary.name) : tile('Estimated monthly cost', 'No assessment'),
+    primary ? tile('Estimated monthly cost', fmtMoney(primary.total, primary.currency), 'Assessment: ' + primary.name) : (azlTarget ? null : tile('Estimated monthly cost', 'No assessment')),
+    azlTarget ? tile('Azure Local nodes', fmtInt(azlSize(AZL_DEFAULTS).nodes), 'Waypoint estimate, default settings') : null,
     tile('Servers in migration', fmtInt(migrations.length), fmtInt(migrated) + ' migrated')));
   var grid = h('div', { class: 'grid' });
-  grid.appendChild(card('Azure readiness' + (primary ? ' (' + primary.name + ')' : ''), stackBar(readinessSegments(machines, function (m) { var r = primaryRow(m); return r && r.suitability; }))));
+  if (azlTarget) grid.appendChild(card('Azure Local readiness (Waypoint estimate)', stackBar(azlSegments(machines))));
+  if (primary || !azlTarget) grid.appendChild(card('Azure readiness' + (primary ? ' (' + primary.name + ')' : ''), stackBar(readinessSegments(machines, function (m) { var r = primaryRow(m); return r && r.suitability; }))));
   grid.appendChild(card('Operating system support status', stackBar(supportSegments(machines))));
   grid.appendChild(card('Servers by source', barList(countBy(machines, function (m) { return m.source; }))));
   grid.appendChild(card('Servers by operating system family', barList(countBy(machines, function (m) { return m.osFamily; }))));
@@ -612,6 +687,7 @@ function showMachine(m) {
   openDrawer(m.name, [
     { title: 'Summary', value: { Source: m.source, Site: m.site, FQDN: m.fqdn, 'Operating system': m.osName, 'OS version': m.osVersion, Cores: m.cores,
         'Memory (GB)': fmt1(m.memoryGb), Disks: m.diskCount, 'Disk allocated (GB)': fmt1(m.diskGb), 'IP addresses': m.ips, Power: m.power, 'Support status': m.support, Host: m.host } },
+    { title: 'Azure Local readiness (Waypoint estimate)', value: { Result: m.azl.label, Conditions: m.azl.reasons, Notes: m.azl.notes } },
     { title: 'Assessment results (' + m.assessed.length + ')', value: m.assessed.map(function (r) { return r.rec; }), open: true },
     { title: 'Migration', value: m.migration && m.migration.rec },
     { title: 'SQL Server instances (' + m.sql.length + ')', value: m.sql, open: false },
@@ -634,6 +710,7 @@ function viewServers() {
     { key: 'support', label: 'Support', get: function (m) { return m.support; }, render: function (m) { return chip(m.support, supportLevel(m.support)); } },
     { key: 'ready', label: 'Readiness', get: function (m) { var r = primaryRow(m); return readiness(r && r.suitability)[0]; },
       render: function (m) { var r = primaryRow(m), x = readiness(r && r.suitability); return chip(x[0], x[1]); } },
+    { key: 'azl', label: 'Azure Local', get: function (m) { return m.azl.label; }, render: function (m) { return chip(m.azl.label, m.azl.level); } },
     { key: 'size', label: 'Recommended size', get: function (m) { var r = primaryRow(m); return r && r.size; } },
     { key: 'cost', label: 'Monthly cost', num: true, get: function (m) { var r = primaryRow(m); return r ? r.total : null; }, fmt: function (v) { return fmtMoney(v, cur); } },
     { key: 'sql', label: 'SQL', num: true, get: function (m) { return m.sql.length; }, fmt: fmtInt },
@@ -645,7 +722,8 @@ function viewServers() {
     h('p', { class: 'lead', text: 'Every discovered server, joined to its assessment, SQL, web app and migration data. Select a row to see everything known about that server.' }),
     dataTable(cols, machines, { csvName: 'waypoint-servers', sort: 'name', onRow: showMachine, placeholder: 'Search servers, operating systems, IP addresses',
       filters: [{ label: 'Source', get: function (m) { return m.source; } }, { label: 'OS family', get: function (m) { return m.osFamily; } },
-        { label: 'Support', get: function (m) { return m.support; } }, { label: 'Readiness', get: function (m) { var r = primaryRow(m); return readiness(r && r.suitability)[0]; } }] }));
+        { label: 'Support', get: function (m) { return m.support; } }, { label: 'Readiness', get: function (m) { var r = primaryRow(m); return readiness(r && r.suitability)[0]; } },
+        { label: 'Azure Local', get: function (m) { return m.azl.label; } }] }));
 }
 
 function viewAssessments() {
@@ -787,15 +865,79 @@ function viewMigration() {
   root.appendChild(h('div', { class: 'tiles' }, tile('Servers in migration', fmtInt(migrations.length), machines.length ? Math.round(migrations.length / machines.length * 100) + '% of discovered servers' : ''),
     tile('Migrated', fmtInt(migrated)), tile('Test migrated', fmtInt(migrations.filter(function (g) { return /succe/i.test(g.test || ''); }).length)), tile('Needs attention', fmtInt(failed))));
   root.appendChild(h('div', { class: 'grid' }, card('By migration state', barList(countBy(migrations, function (g) { return g.description || g.state; }))),
-    card('By target size', barList(countBy(migrations.filter(function (g) { return g.targetSize; }), function (g) { return g.targetSize; })))));
+    azlTarget ? card('By target Azure Local instance', barList(countBy(migrations.filter(function (g) { return g.targetCluster; }), function (g) { return g.targetCluster; })))
+      : card('By target size', barList(countBy(migrations.filter(function (g) { return g.targetSize; }), function (g) { return g.targetSize; })))));
   root.appendChild(card('Replication and migration items', dataTable([
     { key: 'name', label: 'Server', get: function (g) { return g.name; } }, { key: 'state', label: 'State', get: function (g) { return g.description || g.state; } },
     { key: 'health', label: 'Health', get: function (g) { return g.health; }, render: function (g) { return g.health ? chip(g.health, /crit|fail/i.test(g.health) ? 'critical' : /warn/i.test(g.health) ? 'warning' : 'good') : ''; } },
     { key: 'test', label: 'Test migration', get: function (g) { return g.test; } }, { key: 'lastTest', label: 'Last test', get: function (g) { return fmtDate(g.lastTest); } },
     { key: 'last', label: 'Migrated', get: function (g) { return fmtDate(g.lastMigration); } }, { key: 'size', label: 'Target size', get: function (g) { return g.targetSize; } },
-    { key: 'loc', label: 'Target region', get: function (g) { return g.targetLocation; } }
+    { key: 'loc', label: 'Target region', get: function (g) { return g.targetLocation; } },
+    { key: 'cluster', label: 'Target Azure Local instance', get: function (g) { return g.targetCluster; } },
+    { key: 'tvm', label: 'Target VM', get: function (g) { return g.targetVm; } }
   ], migrations, { csvName: 'waypoint-migration', sort: 'name', filters: [{ label: 'State', get: function (g) { return g.description || g.state; } }],
     onRow: function (g) { openDrawer(g.name, [{ title: 'Migration item record', value: g.rec }]); } })));
+  return root;
+}
+
+function viewAzureLocal() {
+  var root = h('div', null, h('h2', { text: 'Azure Local' }),
+    h('p', { class: 'lead', text: 'Readiness and a cluster sizing estimate for moving this estate to Azure Local. Azure Migrate has no assessment for Azure Local, so these numbers are worked out by Waypoint from the discovery data. Treat them as a planning estimate, not a validated design.' }));
+  var opt = {}; for (var k in AZL_DEFAULTS) opt[k] = AZL_DEFAULTS[k];
+  var first = azlSize(opt), out = h('div');
+  function field(label, key, attrs) {
+    var input = h('input', Object.assign({ type: 'number', value: opt[key], 'aria-label': label, style: 'width:90px' }, attrs || {}));
+    input.addEventListener('input', function () { opt[key] = num(input.value); draw(); });
+    return h('label', { style: 'display:flex;gap:6px;align-items:center;justify-content:space-between' }, label, input);
+  }
+  function pick(label, key, options) {
+    var sel = h('select', { 'aria-label': label });
+    options.forEach(function (o) { sel.appendChild(h('option', { value: o[0], text: o[1], selected: opt[key] === o[0] })); });
+    sel.addEventListener('change', function () { opt[key] = sel.value; draw(); });
+    return h('label', { style: 'display:flex;gap:6px;align-items:center;justify-content:space-between' }, label, sel);
+  }
+  var spare = h('input', { type: 'checkbox', checked: opt.spare, 'aria-label': 'Add one spare node' });
+  spare.addEventListener('change', function () { opt.spare = spare.checked; draw(); });
+  var inputs = h('div', { class: 'controls', style: 'display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 24px' },
+    first.hasUtilization ? pick('Size from', 'basis', [['allocated', 'Allocated CPU and memory'], ['utilized', 'Utilized (assessment performance data)']]) : null,
+    field('Virtual CPUs per physical core', 'ratio', { min: 1, max: 16, step: 0.5 }), field('Growth allowance %', 'growth', { min: 0, max: 300 }),
+    field('Physical cores per node', 'coresPerNode', { min: 1 }), field('Memory per node (GB)', 'memPerNode', { min: 1 }),
+    field('Memory reserved per node (GB)', 'memReserve', { min: 0 }), field('Raw storage per node (TB)', 'rawPerNode', { min: 0, step: 0.5 }),
+    pick('Storage resiliency', 'resiliency', [['three', 'Three way mirror (33% usable)'], ['two', 'Two way mirror (50% usable)']]),
+    field('Fill storage to at most %', 'fill', { min: 10, max: 100 }),
+    h('label', { style: 'display:flex;gap:6px;align-items:center;justify-content:space-between' }, 'Add one spare node (N+1)', spare));
+  function draw() {
+    var z = azlSize(opt);
+    out.textContent = '';
+    out.appendChild(h('div', { class: 'tiles' },
+      tile('Nodes needed', fmtInt(z.nodes), z.instances > 1 ? z.instances + ' Azure Local instances (16 nodes each at most)' : 'One Azure Local instance'),
+      tile('Limited by', z.constraint), tile('Servers included', fmtInt(z.servers)),
+      tile('Physical cores needed', fmtInt(Math.ceil(z.needCores)), fmtInt(z.vcpu) + ' virtual CPUs today'),
+      tile('Memory needed', fmtInt(z.needMem) + ' GB', fmtInt(z.mem) + ' GB today'),
+      tile('Usable storage needed', fmt1(z.needUsableTb) + ' TB', fmt1(z.needRawTb) + ' TB raw')));
+    out.appendChild(card('Nodes needed by resource', barList([{ label: 'CPU', value: z.byCpu }, { label: 'Memory', value: z.byMem }, { label: 'Storage', value: z.bySto }], { limit: 3 }),
+      h('p', { class: 'note', text: 'The largest of the three sets the node count, before the spare node. Three way mirror needs at least 3 nodes, two way mirror at least 2. Servers that Azure Migrate cannot move to Azure Local are left out.' })));
+  }
+  root.appendChild(h('div', { class: 'grid' },
+    card('Azure Local readiness (Waypoint estimate)', stackBar(azlSegments(machines))),
+    card('Conditions found', barList(countBy([].concat.apply([], machines.map(function (m) { return m.azl.reasons; })), function (r) { return r; }), { limit: 8, color: 'var(--series-2)' })),
+    card('Check by hand before migration', h('ul', { style: 'margin:0;padding-left:18px;color:var(--text-secondary)' },
+      h('li', { text: 'BitLocker must be turned off on Windows VMs' }), h('li', { text: 'Encrypted disks and volumes are not supported' }),
+      h('li', { text: 'VMs with shared disks are not supported' }), h('li', { text: 'Linux VMs need Hyper-V drivers in the boot image' }),
+      h('li', { text: 'One source appliance and one target appliance per Azure Migrate project' }),
+      h('li', { text: 'Discovery data cannot show these, so Waypoint cannot check them' })))));
+  root.appendChild(card('Cluster sizing estimate', inputs, out));
+  draw();
+  root.appendChild(h('div', { style: 'height:14px' }));
+  root.appendChild(card('Servers', dataTable([
+    { key: 'name', label: 'Server', get: function (m) { return m.name; } }, { key: 'source', label: 'Source', get: function (m) { return m.source; } },
+    { key: 'os', label: 'Operating system', get: function (m) { return m.osName; } },
+    { key: 'azl', label: 'Azure Local', get: function (m) { return m.azl.label; }, render: function (m) { return chip(m.azl.label, m.azl.level); } },
+    { key: 'why', label: 'Conditions', get: function (m) { return m.azl.reasons.join('; '); } }, { key: 'notes', label: 'Notes', get: function (m) { return m.azl.notes.join('; '); } },
+    { key: 'cores', label: 'Cores', num: true, get: function (m) { return m.cores; }, fmt: fmtInt }, { key: 'mem', label: 'Memory GB', num: true, get: function (m) { return m.memoryGb; }, fmt: fmt1 },
+    { key: 'disk', label: 'Disk GB', num: true, get: function (m) { return m.diskGb; }, fmt: fmt1 },
+    { key: 'mig', label: 'Migration', get: function (m) { return m.migration ? (m.migration.description || m.migration.state) : ''; } }
+  ], machines, { csvName: 'waypoint-azure-local', sort: 'name', onRow: showMachine, filters: [{ label: 'Azure Local', get: function (m) { return m.azl.label; } }, { label: 'Source', get: function (m) { return m.source; } }] })));
   return root;
 }
 
@@ -871,6 +1013,7 @@ var TABS = [
   { id: 'overview', label: 'Overview', view: viewOverview },
   { id: 'servers', label: 'Servers', count: machines.length, view: viewServers },
   { id: 'assessments', label: 'Assessments', count: assessments.length + ds('Assessment_AVS').length + ds('Assessment_SQL').length + ds('Assessment_WebApp').length, view: viewAssessments },
+  { id: 'azurelocal', label: 'Azure Local', view: viewAzureLocal },
   { id: 'sql', label: 'SQL Server', count: sqlServers.length, view: viewSql },
   { id: 'web', label: 'Web apps', count: webApps.length, view: viewWeb },
   { id: 'software', label: 'Software', count: softwareRows.length, view: viewSoftware },
@@ -891,7 +1034,7 @@ function start() {
   } });
   app.appendChild(h('header', { class: 'top' }, logo.firstChild,
     h('div', { class: 'grow' }, h('h1', { text: title }),
-      h('div', { class: 'meta', text: [man.Project ? 'Project ' + man.Project : '', man.ExportedAtUtc ? 'exported ' + fmtDate(man.ExportedAtUtc) : '', fmtInt(machines.length) + ' servers'].filter(Boolean).join('  ·  ') })),
+      h('div', { class: 'meta', text: [man.Project ? 'Project ' + man.Project : '', azlTarget ? 'target Azure Local' : '', man.ExportedAtUtc ? 'exported ' + fmtDate(man.ExportedAtUtc) : '', fmtInt(machines.length) + ' servers'].filter(Boolean).join('  ·  ') })),
     themeBtn, h('button', { type: 'button', text: 'Print', onclick: function () { window.print(); } })));
   if (man.SampleData) app.appendChild(h('div', { class: 'banner', text: 'Sample data. This report shows a fictional estate, not a real Azure Migrate project.' }));
   if (DATA.loadError) app.appendChild(h('div', { class: 'banner', text: 'The embedded data could not be read: ' + DATA.loadError }));
@@ -911,7 +1054,7 @@ function start() {
   app.appendChild(nav); app.appendChild(main);
   app.appendChild(h('footer', { text: 'Wagonmaster Waypoint ' + (meta.waypointVersion || '') + '. Generated from a Wagonmaster Manifest export. This file contains project data: handle it as confidential.' }));
   show((location.hash || '').slice(1) || 'overview');
-  window.WagonmasterWaypoint = { tabs: TABS.map(function (t) { return t.id; }), show: show, machines: machines.length, coverage: coverage, model: { assessments: assessments.length, sql: sqlServers.length, web: webApps.length, migrations: migrations.length, software: softwareRows.length } };
+  window.WagonmasterWaypoint = { tabs: TABS.map(function (t) { return t.id; }), show: show, machines: machines.length, coverage: coverage, azureLocal: { target: azlTarget, size: azlSize, defaults: AZL_DEFAULTS }, model: { assessments: assessments.length, sql: sqlServers.length, web: webApps.length, migrations: migrations.length, software: softwareRows.length } };
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
