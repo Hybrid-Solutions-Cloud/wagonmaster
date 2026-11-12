@@ -20,7 +20,7 @@ Thanks for helping with Wagonmaster. Issues and pull requests are welcome.
 ## Before you open a pull request
 
 ```powershell
-Invoke-ScriptAnalyzer -Path src -Recurse -Severity Warning, Error
+Invoke-ScriptAnalyzer -Path src -Recurse -Settings ./PSScriptAnalyzerSettings.psd1
 Invoke-Pester -Path tests
 ```
 

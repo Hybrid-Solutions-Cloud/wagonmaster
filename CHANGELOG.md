@@ -4,6 +4,12 @@ All notable changes to this repository are recorded here. Each tool is versioned
 
 ## Wagonmaster Manifest
 
+### 1.2.1 (2026-11-12)
+
+- First CI run: the script parses and the static Pester tests pass.
+- Documented PSScriptAnalyzer suppression for reading the service principal secret from `AZURE_CLIENT_SECRET`.
+- Added `PSScriptAnalyzerSettings.psd1`.
+
 ### 1.2.0 (2026-11-12)
 
 - Renamed to Wagonmaster Manifest. The script is now `Export-WagonmasterManifest.ps1`.

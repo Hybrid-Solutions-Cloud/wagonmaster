@@ -1,6 +1,6 @@
 # API reference
 
-Script version 1.2.0. Last updated 2026-11-12. [Download this page as a Word document](/downloads/wagonmaster-manifest-api-reference.docx){target="_self"}.
+Script version 1.2.1. Last updated 2026-11-12. [Download this page as a Word document](/downloads/wagonmaster-manifest-api-reference.docx){target="_self"}.
 
 ## How the script calls Azure
 

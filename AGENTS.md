@@ -18,12 +18,12 @@ If the HCS Governance MCP server is available (`.mcp.json`), call `bootstrap` fo
 
 ## Current state
 
-Manifest (`src/manifest/Export-WagonmasterManifest.ps1`) has never been executed. The open work list is in `.ai/state/HANDOFF.md`.
+Manifest (`src/manifest/Export-WagonmasterManifest.ps1`) parses and passes static tests in CI, but has never been run against Azure. The open work list is in `.ai/state/HANDOFF.md`.
 
 ## Commands
 
 - Docs: `cd docs && npm ci && npm run docs:build`
-- Lint: `Invoke-ScriptAnalyzer -Path src -Recurse -Severity Warning, Error`
+- Lint: `Invoke-ScriptAnalyzer -Path src -Recurse -Settings ./PSScriptAnalyzerSettings.psd1`
 - Tests: `Invoke-Pester -Path tests`
 - Word downloads: `bash tools/Build-WordDocs.sh`
 

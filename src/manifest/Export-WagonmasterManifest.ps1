@@ -129,14 +129,15 @@
 .NOTES
     Author: Kristopher Turner
     Contact: kris@hybridsolutions.cloud
-    Version: 1.2.0
+    Version: 1.2.1
 
-    ScriptVersion    = "1.2.0"
+    ScriptVersion    = "1.2.1"
     TaskReference    = "wagonmaster/manifest"
     DocumentationRef = "docs/manifest/usage.md"
     LastUpdated      = "2026-11-12"
     UpdatedBy        = "Kristopher Turner"
     ChangeLog        = @(
+        "1.2.1 - 2026-11-12 - First CI run: script parses and static tests pass; documented suppression for the service principal secret environment variable"
         "1.2.0 - 2026-11-12 - Renamed to Wagonmaster Manifest (Export-WagonmasterManifest.ps1); config file, environment variables and output folder renamed to match"
         "1.1.0 - 2026-11-12 - Review fixes: fail when project is unreadable; prompt for service principal values; process-scoped sign-in for MI and SPN; CSV formula guard, BOM and column collision fix; input validation"
         "1.0.0 - 2026-11-12 - Initial implementation"
@@ -153,6 +154,8 @@
     config file is used). Missing modules are installed for the current user.
 #>
 [CmdletBinding()]
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingConvertToSecureStringWithPlainText', '',
+    Justification = 'AZURE_CLIENT_SECRET is the standard environment variable for a service principal secret. It is converted in memory and never written to disk or logs.')]
 param(
     [string]$ConfigPath = '',
 
@@ -1099,7 +1102,7 @@ $summary | Export-Csv -Path (Join-Path $runFolder '_Summary.csv') -NoTypeInforma
 $script:manifest | Export-Csv -Path (Join-Path $runFolder '_CallLog.csv') -NoTypeInformation -Encoding utf8BOM
 [pscustomobject]@{
     ExportedAtUtc   = (Get-Date).ToUniversalTime().ToString('o')
-    ScriptVersion   = '1.2.0'
+    ScriptVersion   = '1.2.1'
     SubscriptionId  = $subscriptionIdValue
     ResourceGroup   = $resourceGroupValue
     Project         = $projectNameValue
