@@ -1,6 +1,8 @@
 # Wagonmaster Waypoint
 
-Waypoint turns a Wagonmaster Manifest export into one HTML dashboard. The file needs no server, no internet access and no sign in: open it in any browser, email it, or put it on a file share.
+Waypoint turns a Wagonmaster Manifest export into one HTML dashboard, for migrations to Azure or to Azure Local. The file needs no server, no internet access and no sign in: open it in any browser, email it, or put it on a file share.
+
+Version 0.2.0. Last updated 2026-11-12.
 
 ## Live demos
 

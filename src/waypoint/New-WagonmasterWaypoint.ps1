@@ -10,6 +10,10 @@
 
     Waypoint never contacts Azure. It only reads the export folder and writes one file.
 
+    The report covers migrations to Azure and to Azure Local. For Azure Local it works out
+    readiness and a cluster sizing estimate from the discovery data, because Azure Migrate
+    has no assessment type for Azure Local.
+
     The report embeds every dataset in the export, so it holds the same customer data as
     the export itself. Handle it the same way.
 

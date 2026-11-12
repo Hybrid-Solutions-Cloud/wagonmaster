@@ -45,6 +45,7 @@ Run the script with no parameters and answer the prompts. No IDs are needed.
 5. Press Enter to accept the default output folder, or type another one.
 6. Check the list of resources the dry run prints. Then run the same command without `-DryRun`.
 7. Open `_Summary.csv` in the new output folder to see what was exported.
+8. Optional: build a dashboard from the export with [Wagonmaster Waypoint](/waypoint/).
 
 To skip the prompts next time, pass the values:
 

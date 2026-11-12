@@ -228,6 +228,10 @@ The export is customer confidential. It holds server names, IP addresses, operat
 - Review the `Project_Solutions` dataset once before sending an export outside the team. It lists every resource linked to the project, and its exact contents have not been checked against a live project.
 - Delete local copies when the engagement ends, in line with the customer's data handling terms.
 
+## Waypoint reports
+
+Wagonmaster Waypoint builds an HTML dashboard from an export. It never signs in to or contacts Azure, so it needs no Azure role at all. The report embeds the export's data, so everything in this section applies to the report file too. Values from the export are shown as text and are never run as code.
+
 ## Verification and audit
 
 Confirm least privilege before the first real run, then review it every quarter.

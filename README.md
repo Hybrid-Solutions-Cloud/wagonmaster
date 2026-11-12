@@ -28,7 +28,7 @@ cd wagonmaster/src/manifest
 
 The script prompts for anything it needs. When the dry run looks right, run it again without `-DryRun`.
 
-> **Early release.** Manifest has been code reviewed but has not yet been run against a live Azure Migrate project. Start with `-DryRun` and check `_Summary.csv` after the first full export.
+> **Early release.** Manifest has been code reviewed but has not yet been run against a live Azure Migrate project. Start with `-DryRun` and check `_Summary.csv` after the first full export. Waypoint is a preview built on sample data: check its Data quality tab after your first report on real data.
 
 - [How to use](docs/manifest/usage.md)
 - [Security and access](docs/manifest/security.md): the RBAC needed for interactive, managed identity and service principal runs, and how to create each identity
@@ -50,11 +50,11 @@ Live demos: [migrating to Azure](https://labs.hybridsolutions.cloud/wagonmaster/
 | Path | Contents |
 | --- | --- |
 | `src/<tool>/` | One folder per tool. `src/manifest/` holds Wagonmaster Manifest. |
-| `tests/<tool>/` | Pester tests for that tool |
+| `tests/<tool>/` | Tests for that tool: Pester for PowerShell, Node for the Waypoint report |
 | `docs/` | VitePress documentation site. One folder per tool. |
 | `samples/` | Fictional sample export used by tests and the demo |
 | `tools/` | Helper scripts for maintaining the repo, docs and sample data |
-| `.github/workflows/` | Docs build and deploy, and script validation |
+| `.github/workflows/` | Docs and demo build and deploy, and validation of scripts and the report |
 
 ## Adding a tool
 

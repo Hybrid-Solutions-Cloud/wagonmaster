@@ -5,7 +5,7 @@ Wagonmaster starts with one tool and grows from the data it produces.
 | Tool | Purpose | Status |
 | --- | --- | --- |
 | [Manifest](/manifest/) | Export all Azure Migrate project data to CSV and JSON | Available, early release |
-| [Waypoint](/waypoint/) | One file HTML dashboard for discovery, readiness, cost and migration progress, built from a Manifest export | Preview, built on sample data |
+| [Waypoint](/waypoint/) | One file HTML dashboard for discovery, readiness, cost, Azure Local sizing and migration progress, built from a Manifest export | Preview, built on sample data |
 | Muster | Move group and wave planning from inventory and dependency data | Planned |
 
 ## Next for Manifest
@@ -18,7 +18,8 @@ Wagonmaster starts with one tool and grows from the data it produces.
 
 ## Next for Waypoint
 
-- Confirm field coverage against an export from a real project
+- Confirm field coverage against an export from a real project, for both Azure and Azure Local targets
+- Owner supplied defaults for the Azure Local sizing estimate
 - Dependency views, once dependency data can be exported
 - Wave and move group views, to pair with Muster
 - Compare two exports to show progress over time

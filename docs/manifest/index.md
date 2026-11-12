@@ -27,6 +27,14 @@ Agentless dependency data is not included. Export it from the Azure portal.
 - **Friendly to non engineers.** Run it with no parameters and it prompts for what it needs. Subscriptions and projects are picked from a list.
 - **Safe to automate.** In pipelines and scheduled runs it never prompts. A missing value stops the run with a clear error.
 
+## Works with Azure and Azure Local projects
+
+Manifest exports any Azure Migrate project. For projects that migrate VMware or Hyper-V VMs to Azure Local, replication status comes from the project's replication vault and is written to the `Migration_DataReplication_ProtectedItems` dataset. Azure Migrate has no assessment for Azure Local, so those projects have no assessment datasets.
+
+## Next step: a dashboard
+
+[Wagonmaster Waypoint](/waypoint/) turns the export into one HTML dashboard with readiness, cost, sizing and migration progress.
+
 ## Documentation
 
 | Page | Read it when |

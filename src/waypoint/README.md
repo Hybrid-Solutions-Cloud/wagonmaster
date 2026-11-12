@@ -1,6 +1,6 @@
 # Wagonmaster Waypoint
 
-Builds one self contained HTML dashboard from a Wagonmaster Manifest export. Never contacts Azure.
+Builds one self contained HTML dashboard from a Wagonmaster Manifest export, for migrations to Azure or to Azure Local. Never contacts Azure.
 
 ```powershell
 ./New-WagonmasterWaypoint.ps1 -ExportPath ../../samples/manifest-export -OutputPath ./demo.html -Open

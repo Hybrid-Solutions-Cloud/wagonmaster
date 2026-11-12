@@ -15,7 +15,7 @@ Wagonmaster is a family of open source tools for Azure migrations, published by 
 | Path | Contents |
 | --- | --- |
 | `src/<tool>/` | One folder per tool. `src/manifest/` holds Wagonmaster Manifest. |
-| `tests/<tool>/` | Pester tests for that tool |
+| `tests/<tool>/` | Tests for that tool: Pester for PowerShell, Node for the Waypoint report |
 | `docs/` | This site, built with VitePress. One folder per tool. |
 | `samples/` | Fictional sample export used by tests and the live demo |
 | `tools/` | Helper scripts for maintaining the repo, docs and sample data |

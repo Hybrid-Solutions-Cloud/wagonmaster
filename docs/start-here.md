@@ -1,6 +1,6 @@
 # Start here
 
-Wagonmaster is a family of open source tools for Azure migrations. The first tool, Wagonmaster Manifest, exports all the data in an Azure Migrate project to CSV and JSON.
+Wagonmaster is a family of open source tools for Azure migrations. Wagonmaster Manifest exports all the data in an Azure Migrate project to CSV and JSON. Wagonmaster Waypoint turns that export into a dashboard.
 
 ::: warning Early release
 Manifest has been code reviewed but has not yet been run against a live Azure Migrate project. Run it with `-DryRun` first and check `_Summary.csv` after your first full export.
@@ -29,10 +29,17 @@ cd wagonmaster/src/manifest
 
 The script prompts for anything it needs. When the dry run looks right, run it again without `-DryRun`.
 
+Then build the dashboard from the export:
+
+```powershell
+cd ../waypoint
+./New-WagonmasterWaypoint.ps1 -ExportPath <path-to-export-folder> -Open
+```
+
 ## The tools
 
 | Tool | What it does | Status |
 | --- | --- | --- |
 | [Manifest](/manifest/) | Exports Azure Migrate project data to CSV and JSON | Available, early release |
-| [Waypoint](/waypoint/) | One file HTML dashboard built from a Manifest export | Preview, built on sample data |
+| [Waypoint](/waypoint/) | One file HTML dashboard built from a Manifest export, for migrations to Azure or Azure Local | Preview, built on sample data |
 | Muster | Move group and wave planning | Planned |
