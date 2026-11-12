@@ -1,0 +1,5 @@
+﻿_Project,_Site,id,name,fqdn,version
+iic-migrate,iic-hyperv-site,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/hosts/hv01,hv01,hv01.iic.example,10.0.20348
+iic-migrate,iic-hyperv-site,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/hosts/hv02,hv02,hv02.iic.example,10.0.20348
+iic-migrate,iic-hyperv-site,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/hosts/hv03,hv03,hv03.iic.example,10.0.20348
+iic-migrate,iic-hyperv-site,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/hosts/hv04,hv04,hv04.iic.example,10.0.20348

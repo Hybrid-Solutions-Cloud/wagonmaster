@@ -2,6 +2,12 @@
 
 The full history is in [CHANGELOG.md](https://github.com/Hybrid-Solutions-Cloud/wagonmaster/blob/main/CHANGELOG.md).
 
+## Wagonmaster Waypoint
+
+| Version | Date | Changes |
+| --- | --- | --- |
+| 0.1.0 | 2026-11-12 | Initial preview. One file HTML dashboard with overview, servers, assessments, SQL Server, web apps, software, migration, project, data explorer and data quality views. Built on sample data. |
+
 ## Wagonmaster Manifest
 
 | Version | Date | Changes |

@@ -13,6 +13,7 @@ Manifest has been code reviewed but has not yet been run against a live Azure Mi
 | Export data from an Azure Migrate project today | [How to use Manifest](/manifest/usage) |
 | Know what access to grant, and how to set up a managed identity or service principal | [Security and access](/manifest/security) |
 | See every API call the tool makes | [API reference](/manifest/api-reference) |
+| Turn an export into a dashboard | [Waypoint](/waypoint/) |
 | See what is planned next | [Roadmap](/project/roadmap) |
 
 ## Quick start
@@ -32,5 +33,5 @@ The script prompts for anything it needs. When the dry run looks right, run it a
 | Tool | What it does | Status |
 | --- | --- | --- |
 | [Manifest](/manifest/) | Exports Azure Migrate project data to CSV and JSON | Available, early release |
-| Waypoint | Dashboards built on Manifest exports | Planned |
+| [Waypoint](/waypoint/) | One file HTML dashboard built from a Manifest export | Preview, built on sample data |
 | Muster | Move group and wave planning | Planned |

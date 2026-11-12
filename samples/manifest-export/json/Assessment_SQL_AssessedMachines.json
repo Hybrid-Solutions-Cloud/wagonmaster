@@ -1,0 +1,226 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-003-7746f0",
+  "name": "iic-sql-003-7746f0",
+  "properties": {
+   "displayName": "iic-sql-003",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-003-7746f0",
+   "suitability": "ConditionallySuitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 1667.22,
+   "monthlyStorageCost": 208.4
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-010-4df9f7",
+  "name": "iic-sql-010-4df9f7",
+  "properties": {
+   "displayName": "iic-sql-010",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-010-4df9f7",
+   "suitability": "ConditionallySuitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 1380.02,
+   "monthlyStorageCost": 172.5
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-019-614604",
+  "name": "iic-sql-019-614604",
+  "properties": {
+   "displayName": "iic-sql-019",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-019-614604",
+   "suitability": "ConditionallySuitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 2103.51,
+   "monthlyStorageCost": 262.94
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-040-75937c",
+  "name": "iic-sql-040-75937c",
+  "properties": {
+   "displayName": "iic-sql-040",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-040-75937c",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 872.26,
+   "monthlyStorageCost": 109.03
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-054-ea6a2b",
+  "name": "iic-sql-054-ea6a2b",
+  "properties": {
+   "displayName": "iic-sql-054",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-054-ea6a2b",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 2120.39,
+   "monthlyStorageCost": 265.05
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-080-c44933",
+  "name": "iic-sql-080-c44933",
+  "properties": {
+   "displayName": "iic-sql-080",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-080-c44933",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 1633.62,
+   "monthlyStorageCost": 204.2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-092-47af62",
+  "name": "iic-sql-092-47af62",
+  "properties": {
+   "displayName": "iic-sql-092",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-092-47af62",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 960.46,
+   "monthlyStorageCost": 120.06
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-099-602949",
+  "name": "iic-sql-099-602949",
+  "properties": {
+   "displayName": "iic-sql-099",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-099-602949",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 1041.73,
+   "monthlyStorageCost": 130.22
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-126-ff7874",
+  "name": "iic-sql-126-ff7874",
+  "properties": {
+   "displayName": "iic-sql-126",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-126-ff7874",
+   "suitability": "ConditionallySuitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 1570.74,
+   "monthlyStorageCost": 196.34
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-128-1a98ec",
+  "name": "iic-sql-128-1a98ec",
+  "properties": {
+   "displayName": "iic-sql-128",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-128-1a98ec",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 758.22,
+   "monthlyStorageCost": 94.78
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-146-016307",
+  "name": "iic-sql-146-016307",
+  "properties": {
+   "displayName": "iic-sql-146",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-146-016307",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 1096.93,
+   "monthlyStorageCost": 137.12
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-159-8a4860",
+  "name": "iic-sql-159-8a4860",
+  "properties": {
+   "displayName": "iic-sql-159",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-159-8a4860",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 2087.78,
+   "monthlyStorageCost": 260.97
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-208-147742",
+  "name": "iic-sql-208-147742",
+  "properties": {
+   "displayName": "iic-sql-208",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-sql-208-147742",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 1323.93,
+   "monthlyStorageCost": 165.49
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlMachines/iic-sql-220-a22b1c",
+  "name": "iic-sql-220-a22b1c",
+  "properties": {
+   "displayName": "iic-sql-220",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-sql-220-a22b1c",
+   "suitability": "Suitable",
+   "recommendedVmSize": "Standard_E8ds_v5",
+   "monthlyComputeCost": 284.9,
+   "monthlyStorageCost": 35.61
+  }
+ }
+]

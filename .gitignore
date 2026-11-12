@@ -24,6 +24,9 @@ TestResults/
 testResults.xml
 coverage.xml
 
+# Generated in CI from the sample export
+docs/public/waypoint-demo/
+
 # Node
 node_modules/
 npm-debug.log

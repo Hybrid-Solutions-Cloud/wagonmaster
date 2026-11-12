@@ -5,11 +5,15 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+      - 'src/waypoint/**'
+      - 'samples/**'
       - '.github/workflows/deploy-docs.yml'
   push:
     branches: [main]
     paths:
       - 'docs/**'
+      - 'src/waypoint/**'
+      - 'samples/**'
       - '.github/workflows/deploy-docs.yml'
   workflow_dispatch:
 
@@ -40,6 +44,10 @@ jobs:
       - name: Install dependencies
         working-directory: docs
         run: npm ci
+
+      - name: Build the Waypoint demo from the sample export
+        shell: pwsh
+        run: ./src/waypoint/New-WagonmasterWaypoint.ps1 -ExportPath ./samples/manifest-export -OutputPath ./docs/public/waypoint-demo/index.html -NonInteractive
 
       - name: Build site
         working-directory: docs

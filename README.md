@@ -13,7 +13,7 @@ Open source tools for planning and running Azure migrations. Wagonmaster works w
 | Tool | What it does | Status |
 | --- | --- | --- |
 | [Manifest](src/manifest/) | Exports all the data in an Azure Migrate project to CSV and JSON | Available, early release |
-| Waypoint | Dashboards built on Manifest exports | Planned |
+| [Waypoint](src/waypoint/) | One file HTML dashboard built from a Manifest export | Preview, built on sample data |
 | Muster | Move group and wave planning | Planned |
 
 ## Quick start: Manifest
@@ -34,6 +34,17 @@ The script prompts for anything it needs. When the dry run looks right, run it a
 - [Security and access](docs/manifest/security.md): the RBAC needed for interactive, managed identity and service principal runs, and how to create each identity
 - [API reference](docs/manifest/api-reference.md): every call the tool makes
 
+## Quick start: Waypoint
+
+Waypoint needs only PowerShell 7 and an export. Try it with the sample data:
+
+```powershell
+cd wagonmaster/src/waypoint
+./New-WagonmasterWaypoint.ps1 -ExportPath ../../samples/manifest-export -OutputPath ./demo.html -Open
+```
+
+See the [live demo](https://labs.hybridsolutions.cloud/wagonmaster/waypoint-demo/index.html) and the [Waypoint docs](docs/waypoint/index.md).
+
 ## Repository layout
 
 | Path | Contents |
@@ -41,7 +52,8 @@ The script prompts for anything it needs. When the dry run looks right, run it a
 | `src/<tool>/` | One folder per tool. `src/manifest/` holds Wagonmaster Manifest. |
 | `tests/<tool>/` | Pester tests for that tool |
 | `docs/` | VitePress documentation site. One folder per tool. |
-| `tools/` | Helper scripts for maintaining the repo and docs |
+| `samples/` | Fictional sample export used by tests and the demo |
+| `tools/` | Helper scripts for maintaining the repo, docs and sample data |
 | `.github/workflows/` | Docs build and deploy, and script validation |
 
 ## Adding a tool

@@ -1,0 +1,3260 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-161-8c63be",
+  "name": "iic-batch-161-8c63be",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-161",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "CentOS Linux 7",
+    "osVersion": "7.9",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C296fa20ca0",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29000674f0",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:e9:fe:f0",
+     "ipAddressList": [
+      "10.11.146.113"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 50,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-dc-162-54b09d",
+  "name": "iic-dc-162-54b09d",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-dc-162",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Red Hat Enterprise Linux 7.9",
+    "osVersion": "7.9",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C2971bb79e3",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29104a6e0a",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:7c:b9:ad",
+     "ipAddressList": [
+      "10.13.47.179"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "OFF",
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "numberOfApplications": 52,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-163-03ac2b",
+  "name": "iic-api-163-03ac2b",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-163",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Datacenter",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29c95c33ec",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2913143e66",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C294ceed09b",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:be:04:c9",
+     "ipAddressList": [
+      "10.13.178.190"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 14,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-164-2e74b8",
+  "name": "iic-print-164-2e74b8",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-164",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C29cb1743e5",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C290cefa807",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:14:51:32",
+     "ipAddressList": [
+      "10.12.102.35"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 42,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-165-8ae362",
+  "name": "iic-batch-165-8ae362",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-165",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Datacenter",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 16,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C29d418364f",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29a30cdd8c",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C2987fe5ec1",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C298f10952c",
+     "label": "Hard disk 4",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:4b:5c:01",
+     "ipAddressList": [
+      "10.11.189.158"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 52,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-etl-166-7f9408",
+  "name": "iic-etl-166-7f9408",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-etl-166",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Standard",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C2921d54ab5",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:f4:b7:9e",
+     "ipAddressList": [
+      "10.12.10.78"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 36,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-167-d1090f",
+  "name": "iic-batch-167-d1090f",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-167",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Red Hat Enterprise Linux 8.8",
+    "osVersion": "8.8",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 16,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C290c10e9ff",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2902105012",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C296dded2df",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:59:e9:c4",
+     "ipAddressList": [
+      "10.11.174.143"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 58,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-etl-168-7977cd",
+  "name": "iic-etl-168-7977cd",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-etl-168",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "osVersion": "6.1",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29c5e6764c",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29a7e9132c",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:2d:49:4b",
+     "ipAddressList": [
+      "10.10.177.237"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 28,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-169-ec7487",
+  "name": "iic-api-169-ec7487",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-169",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "CentOS Linux 7",
+    "osVersion": "7.9",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C297c1164b3",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C293fb16217",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:5f:ae:d6",
+     "ipAddressList": [
+      "10.13.207.11"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 56,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-170-1e9414",
+  "name": "iic-print-170-1e9414",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-170",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C2942980350",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C299032e9be",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:e7:b6:7f",
+     "ipAddressList": [
+      "10.13.78.158"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "OFF",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 17,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-171-e98afe",
+  "name": "iic-api-171-e98afe",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-171",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Datacenter",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C299e97f1e5",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C299fd558c8",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C294d40817b",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:9e:f7:17",
+     "ipAddressList": [
+      "10.13.221.121"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 48,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-app-172-fb18ee",
+  "name": "iic-app-172-fb18ee",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-app-172",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C2901f72f4f",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C295f6970f4",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:94:48:5e",
+     "ipAddressList": [
+      "10.12.65.42"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 46,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-etl-173-73c29b",
+  "name": "iic-etl-173-73c29b",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-etl-173",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C298b88db53",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C299c1ef178",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:bf:85:83",
+     "ipAddressList": [
+      "10.11.153.17"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 32,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-etl-174-aaca16",
+  "name": "iic-etl-174-aaca16",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-etl-174",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2016 Datacenter",
+    "osVersion": "10.0.14393",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C29e7245f4d",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29a12b28de",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:96:25:95",
+     "ipAddressList": [
+      "10.10.71.179"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "numberOfApplications": 55,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-etl-175-6cd59b",
+  "name": "iic-etl-175-6cd59b",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-etl-175",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "CentOS Linux 7",
+    "osVersion": "7.9",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29cae22563",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:38:bc:72",
+     "ipAddressList": [
+      "10.11.75.22"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 33,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-176-1ce946",
+  "name": "iic-web-176-1ce946",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-web-176",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C2901101b2f",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C2950b966b6",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:b8:15:0a",
+     "ipAddressList": [
+      "10.11.75.28"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "OFF",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 9,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-177-bf0022",
+  "name": "iic-batch-177-bf0022",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-177",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Red Hat Enterprise Linux 8.8",
+    "osVersion": "8.8",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29fbc9ea82",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C298288ee4c",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C2962c74aa0",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:1c:0b:e5",
+     "ipAddressList": [
+      "10.10.38.115"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 41,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-178-f66637",
+  "name": "iic-print-178-f66637",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-178",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Standard",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 16,
+   "allocatedMemoryInMB": 131072,
+   "disks": [
+    {
+     "uuid": "6000C295a8b5c57",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C298b1d124d",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C291fe96f6a",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:23:b0:ec",
+     "ipAddressList": [
+      "10.12.216.118"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 56,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-mgmt-179-985075",
+  "name": "iic-mgmt-179-985075",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-mgmt-179",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29ad4a87de",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2959e52d5d",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:15:08:ec",
+     "ipAddressList": [
+      "10.13.189.108"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 37,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-180-b227bc",
+  "name": "iic-print-180-b227bc",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-180",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2012 R2 Standard",
+    "osVersion": "6.3",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29208f6cab",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:5b:ab:4b",
+     "ipAddressList": [
+      "10.10.207.22"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 58,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-mgmt-181-7accd9",
+  "name": "iic-mgmt-181-7accd9",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-mgmt-181",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Datacenter",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 16,
+   "allocatedMemoryInMB": 131072,
+   "disks": [
+    {
+     "uuid": "6000C29b48fe0e4",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C295229bbe1",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:66:19:d4",
+     "ipAddressList": [
+      "10.13.188.45"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 43,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-182-0104f2",
+  "name": "iic-batch-182-0104f2",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-182",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Ubuntu 22.04 LTS",
+    "osVersion": "22.04",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C298444d259",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29eb1e8ba4",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:b3:ae:b6",
+     "ipAddressList": [
+      "10.13.142.158"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 25,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-183-3f7cc1",
+  "name": "iic-api-183-3f7cc1",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-183",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Red Hat Enterprise Linux 7.9",
+    "osVersion": "7.9",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C291c57f335",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:b9:e1:11",
+     "ipAddressList": [
+      "10.13.174.13"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "numberOfApplications": 47,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-mgmt-184-5111a2",
+  "name": "iic-mgmt-184-5111a2",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-mgmt-184",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Standard",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C29dfcb42c3",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:3e:eb:ca",
+     "ipAddressList": [
+      "10.13.142.82"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 45,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-185-7c256b",
+  "name": "iic-web-185-7c256b",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-web-185",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2016 Datacenter",
+    "osVersion": "10.0.14393",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 4096,
+   "disks": [
+    {
+     "uuid": "6000C29148265ca",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:75:6d:65",
+     "ipAddressList": [
+      "10.13.237.24"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Extended"
+   },
+   "numberOfApplications": 47,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-186-153e02",
+  "name": "iic-print-186-153e02",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-186",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "CentOS Linux 7",
+    "osVersion": "7.9",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C2953459195",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:64:a0:65",
+     "ipAddressList": [
+      "10.12.80.67"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 55,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-sql-187-d78917",
+  "name": "iic-sql-187-d78917",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-sql-187",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Red Hat Enterprise Linux 8.8",
+    "osVersion": "8.8",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C2929e128de",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2969664815",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C294bd74775",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:10:df:3d",
+     "ipAddressList": [
+      "10.10.229.190"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 26,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-etl-188-8a7285",
+  "name": "iic-etl-188-8a7285",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-etl-188",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Standard",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C290f6bae09",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C297e5db170",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2993d49f8f",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:72:8c:2e",
+     "ipAddressList": [
+      "10.10.167.176"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "OFF",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 51,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-189-af58cb",
+  "name": "iic-web-189-af58cb",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-web-189",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C299527701e",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29cc16cfc4",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:06:13:79",
+     "ipAddressList": [
+      "10.10.218.167"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 11,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-190-90764b",
+  "name": "iic-web-190-90764b",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-web-190",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2012 R2 Standard",
+    "osVersion": "6.3",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C292038fa9b",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29e0393f64",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:aa:ef:0f",
+     "ipAddressList": [
+      "10.11.65.94"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 53,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-dc-191-640b80",
+  "name": "iic-dc-191-640b80",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-dc-191",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Standard",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 16,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C29179ecbc9",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29ed0c9f5b",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29fbd571b1",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:9f:e2:e6",
+     "ipAddressList": [
+      "10.12.45.201"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 55,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-192-56bb31",
+  "name": "iic-print-192-56bb31",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-192",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Ubuntu 22.04 LTS",
+    "osVersion": "22.04",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C296ade8168",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29d900ca5b",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:ae:13:4f",
+     "ipAddressList": [
+      "10.12.49.70"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 17,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-193-9cf75e",
+  "name": "iic-print-193-9cf75e",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-193",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2012 R2 Standard",
+    "osVersion": "6.3",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29a39b4b88",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29df304553",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:14:7d:4f",
+     "ipAddressList": [
+      "10.11.114.140"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 22,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-194-20b1f3",
+  "name": "iic-batch-194-20b1f3",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-194",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Datacenter",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C29665eb2d1",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:80:90:5d",
+     "ipAddressList": [
+      "10.13.167.207"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 17,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-195-d984e8",
+  "name": "iic-api-195-d984e8",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-195",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2012 R2 Standard",
+    "osVersion": "6.3",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C2990246887",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:6c:a7:54",
+     "ipAddressList": [
+      "10.11.177.21"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 44,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-etl-196-69685d",
+  "name": "iic-etl-196-69685d",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-etl-196",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Red Hat Enterprise Linux 8.8",
+    "osVersion": "8.8",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C2961ed438d",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2948646a39",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29ceb83f58",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:55:68:c4",
+     "ipAddressList": [
+      "10.11.58.28"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 13,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-mgmt-197-26b795",
+  "name": "iic-mgmt-197-26b795",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-mgmt-197",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Standard",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C29dab8780f",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C295833eaa9",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:66:5d:87",
+     "ipAddressList": [
+      "10.13.94.31"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 14,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-mgmt-198-dc8e91",
+  "name": "iic-mgmt-198-dc8e91",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-mgmt-198",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "SUSE Linux Enterprise Server 15 SP4",
+    "osVersion": "15.4",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C2955b895e3",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29ca4f9055",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C290f98ef83",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29747bb108",
+     "label": "Hard disk 4",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:83:77:b9",
+     "ipAddressList": [
+      "10.10.107.42"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 22,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-file-199-4199b9",
+  "name": "iic-file-199-4199b9",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-file-199",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "SUSE Linux Enterprise Server 15 SP4",
+    "osVersion": "15.4",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C2993190d03",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29e4082e71",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C293c02d5dd",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C299dc058c4",
+     "label": "Hard disk 4",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:88:13:3f",
+     "ipAddressList": [
+      "10.12.3.89"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 9,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-mgmt-200-2cad57",
+  "name": "iic-mgmt-200-2cad57",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-mgmt-200",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Red Hat Enterprise Linux 8.8",
+    "osVersion": "8.8",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C298dd89fd4",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C298c216435",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2978fc1858",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C295a570041",
+     "label": "Hard disk 4",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:2e:9b:7d",
+     "ipAddressList": [
+      "10.10.63.195"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 50,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-201-0771f0",
+  "name": "iic-batch-201-0771f0",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-201",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2012 R2 Standard",
+    "osVersion": "6.3",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C2945c695b0",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:fe:c3:84",
+     "ipAddressList": [
+      "10.11.172.81"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "OFF",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 21,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-dc-202-a88219",
+  "name": "iic-dc-202-a88219",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-dc-202",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "SUSE Linux Enterprise Server 15 SP4",
+    "osVersion": "15.4",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C2948fa7c66",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C2910d9f114",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:1c:13:36",
+     "ipAddressList": [
+      "10.12.194.99"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 14,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-203-478d22",
+  "name": "iic-print-203-478d22",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-203",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Ubuntu 22.04 LTS",
+    "osVersion": "22.04",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29e944573a",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:0b:0d:d2",
+     "ipAddressList": [
+      "10.11.105.175"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 9,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-204-cd6b72",
+  "name": "iic-web-204-cd6b72",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-web-204",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C290dadca6c",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:56:fe:24",
+     "ipAddressList": [
+      "10.12.85.126"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 47,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-205-a6a264",
+  "name": "iic-api-205-a6a264",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-205",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Ubuntu 22.04 LTS",
+    "osVersion": "22.04",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C296e1d05c8",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29accbeffc",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:b8:1a:6c",
+     "ipAddressList": [
+      "10.11.107.122"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 15,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-206-dbe508",
+  "name": "iic-api-206-dbe508",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-206",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "SUSE Linux Enterprise Server 15 SP4",
+    "osVersion": "15.4",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 16,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C290c254469",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2976a37425",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C294d34a4ed",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29681fac1b",
+     "label": "Hard disk 4",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:4e:75:8a",
+     "ipAddressList": [
+      "10.11.229.48"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 56,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-207-12acc8",
+  "name": "iic-web-207-12acc8",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-web-207",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C29141e3a64",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29cff2730d",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:31:30:d7",
+     "ipAddressList": [
+      "10.12.120.198"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 19,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-sql-208-147742",
+  "name": "iic-sql-208-147742",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-sql-208",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C29cd51bd28",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:3c:89:20",
+     "ipAddressList": [
+      "10.11.94.195"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 54,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-209-c4aff9",
+  "name": "iic-print-209-c4aff9",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-209",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "osVersion": "6.1",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C294d116018",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C294b89e8b4",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C298b385ee4",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:97:35:89",
+     "ipAddressList": [
+      "10.12.67.133"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 33,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-210-7e1230",
+  "name": "iic-api-210-7e1230",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-210",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Standard",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C291bbb5d1d",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29b70fa884",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:dc:0b:ae",
+     "ipAddressList": [
+      "10.10.71.170"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 29,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-211-121bb0",
+  "name": "iic-api-211-121bb0",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-211",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2022 Datacenter",
+    "osVersion": "10.0.20348",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 16,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C295e92eb6d",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2968fc2664",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C296589be3f",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:e0:7b:f7",
+     "ipAddressList": [
+      "10.13.124.63"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 52,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-mgmt-212-a2c82c",
+  "name": "iic-mgmt-212-a2c82c",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-mgmt-212",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "osVersion": "6.1",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 16384,
+   "disks": [
+    {
+     "uuid": "6000C29c9a0ba67",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:c3:61:5b",
+     "ipAddressList": [
+      "10.10.64.42"
+     ],
+     "networkName": "VLAN-120-Data"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 11,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-213-9b73c1",
+  "name": "iic-batch-213-9b73c1",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-213",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Datacenter",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 4096,
+   "disks": [
+    {
+     "uuid": "6000C296e3b4c88",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29a8da65b8",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2909dbce68",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 68719476736,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:23:c7:8c",
+     "ipAddressList": [
+      "10.10.149.224"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 52,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-print-214-a9ca1c",
+  "name": "iic-print-214-a9ca1c",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-print-214",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Ubuntu 20.04 LTS",
+    "osVersion": "20.04",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 16,
+   "allocatedMemoryInMB": 65536,
+   "disks": [
+    {
+     "uuid": "6000C2990f1d78d",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29cce5bd55",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29b33ea29c",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29025e3784",
+     "label": "Hard disk 4",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:89:92:52",
+     "ipAddressList": [
+      "10.11.237.29"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 36,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv02.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-batch-215-ff16e0",
+  "name": "iic-batch-215-ff16e0",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-batch-215",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Datacenter",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C298915b9fb",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29b89b3e01",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:27:cd:9c",
+     "ipAddressList": [
+      "10.11.62.154"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 49,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-216-ac47d3",
+  "name": "iic-api-216-ac47d3",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-api-216",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2012 R2 Standard",
+    "osVersion": "6.3",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C294ea27923",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C294555a013",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 549755813888,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:f0:7f:04",
+     "ipAddressList": [
+      "10.12.207.53"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 13,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-file-217-b2ea45",
+  "name": "iic-file-217-b2ea45",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-file-217",
+   "operatingSystemDetails": {
+    "osType": "linuxguest",
+    "osName": "Ubuntu 22.04 LTS",
+    "osVersion": "22.04",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 4,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C2929d9fee4",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29f9d4c11c",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C2993c26ba7",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C29c8040004",
+     "label": "Hard disk 4",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:54:61:b0",
+     "ipAddressList": [
+      "10.10.137.153"
+     ],
+     "networkName": "VLAN-140-Mgmt"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 25,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-mgmt-218-d50ab8",
+  "name": "iic-mgmt-218-d50ab8",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-mgmt-218",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "osVersion": "6.1",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C290a925dee",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thin"
+    },
+    {
+     "uuid": "6000C296e9c35cb",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:19:ff:56",
+     "ipAddressList": [
+      "10.13.29.48"
+     ],
+     "networkName": "VLAN-110-App"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 26,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv01.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-etl-219-47528f",
+  "name": "iic-etl-219-47528f",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-etl-219",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2019 Datacenter",
+    "osVersion": "10.0.17763",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 2,
+   "allocatedMemoryInMB": 8192,
+   "disks": [
+    {
+     "uuid": "6000C29c036fd62",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C29c85057eb",
+     "label": "Hard disk 2",
+     "maxSizeInBytes": 274877906944,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C290dfcec7b",
+     "label": "Hard disk 3",
+     "maxSizeInBytes": 137438953472,
+     "diskProvisioningPolicy": "thick"
+    },
+    {
+     "uuid": "6000C299f335e3a",
+     "label": "Hard disk 4",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thin"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:62:de:56",
+     "ipAddressList": [
+      "10.10.101.46"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Mainstream"
+   },
+   "numberOfApplications": 45,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv04.iic.example",
+   "generation": 2
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-sql-220-a22b1c",
+  "name": "iic-sql-220-a22b1c",
+  "type": "Microsoft.OffAzure/HyperVSites/machines",
+  "properties": {
+   "displayName": "iic-sql-220",
+   "operatingSystemDetails": {
+    "osType": "windowsguest",
+    "osName": "Windows Server 2008 R2 Enterprise",
+    "osVersion": "6.1",
+    "osArchitecture": "x64"
+   },
+   "numberOfProcessorCore": 8,
+   "allocatedMemoryInMB": 32768,
+   "disks": [
+    {
+     "uuid": "6000C29ae9845e4",
+     "label": "Hard disk 1",
+     "maxSizeInBytes": 1099511627776,
+     "diskProvisioningPolicy": "thick"
+    }
+   ],
+   "networkAdapters": [
+    {
+     "nicId": "4000",
+     "macAddress": "00:50:56:1c:ad:d8",
+     "ipAddressList": [
+      "10.12.4.12"
+     ],
+     "networkName": "VLAN-130-Web"
+    }
+   ],
+   "powerStatus": "ON",
+   "productSupportStatus": {
+    "supportStatus": "Unsupported"
+   },
+   "numberOfApplications": 45,
+   "isDeleted": false,
+   "createdTimestamp": "2026-11-03T09:12:00Z",
+   "updatedTimestamp": "2026-11-10T14:00:00Z",
+   "clusterFqdn": "hvclus01.iic.example",
+   "hostFqdn": "hv03.iic.example",
+   "generation": 2
+  }
+ }
+]

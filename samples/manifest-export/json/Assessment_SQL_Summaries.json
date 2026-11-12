@@ -1,0 +1,17 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/summaries/default",
+  "name": "default",
+  "properties": {
+   "numberOfMachines": 14,
+   "numberOfSqlInstances": 14,
+   "numberOfSqlDatabases": 46,
+   "numberOfFciInstances": 0,
+   "numberOfSqlAvailabilityGroups": 0
+  }
+ }
+]

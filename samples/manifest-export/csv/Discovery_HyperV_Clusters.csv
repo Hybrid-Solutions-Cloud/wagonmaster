@@ -1,0 +1,2 @@
+﻿_Project,_Site,id,name,fqdn,functionalLevel,status
+iic-migrate,iic-hyperv-site,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/clusters/hvclus01,hvclus01,hvclus01.iic.example,12,Up

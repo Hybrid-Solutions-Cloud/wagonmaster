@@ -1,0 +1,42 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/hosts/hv01",
+  "name": "hv01",
+  "properties": {
+   "fqdn": "hv01.iic.example",
+   "version": "10.0.20348"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/hosts/hv02",
+  "name": "hv02",
+  "properties": {
+   "fqdn": "hv02.iic.example",
+   "version": "10.0.20348"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/hosts/hv03",
+  "name": "hv03",
+  "properties": {
+   "fqdn": "hv03.iic.example",
+   "version": "10.0.20348"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/hosts/hv04",
+  "name": "hv04",
+  "properties": {
+   "fqdn": "hv04.iic.example",
+   "version": "10.0.20348"
+  }
+ }
+]

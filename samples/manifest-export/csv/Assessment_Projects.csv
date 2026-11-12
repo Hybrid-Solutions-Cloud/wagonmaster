@@ -1,0 +1,2 @@
+﻿_Project,_AssessmentProject,id,name,location,numberOfGroups,numberOfMachines,numberOfAssessments,projectStatus,provisioningState
+iic-migrate,iic-migrate-assessment,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment,iic-migrate-assessment,eastus,2,240,4,Active,Succeeded

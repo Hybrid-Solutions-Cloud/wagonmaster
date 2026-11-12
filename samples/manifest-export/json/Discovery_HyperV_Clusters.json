@@ -1,0 +1,13 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/clusters/hvclus01",
+  "name": "hvclus01",
+  "properties": {
+   "fqdn": "hvclus01.iic.example",
+   "functionalLevel": 12,
+   "status": "Up"
+  }
+ }
+]

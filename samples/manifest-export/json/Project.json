@@ -1,0 +1,18 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-migrate",
+  "name": "iic-migrate",
+  "type": "Microsoft.Migrate/migrateProjects",
+  "location": "eastus",
+  "properties": {
+   "provisioningState": "Succeeded",
+   "registeredTools": [
+    "ServerDiscovery",
+    "ServerAssessment",
+    "ServerMigration"
+   ],
+   "lastSummaryRefreshedTime": "2026-11-10T14:00:00Z"
+  }
+ }
+]

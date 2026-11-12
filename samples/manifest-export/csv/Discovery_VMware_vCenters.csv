@@ -1,0 +1,2 @@
+﻿_Project,_Site,id,name,fqdn,port,version,perfStatisticsLevels.pastDay
+iic-migrate,iic-vmware-site,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/vCenters/vcenter01,vcenter01,vcenter01.iic.example,443,7.0.3,2

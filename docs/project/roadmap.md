@@ -5,7 +5,7 @@ Wagonmaster starts with one tool and grows from the data it produces.
 | Tool | Purpose | Status |
 | --- | --- | --- |
 | [Manifest](/manifest/) | Export all Azure Migrate project data to CSV and JSON | Available, early release |
-| Waypoint | Dashboards for discovery, readiness, cost and migration progress, built on Manifest exports | Planned |
+| [Waypoint](/waypoint/) | One file HTML dashboard for discovery, readiness, cost and migration progress, built from a Manifest export | Preview, built on sample data |
 | Muster | Move group and wave planning from inventory and dependency data | Planned |
 
 ## Next for Manifest
@@ -15,5 +15,12 @@ Wagonmaster starts with one tool and grows from the data it produces.
 - Validate the optional custom role
 - Add dependency data if Microsoft publishes a supported API for it
 - Publish to the PowerShell Gallery
+
+## Next for Waypoint
+
+- Confirm field coverage against an export from a real project
+- Dependency views, once dependency data can be exported
+- Wave and move group views, to pair with Muster
+- Compare two exports to show progress over time
 
 Have an idea for a tool? [Open an issue](https://github.com/Hybrid-Solutions-Cloud/wagonmaster/issues).

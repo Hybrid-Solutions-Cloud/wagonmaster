@@ -1,0 +1,2 @@
+﻿_Project,_Site,id,name,provisioningState
+iic-migrate,iic-master-site,/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site,iic-webapp-site,Succeeded

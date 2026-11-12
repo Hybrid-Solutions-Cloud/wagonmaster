@@ -1,0 +1,16 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment",
+  "name": "iic-migrate-assessment",
+  "location": "eastus",
+  "properties": {
+   "numberOfGroups": 2,
+   "numberOfMachines": 240,
+   "numberOfAssessments": 4,
+   "projectStatus": "Active",
+   "provisioningState": "Succeeded"
+  }
+ }
+]

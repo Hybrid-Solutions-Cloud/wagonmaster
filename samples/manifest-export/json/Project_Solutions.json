@@ -1,0 +1,56 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-migrate/solutions/Servers-Discovery-ServerDiscovery",
+  "name": "Servers-Discovery-ServerDiscovery",
+  "properties": {
+   "tool": "ServerDiscovery",
+   "purpose": "Discovery",
+   "goal": "Servers",
+   "status": "Active",
+   "summary": {
+    "instanceType": "Servers",
+    "discoveredCount": 240,
+    "assessedCount": 240,
+    "replicatingCount": 20,
+    "migratedCount": 10
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-migrate/solutions/Servers-Assessment-ServerAssessment",
+  "name": "Servers-Assessment-ServerAssessment",
+  "properties": {
+   "tool": "ServerAssessment",
+   "purpose": "Assessment",
+   "goal": "Servers",
+   "status": "Active",
+   "summary": {
+    "instanceType": "Servers",
+    "discoveredCount": 240,
+    "assessedCount": 240,
+    "replicatingCount": 20,
+    "migratedCount": 10
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-migrate/solutions/Servers-Migration-ServerMigration",
+  "name": "Servers-Migration-ServerMigration",
+  "properties": {
+   "tool": "ServerMigration",
+   "purpose": "Migration",
+   "goal": "Servers",
+   "status": "Active",
+   "summary": {
+    "instanceType": "Servers",
+    "discoveredCount": 240,
+    "assessedCount": 240,
+    "replicatingCount": 20,
+    "migratedCount": 10
+   }
+  }
+ }
+]

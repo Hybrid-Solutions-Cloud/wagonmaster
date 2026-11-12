@@ -1,0 +1,59 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-vmware-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site",
+  "name": "iic-vmware-site",
+  "type": "Microsoft.OffAzure/VMwareSites",
+  "location": "eastus",
+  "properties": {
+   "applianceName": "iic-appliance-vmware",
+   "provisioningState": "Succeeded",
+   "serviceEndpoint": "https://example.invalid",
+   "discoverySolutionId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-migrate/solutions/Servers-Discovery-ServerDiscovery"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-hyperv-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site",
+  "name": "iic-hyperv-site",
+  "type": "Microsoft.OffAzure/HyperVSites",
+  "location": "eastus",
+  "properties": {
+   "applianceName": "iic-appliance-hyperv",
+   "provisioningState": "Succeeded",
+   "serviceEndpoint": "https://example.invalid",
+   "discoverySolutionId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-migrate/solutions/Servers-Discovery-ServerDiscovery"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-server-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site",
+  "name": "iic-server-site",
+  "type": "Microsoft.OffAzure/ServerSites",
+  "location": "eastus",
+  "properties": {
+   "applianceName": "iic-appliance-server",
+   "provisioningState": "Succeeded",
+   "serviceEndpoint": "https://example.invalid",
+   "discoverySolutionId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/migrateProjects/iic-migrate/solutions/Servers-Discovery-ServerDiscovery"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site",
+  "name": "iic-master-site",
+  "type": "Microsoft.OffAzure/MasterSites",
+  "properties": {
+   "sites": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site",
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site",
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site"
+   ],
+   "provisioningState": "Succeeded"
+  }
+ }
+]

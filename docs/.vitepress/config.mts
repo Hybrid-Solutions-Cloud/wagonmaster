@@ -32,6 +32,16 @@ const manifestSidebar = [
   },
 ]
 
+const waypointSidebar = [
+  {
+    text: 'Wagonmaster Waypoint',
+    items: [
+      { text: 'Overview', link: '/waypoint/' },
+      { text: 'Live demo', link: '/waypoint-demo/index.html', target: '_blank' },
+    ],
+  },
+]
+
 const projectSidebar = [
   {
     text: 'Project',
@@ -80,6 +90,7 @@ export default defineConfig({
         text: 'Tools',
         items: [
           { text: 'Manifest: project data export', link: '/manifest/' },
+          { text: 'Waypoint: dashboard report', link: '/waypoint/' },
           { text: 'Planned tools', link: '/project/roadmap' },
         ],
       },
@@ -88,6 +99,7 @@ export default defineConfig({
 
     sidebar: {
       '/manifest/': manifestSidebar,
+      '/waypoint/': waypointSidebar,
       '/project/': projectSidebar,
     },
 

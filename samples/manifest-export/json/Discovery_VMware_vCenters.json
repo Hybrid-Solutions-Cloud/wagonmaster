@@ -1,0 +1,16 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-vmware-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/vCenters/vcenter01",
+  "name": "vcenter01",
+  "properties": {
+   "fqdn": "vcenter01.iic.example",
+   "port": "443",
+   "version": "7.0.3",
+   "perfStatisticsLevels": {
+    "pastDay": "2"
+   }
+  }
+ }
+]

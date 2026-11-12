@@ -1,0 +1,758 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-008-858926",
+  "name": "iic-batch-008-858926",
+  "properties": {
+   "machineName": "iic-batch-008",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_F4s_v2",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-011-fad503",
+  "name": "iic-api-011-fad503",
+  "properties": {
+   "machineName": "iic-api-011",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-012-cdc7cf",
+  "name": "iic-batch-012-cdc7cf",
+  "properties": {
+   "machineName": "iic-batch-012",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_B2ms",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-027-b1c949",
+  "name": "iic-web-027-b1c949",
+  "properties": {
+   "machineName": "iic-web-027",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-028-6c687f",
+  "name": "iic-web-028-6c687f",
+  "properties": {
+   "machineName": "iic-web-028",
+   "migrationState": "EnableMigrationInProgress",
+   "migrationStateDescription": "Enabling",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-031-3f9d94",
+  "name": "iic-web-031-3f9d94",
+  "properties": {
+   "machineName": "iic-web-031",
+   "migrationState": "InitialSeedingInProgress",
+   "migrationStateDescription": "Initial replication",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-032-4f80ea",
+  "name": "iic-api-032-4f80ea",
+  "properties": {
+   "machineName": "iic-api-032",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_F4s_v2",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-036-c0e9d9",
+  "name": "iic-api-036-c0e9d9",
+  "properties": {
+   "machineName": "iic-api-036",
+   "migrationState": "MigrationFailed",
+   "migrationStateDescription": "Migration failed",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Critical",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_F4s_v2",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-053-22a4c8",
+  "name": "iic-api-053-22a4c8",
+  "properties": {
+   "machineName": "iic-api-053",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-055-39c880",
+  "name": "iic-api-055-39c880",
+  "properties": {
+   "machineName": "iic-api-055",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-056-730c79",
+  "name": "iic-api-056-730c79",
+  "properties": {
+   "machineName": "iic-api-056",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-061-29e021",
+  "name": "iic-web-061-29e021",
+  "properties": {
+   "machineName": "iic-web-061",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-063-494445",
+  "name": "iic-batch-063-494445",
+  "properties": {
+   "machineName": "iic-batch-063",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-064-44bbbd",
+  "name": "iic-api-064-44bbbd",
+  "properties": {
+   "machineName": "iic-api-064",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-066-b160d7",
+  "name": "iic-batch-066-b160d7",
+  "properties": {
+   "machineName": "iic-batch-066",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D2s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-071-a950ab",
+  "name": "iic-api-071-a950ab",
+  "properties": {
+   "machineName": "iic-api-071",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E4s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-073-47529b",
+  "name": "iic-api-073-47529b",
+  "properties": {
+   "machineName": "iic-api-073",
+   "migrationState": "InitialSeedingInProgress",
+   "migrationStateDescription": "Initial replication",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E4s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-074-19eb8f",
+  "name": "iic-api-074-19eb8f",
+  "properties": {
+   "machineName": "iic-api-074",
+   "migrationState": "InitialSeedingInProgress",
+   "migrationStateDescription": "Initial replication",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_B2ms",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-076-241f4d",
+  "name": "iic-web-076-241f4d",
+  "properties": {
+   "machineName": "iic-web-076",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E4s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-082-c21d2c",
+  "name": "iic-api-082-c21d2c",
+  "properties": {
+   "machineName": "iic-api-082",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_B2ms",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-089-009b0c",
+  "name": "iic-api-089-009b0c",
+  "properties": {
+   "machineName": "iic-api-089",
+   "migrationState": "EnableMigrationInProgress",
+   "migrationStateDescription": "Enabling",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_B2ms",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-090-13c550",
+  "name": "iic-api-090-13c550",
+  "properties": {
+   "machineName": "iic-api-090",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_B2ms",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-094-84badc",
+  "name": "iic-batch-094-84badc",
+  "properties": {
+   "machineName": "iic-batch-094",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-095-0b40db",
+  "name": "iic-web-095-0b40db",
+  "properties": {
+   "machineName": "iic-web-095",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E4s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-097-8f581a",
+  "name": "iic-web-097-8f581a",
+  "properties": {
+   "machineName": "iic-web-097",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D4s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-101-c3cdd0",
+  "name": "iic-api-101-c3cdd0",
+  "properties": {
+   "machineName": "iic-api-101",
+   "migrationState": "EnableMigrationInProgress",
+   "migrationStateDescription": "Enabling",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-105-97d2e4",
+  "name": "iic-api-105-97d2e4",
+  "properties": {
+   "machineName": "iic-api-105",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-109-6e78c6",
+  "name": "iic-web-109-6e78c6",
+  "properties": {
+   "machineName": "iic-web-109",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-110-6f95db",
+  "name": "iic-batch-110-6f95db",
+  "properties": {
+   "machineName": "iic-batch-110",
+   "migrationState": "MigrationFailed",
+   "migrationStateDescription": "Migration failed",
+   "testMigrateState": "None",
+   "health": "Critical",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-113-350123",
+  "name": "iic-batch-113-350123",
+  "properties": {
+   "machineName": "iic-batch-113",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E16s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-114-cd37a2",
+  "name": "iic-batch-114-cd37a2",
+  "properties": {
+   "machineName": "iic-batch-114",
+   "migrationState": "MigrationFailed",
+   "migrationStateDescription": "Migration failed",
+   "testMigrateState": "None",
+   "health": "Critical",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_F4s_v2",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-115-8ea5ef",
+  "name": "iic-api-115-8ea5ef",
+  "properties": {
+   "machineName": "iic-api-115",
+   "migrationState": "EnableMigrationInProgress",
+   "migrationStateDescription": "Enabling",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D2s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-batch-116-7189fe",
+  "name": "iic-batch-116-7189fe",
+  "properties": {
+   "machineName": "iic-batch-116",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "None",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_E8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-web-122-edb2bf",
+  "name": "iic-web-122-edb2bf",
+  "properties": {
+   "machineName": "iic-web-122",
+   "migrationState": "MigrationSucceeded",
+   "migrationStateDescription": "Migrated",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": "2026-11-10T02:15:00Z",
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D8s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-123-d5cf2b",
+  "name": "iic-api-123-d5cf2b",
+  "properties": {
+   "machineName": "iic-api-123",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": null,
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_F4s_v2",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Vault": "iic-migrate-MigrateVault-1234",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.RecoveryServices/vaults/iic-migrate-MigrateVault-1234/replicationFabrics/f1/replicationProtectionContainers/c1/replicationMigrationItems/iic-api-127-e20ef0",
+  "name": "iic-api-127-e20ef0",
+  "properties": {
+   "machineName": "iic-api-127",
+   "migrationState": "Replicating",
+   "migrationStateDescription": "Ready to migrate",
+   "testMigrateState": "TestMigrationSucceeded",
+   "health": "Normal",
+   "lastTestMigrationTime": "2026-11-09T18:30:00Z",
+   "lastMigrationTime": null,
+   "providerSpecificDetails": {
+    "instanceType": "VMwareCbt",
+    "targetVmSize": "Standard_D2s_v5",
+    "targetLocation": "eastus",
+    "targetResourceGroupId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-wave1-prd"
+   }
+  }
+ }
+]

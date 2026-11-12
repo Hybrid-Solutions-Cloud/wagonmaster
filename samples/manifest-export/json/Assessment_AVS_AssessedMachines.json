@@ -1,0 +1,2882 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-001-976c73",
+  "name": "iic-file-001-976c73",
+  "properties": {
+   "displayName": "iic-file-001",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-001-976c73",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 102.9,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-002-159285",
+  "name": "iic-dc-002-159285",
+  "properties": {
+   "displayName": "iic-dc-002",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-002-159285",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 273.4,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-003-7746f0",
+  "name": "iic-sql-003-7746f0",
+  "properties": {
+   "displayName": "iic-sql-003",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-003-7746f0",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 377.8,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-004-15df82",
+  "name": "iic-app-004-15df82",
+  "properties": {
+   "displayName": "iic-app-004",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-004-15df82",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 341.2,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-005-1e09d3",
+  "name": "iic-dc-005-1e09d3",
+  "properties": {
+   "displayName": "iic-dc-005",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-005-1e09d3",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 228.2,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-006-2b1b21",
+  "name": "iic-dc-006-2b1b21",
+  "properties": {
+   "displayName": "iic-dc-006",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-006-2b1b21",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 239.8,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-007-7320f6",
+  "name": "iic-mgmt-007-7320f6",
+  "properties": {
+   "displayName": "iic-mgmt-007",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-007-7320f6",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 120.6,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-008-858926",
+  "name": "iic-batch-008-858926",
+  "properties": {
+   "displayName": "iic-batch-008",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-008-858926",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 109.4,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-009-8fbd6c",
+  "name": "iic-dc-009-8fbd6c",
+  "properties": {
+   "displayName": "iic-dc-009",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-009-8fbd6c",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 199.5,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-010-4df9f7",
+  "name": "iic-sql-010-4df9f7",
+  "properties": {
+   "displayName": "iic-sql-010",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-010-4df9f7",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 117.6,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-011-fad503",
+  "name": "iic-api-011-fad503",
+  "properties": {
+   "displayName": "iic-api-011",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-011-fad503",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 4096,
+   "storageInUseGB": 303.4,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-012-cdc7cf",
+  "name": "iic-batch-012-cdc7cf",
+  "properties": {
+   "displayName": "iic-batch-012",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-012-cdc7cf",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 265.9,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-013-670082",
+  "name": "iic-mgmt-013-670082",
+  "properties": {
+   "displayName": "iic-mgmt-013",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-013-670082",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 63.9,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-014-7e2f6f",
+  "name": "iic-file-014-7e2f6f",
+  "properties": {
+   "displayName": "iic-file-014",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-014-7e2f6f",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 219.1,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-015-0cc9b0",
+  "name": "iic-print-015-0cc9b0",
+  "properties": {
+   "displayName": "iic-print-015",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-015-0cc9b0",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 351.0,
+   "operatingSystemName": "Ubuntu 20.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-016-7fed2b",
+  "name": "iic-dc-016-7fed2b",
+  "properties": {
+   "displayName": "iic-dc-016",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-016-7fed2b",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 236.9,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-017-98c6f8",
+  "name": "iic-file-017-98c6f8",
+  "properties": {
+   "displayName": "iic-file-017",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-017-98c6f8",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 77.9,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-018-dbde40",
+  "name": "iic-etl-018-dbde40",
+  "properties": {
+   "displayName": "iic-etl-018",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-018-dbde40",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 74.3,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-019-614604",
+  "name": "iic-sql-019-614604",
+  "properties": {
+   "displayName": "iic-sql-019",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-019-614604",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 327.9,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-020-a97cc2",
+  "name": "iic-mgmt-020-a97cc2",
+  "properties": {
+   "displayName": "iic-mgmt-020",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-020-a97cc2",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 174.7,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-021-d2c086",
+  "name": "iic-print-021-d2c086",
+  "properties": {
+   "displayName": "iic-print-021",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-021-d2c086",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 35.2,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-022-ddd7d7",
+  "name": "iic-app-022-ddd7d7",
+  "properties": {
+   "displayName": "iic-app-022",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-022-ddd7d7",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 298.9,
+   "operatingSystemName": "Ubuntu 20.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-023-195638",
+  "name": "iic-file-023-195638",
+  "properties": {
+   "displayName": "iic-file-023",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-023-195638",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 20.5,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-024-d33e58",
+  "name": "iic-app-024-d33e58",
+  "properties": {
+   "displayName": "iic-app-024",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-024-d33e58",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 372.4,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-025-06651e",
+  "name": "iic-app-025-06651e",
+  "properties": {
+   "displayName": "iic-app-025",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-025-06651e",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 103.0,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-026-70d0f8",
+  "name": "iic-file-026-70d0f8",
+  "properties": {
+   "displayName": "iic-file-026",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-026-70d0f8",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 305.6,
+   "operatingSystemName": "Red Hat Enterprise Linux 8.8"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-027-b1c949",
+  "name": "iic-web-027-b1c949",
+  "properties": {
+   "displayName": "iic-web-027",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-027-b1c949",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 249.1,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-028-6c687f",
+  "name": "iic-web-028-6c687f",
+  "properties": {
+   "displayName": "iic-web-028",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-028-6c687f",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 291.1,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-029-dab364",
+  "name": "iic-app-029-dab364",
+  "properties": {
+   "displayName": "iic-app-029",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-029-dab364",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 383.3,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-030-8d28e1",
+  "name": "iic-dc-030-8d28e1",
+  "properties": {
+   "displayName": "iic-dc-030",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-030-8d28e1",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 173.5,
+   "operatingSystemName": "Ubuntu 20.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-031-3f9d94",
+  "name": "iic-web-031-3f9d94",
+  "properties": {
+   "displayName": "iic-web-031",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-031-3f9d94",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 127.1,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-032-4f80ea",
+  "name": "iic-api-032-4f80ea",
+  "properties": {
+   "displayName": "iic-api-032",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-032-4f80ea",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 165.7,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-033-c0ec5d",
+  "name": "iic-app-033-c0ec5d",
+  "properties": {
+   "displayName": "iic-app-033",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-033-c0ec5d",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 228.6,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-034-f40b49",
+  "name": "iic-etl-034-f40b49",
+  "properties": {
+   "displayName": "iic-etl-034",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-034-f40b49",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 88.4,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-035-533ddc",
+  "name": "iic-mgmt-035-533ddc",
+  "properties": {
+   "displayName": "iic-mgmt-035",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-035-533ddc",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 372.3,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-036-c0e9d9",
+  "name": "iic-api-036-c0e9d9",
+  "properties": {
+   "displayName": "iic-api-036",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-036-c0e9d9",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 131072,
+   "storageInUseGB": 126.2,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-037-a3ae5e",
+  "name": "iic-etl-037-a3ae5e",
+  "properties": {
+   "displayName": "iic-etl-037",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-037-a3ae5e",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 291.2,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-038-bf7165",
+  "name": "iic-dc-038-bf7165",
+  "properties": {
+   "displayName": "iic-dc-038",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-038-bf7165",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 183.1,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-039-60816c",
+  "name": "iic-dc-039-60816c",
+  "properties": {
+   "displayName": "iic-dc-039",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-039-60816c",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 168.6,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-040-75937c",
+  "name": "iic-sql-040-75937c",
+  "properties": {
+   "displayName": "iic-sql-040",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-040-75937c",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 208.3,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-041-9b3920",
+  "name": "iic-mgmt-041-9b3920",
+  "properties": {
+   "displayName": "iic-mgmt-041",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-041-9b3920",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 198.3,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-042-1c2df8",
+  "name": "iic-dc-042-1c2df8",
+  "properties": {
+   "displayName": "iic-dc-042",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-042-1c2df8",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 79.5,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-043-fa505b",
+  "name": "iic-dc-043-fa505b",
+  "properties": {
+   "displayName": "iic-dc-043",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-043-fa505b",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 310.5,
+   "operatingSystemName": "Red Hat Enterprise Linux 8.8"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-044-d79c03",
+  "name": "iic-etl-044-d79c03",
+  "properties": {
+   "displayName": "iic-etl-044",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-044-d79c03",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 187.4,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-045-611671",
+  "name": "iic-app-045-611671",
+  "properties": {
+   "displayName": "iic-app-045",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-045-611671",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 194.7,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-046-d0335e",
+  "name": "iic-mgmt-046-d0335e",
+  "properties": {
+   "displayName": "iic-mgmt-046",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-046-d0335e",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 136.8,
+   "operatingSystemName": "Red Hat Enterprise Linux 7.9"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-047-10ac6a",
+  "name": "iic-file-047-10ac6a",
+  "properties": {
+   "displayName": "iic-file-047",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-047-10ac6a",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 263.8,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-048-6fafb7",
+  "name": "iic-dc-048-6fafb7",
+  "properties": {
+   "displayName": "iic-dc-048",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-048-6fafb7",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 116.1,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-049-c095a6",
+  "name": "iic-print-049-c095a6",
+  "properties": {
+   "displayName": "iic-print-049",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-049-c095a6",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 66.6,
+   "operatingSystemName": "Ubuntu 20.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-050-5cfb14",
+  "name": "iic-sql-050-5cfb14",
+  "properties": {
+   "displayName": "iic-sql-050",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-050-5cfb14",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 384.7,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-051-0b08f5",
+  "name": "iic-etl-051-0b08f5",
+  "properties": {
+   "displayName": "iic-etl-051",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-051-0b08f5",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 376.3,
+   "operatingSystemName": "Red Hat Enterprise Linux 8.8"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-052-72aff6",
+  "name": "iic-print-052-72aff6",
+  "properties": {
+   "displayName": "iic-print-052",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-052-72aff6",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 4096,
+   "storageInUseGB": 215.7,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-053-22a4c8",
+  "name": "iic-api-053-22a4c8",
+  "properties": {
+   "displayName": "iic-api-053",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-053-22a4c8",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 307.7,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-054-ea6a2b",
+  "name": "iic-sql-054-ea6a2b",
+  "properties": {
+   "displayName": "iic-sql-054",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-054-ea6a2b",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 315.8,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-055-39c880",
+  "name": "iic-api-055-39c880",
+  "properties": {
+   "displayName": "iic-api-055",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-055-39c880",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 92.0,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-056-730c79",
+  "name": "iic-api-056-730c79",
+  "properties": {
+   "displayName": "iic-api-056",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-056-730c79",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 341.7,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-057-5a75ec",
+  "name": "iic-sql-057-5a75ec",
+  "properties": {
+   "displayName": "iic-sql-057",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-057-5a75ec",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 113.0,
+   "operatingSystemName": "Red Hat Enterprise Linux 7.9"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-058-fa815f",
+  "name": "iic-dc-058-fa815f",
+  "properties": {
+   "displayName": "iic-dc-058",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-058-fa815f",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 4096,
+   "storageInUseGB": 392.0,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-059-0c9ea0",
+  "name": "iic-mgmt-059-0c9ea0",
+  "properties": {
+   "displayName": "iic-mgmt-059",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-059-0c9ea0",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 294.6,
+   "operatingSystemName": "Red Hat Enterprise Linux 8.8"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-060-fb003d",
+  "name": "iic-file-060-fb003d",
+  "properties": {
+   "displayName": "iic-file-060",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-060-fb003d",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 119.6,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-061-29e021",
+  "name": "iic-web-061-29e021",
+  "properties": {
+   "displayName": "iic-web-061",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-061-29e021",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 145.6,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-062-c9bf01",
+  "name": "iic-dc-062-c9bf01",
+  "properties": {
+   "displayName": "iic-dc-062",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-062-c9bf01",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 291.7,
+   "operatingSystemName": "Ubuntu 22.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-063-494445",
+  "name": "iic-batch-063-494445",
+  "properties": {
+   "displayName": "iic-batch-063",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-063-494445",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 227.8,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-064-44bbbd",
+  "name": "iic-api-064-44bbbd",
+  "properties": {
+   "displayName": "iic-api-064",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-064-44bbbd",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 67.7,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-065-b08107",
+  "name": "iic-sql-065-b08107",
+  "properties": {
+   "displayName": "iic-sql-065",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-065-b08107",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 331.1,
+   "operatingSystemName": "Red Hat Enterprise Linux 7.9"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-066-b160d7",
+  "name": "iic-batch-066-b160d7",
+  "properties": {
+   "displayName": "iic-batch-066",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-066-b160d7",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 40.0,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-067-32bc02",
+  "name": "iic-dc-067-32bc02",
+  "properties": {
+   "displayName": "iic-dc-067",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-067-32bc02",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 186.9,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-068-67c122",
+  "name": "iic-mgmt-068-67c122",
+  "properties": {
+   "displayName": "iic-mgmt-068",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-068-67c122",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 364.5,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-069-53a99a",
+  "name": "iic-etl-069-53a99a",
+  "properties": {
+   "displayName": "iic-etl-069",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-069-53a99a",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 165.9,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-070-7cbb0a",
+  "name": "iic-etl-070-7cbb0a",
+  "properties": {
+   "displayName": "iic-etl-070",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-070-7cbb0a",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 180.3,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-071-a950ab",
+  "name": "iic-api-071-a950ab",
+  "properties": {
+   "displayName": "iic-api-071",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-071-a950ab",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 84.9,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-072-c32ca1",
+  "name": "iic-app-072-c32ca1",
+  "properties": {
+   "displayName": "iic-app-072",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-072-c32ca1",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 150.3,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-073-47529b",
+  "name": "iic-api-073-47529b",
+  "properties": {
+   "displayName": "iic-api-073",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-073-47529b",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 251.4,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-074-19eb8f",
+  "name": "iic-api-074-19eb8f",
+  "properties": {
+   "displayName": "iic-api-074",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-074-19eb8f",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 169.9,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-075-c82c5e",
+  "name": "iic-print-075-c82c5e",
+  "properties": {
+   "displayName": "iic-print-075",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-075-c82c5e",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 290.2,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-076-241f4d",
+  "name": "iic-web-076-241f4d",
+  "properties": {
+   "displayName": "iic-web-076",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-076-241f4d",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 214.7,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-077-350af5",
+  "name": "iic-etl-077-350af5",
+  "properties": {
+   "displayName": "iic-etl-077",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-077-350af5",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 342.8,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-078-49d911",
+  "name": "iic-mgmt-078-49d911",
+  "properties": {
+   "displayName": "iic-mgmt-078",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-078-49d911",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 127.3,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-079-a3c8ae",
+  "name": "iic-dc-079-a3c8ae",
+  "properties": {
+   "displayName": "iic-dc-079",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-079-a3c8ae",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 266.9,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-080-c44933",
+  "name": "iic-sql-080-c44933",
+  "properties": {
+   "displayName": "iic-sql-080",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-080-c44933",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 131072,
+   "storageInUseGB": 77.8,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-081-521905",
+  "name": "iic-app-081-521905",
+  "properties": {
+   "displayName": "iic-app-081",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-081-521905",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 240.8,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-082-c21d2c",
+  "name": "iic-api-082-c21d2c",
+  "properties": {
+   "displayName": "iic-api-082",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-082-c21d2c",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 257.8,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-083-547173",
+  "name": "iic-file-083-547173",
+  "properties": {
+   "displayName": "iic-file-083",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-083-547173",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 204.2,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-084-68363c",
+  "name": "iic-print-084-68363c",
+  "properties": {
+   "displayName": "iic-print-084",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-084-68363c",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 343.8,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-085-b6e7af",
+  "name": "iic-dc-085-b6e7af",
+  "properties": {
+   "displayName": "iic-dc-085",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-085-b6e7af",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 181.0,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-086-0a6cd0",
+  "name": "iic-app-086-0a6cd0",
+  "properties": {
+   "displayName": "iic-app-086",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-086-0a6cd0",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 171.4,
+   "operatingSystemName": "Ubuntu 22.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-087-1834c5",
+  "name": "iic-app-087-1834c5",
+  "properties": {
+   "displayName": "iic-app-087",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-087-1834c5",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 158.1,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-088-664871",
+  "name": "iic-mgmt-088-664871",
+  "properties": {
+   "displayName": "iic-mgmt-088",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-088-664871",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 215.1,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-089-009b0c",
+  "name": "iic-api-089-009b0c",
+  "properties": {
+   "displayName": "iic-api-089",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-089-009b0c",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 112.0,
+   "operatingSystemName": "Red Hat Enterprise Linux 8.8"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-090-13c550",
+  "name": "iic-api-090-13c550",
+  "properties": {
+   "displayName": "iic-api-090",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-090-13c550",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 305.9,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-091-c1990d",
+  "name": "iic-print-091-c1990d",
+  "properties": {
+   "displayName": "iic-print-091",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-091-c1990d",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 140.0,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-092-47af62",
+  "name": "iic-sql-092-47af62",
+  "properties": {
+   "displayName": "iic-sql-092",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-092-47af62",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 61.4,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-093-c49357",
+  "name": "iic-mgmt-093-c49357",
+  "properties": {
+   "displayName": "iic-mgmt-093",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-093-c49357",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 284.8,
+   "operatingSystemName": "Red Hat Enterprise Linux 7.9"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-094-84badc",
+  "name": "iic-batch-094-84badc",
+  "properties": {
+   "displayName": "iic-batch-094",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-094-84badc",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 127.4,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-095-0b40db",
+  "name": "iic-web-095-0b40db",
+  "properties": {
+   "displayName": "iic-web-095",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-095-0b40db",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 297.9,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-096-481fd4",
+  "name": "iic-print-096-481fd4",
+  "properties": {
+   "displayName": "iic-print-096",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-096-481fd4",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 145.3,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-097-8f581a",
+  "name": "iic-web-097-8f581a",
+  "properties": {
+   "displayName": "iic-web-097",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-097-8f581a",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 159.3,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-098-939975",
+  "name": "iic-print-098-939975",
+  "properties": {
+   "displayName": "iic-print-098",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-098-939975",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 272.2,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-099-602949",
+  "name": "iic-sql-099-602949",
+  "properties": {
+   "displayName": "iic-sql-099",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-099-602949",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 131072,
+   "storageInUseGB": 146.4,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-100-ec0456",
+  "name": "iic-print-100-ec0456",
+  "properties": {
+   "displayName": "iic-print-100",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-100-ec0456",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 393.7,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-101-c3cdd0",
+  "name": "iic-api-101-c3cdd0",
+  "properties": {
+   "displayName": "iic-api-101",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-101-c3cdd0",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 262.9,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-102-c70c79",
+  "name": "iic-mgmt-102-c70c79",
+  "properties": {
+   "displayName": "iic-mgmt-102",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-102-c70c79",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 254.9,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-103-273084",
+  "name": "iic-dc-103-273084",
+  "properties": {
+   "displayName": "iic-dc-103",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-103-273084",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 149.3,
+   "operatingSystemName": "Ubuntu 20.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-104-9a3834",
+  "name": "iic-file-104-9a3834",
+  "properties": {
+   "displayName": "iic-file-104",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-104-9a3834",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 278.5,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-105-97d2e4",
+  "name": "iic-api-105-97d2e4",
+  "properties": {
+   "displayName": "iic-api-105",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-105-97d2e4",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 367.6,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-106-5e7935",
+  "name": "iic-etl-106-5e7935",
+  "properties": {
+   "displayName": "iic-etl-106",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-106-5e7935",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 137.6,
+   "operatingSystemName": "Ubuntu 20.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-107-7866cf",
+  "name": "iic-etl-107-7866cf",
+  "properties": {
+   "displayName": "iic-etl-107",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-107-7866cf",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 4096,
+   "storageInUseGB": 119.5,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-108-b89b01",
+  "name": "iic-sql-108-b89b01",
+  "properties": {
+   "displayName": "iic-sql-108",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-108-b89b01",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 210.4,
+   "operatingSystemName": "Ubuntu 22.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-109-6e78c6",
+  "name": "iic-web-109-6e78c6",
+  "properties": {
+   "displayName": "iic-web-109",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-109-6e78c6",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 139.9,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-110-6f95db",
+  "name": "iic-batch-110-6f95db",
+  "properties": {
+   "displayName": "iic-batch-110",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-110-6f95db",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 397.9,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-111-dddc29",
+  "name": "iic-app-111-dddc29",
+  "properties": {
+   "displayName": "iic-app-111",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-111-dddc29",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 384.5,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-112-d0a244",
+  "name": "iic-sql-112-d0a244",
+  "properties": {
+   "displayName": "iic-sql-112",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-112-d0a244",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 337.9,
+   "operatingSystemName": "Red Hat Enterprise Linux 7.9"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-113-350123",
+  "name": "iic-batch-113-350123",
+  "properties": {
+   "displayName": "iic-batch-113",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-113-350123",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 237.3,
+   "operatingSystemName": "Ubuntu 22.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-114-cd37a2",
+  "name": "iic-batch-114-cd37a2",
+  "properties": {
+   "displayName": "iic-batch-114",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-114-cd37a2",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 254.0,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-115-8ea5ef",
+  "name": "iic-api-115-8ea5ef",
+  "properties": {
+   "displayName": "iic-api-115",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-115-8ea5ef",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 34.8,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-116-7189fe",
+  "name": "iic-batch-116-7189fe",
+  "properties": {
+   "displayName": "iic-batch-116",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-116-7189fe",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 369.4,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-117-25ff29",
+  "name": "iic-dc-117-25ff29",
+  "properties": {
+   "displayName": "iic-dc-117",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-117-25ff29",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 131072,
+   "storageInUseGB": 292.0,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-118-c16394",
+  "name": "iic-dc-118-c16394",
+  "properties": {
+   "displayName": "iic-dc-118",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-118-c16394",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 84.4,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-119-d3aaeb",
+  "name": "iic-dc-119-d3aaeb",
+  "properties": {
+   "displayName": "iic-dc-119",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-119-d3aaeb",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 233.7,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-dc-120-a7b38c",
+  "name": "iic-dc-120-a7b38c",
+  "properties": {
+   "displayName": "iic-dc-120",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-dc-120-a7b38c",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 131072,
+   "storageInUseGB": 132.1,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-121-f37fe5",
+  "name": "iic-etl-121-f37fe5",
+  "properties": {
+   "displayName": "iic-etl-121",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-121-f37fe5",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 139.0,
+   "operatingSystemName": "CentOS Linux 7"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-122-edb2bf",
+  "name": "iic-web-122-edb2bf",
+  "properties": {
+   "displayName": "iic-web-122",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-122-edb2bf",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 131072,
+   "storageInUseGB": 254.3,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-123-d5cf2b",
+  "name": "iic-api-123-d5cf2b",
+  "properties": {
+   "displayName": "iic-api-123",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-123-d5cf2b",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 374.4,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-124-321ddc",
+  "name": "iic-etl-124-321ddc",
+  "properties": {
+   "displayName": "iic-etl-124",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-124-321ddc",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 141.9,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-mgmt-125-da7c02",
+  "name": "iic-mgmt-125-da7c02",
+  "properties": {
+   "displayName": "iic-mgmt-125",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-mgmt-125-da7c02",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 226.9,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-126-ff7874",
+  "name": "iic-sql-126-ff7874",
+  "properties": {
+   "displayName": "iic-sql-126",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-126-ff7874",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 348.8,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-127-e20ef0",
+  "name": "iic-api-127-e20ef0",
+  "properties": {
+   "displayName": "iic-api-127",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-127-e20ef0",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 308.5,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-128-1a98ec",
+  "name": "iic-sql-128-1a98ec",
+  "properties": {
+   "displayName": "iic-sql-128",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-128-1a98ec",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 37.8,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-129-6fdaa0",
+  "name": "iic-file-129-6fdaa0",
+  "properties": {
+   "displayName": "iic-file-129",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-129-6fdaa0",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 306.1,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-130-4b7f6f",
+  "name": "iic-batch-130-4b7f6f",
+  "properties": {
+   "displayName": "iic-batch-130",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-130-4b7f6f",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 56.2,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-131-7a1ea0",
+  "name": "iic-web-131-7a1ea0",
+  "properties": {
+   "displayName": "iic-web-131",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-131-7a1ea0",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 358.7,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-132-7c893b",
+  "name": "iic-etl-132-7c893b",
+  "properties": {
+   "displayName": "iic-etl-132",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-132-7c893b",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 55.1,
+   "operatingSystemName": "Ubuntu 22.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-133-0ad74b",
+  "name": "iic-web-133-0ad74b",
+  "properties": {
+   "displayName": "iic-web-133",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-133-0ad74b",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 4096,
+   "storageInUseGB": 133.7,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-134-4c3d5e",
+  "name": "iic-api-134-4c3d5e",
+  "properties": {
+   "displayName": "iic-api-134",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-134-4c3d5e",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 376.0,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-135-7e09ac",
+  "name": "iic-print-135-7e09ac",
+  "properties": {
+   "displayName": "iic-print-135",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-135-7e09ac",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 134.2,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-136-b513d9",
+  "name": "iic-api-136-b513d9",
+  "properties": {
+   "displayName": "iic-api-136",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-136-b513d9",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 204.0,
+   "operatingSystemName": "Red Hat Enterprise Linux 7.9"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-print-137-ed6907",
+  "name": "iic-print-137-ed6907",
+  "properties": {
+   "displayName": "iic-print-137",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-print-137-ed6907",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 361.3,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-138-8de893",
+  "name": "iic-file-138-8de893",
+  "properties": {
+   "displayName": "iic-file-138",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-138-8de893",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 341.1,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-139-fedfc6",
+  "name": "iic-etl-139-fedfc6",
+  "properties": {
+   "displayName": "iic-etl-139",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-139-fedfc6",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 290.1,
+   "operatingSystemName": "Windows Server 2022 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-app-140-7b6b0e",
+  "name": "iic-app-140-7b6b0e",
+  "properties": {
+   "displayName": "iic-app-140",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-app-140-7b6b0e",
+   "suitability": "ConditionallySuitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 90.1,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-141-aab4a9",
+  "name": "iic-etl-141-aab4a9",
+  "properties": {
+   "displayName": "iic-etl-141",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-141-aab4a9",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 288.3,
+   "operatingSystemName": "Ubuntu 22.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-web-142-7d4059",
+  "name": "iic-web-142-7d4059",
+  "properties": {
+   "displayName": "iic-web-142",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-142-7d4059",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 111.0,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-143-7b7b77",
+  "name": "iic-api-143-7b7b77",
+  "properties": {
+   "displayName": "iic-api-143",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-143-7b7b77",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 284.4,
+   "operatingSystemName": "Ubuntu 22.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-144-23e3eb",
+  "name": "iic-file-144-23e3eb",
+  "properties": {
+   "displayName": "iic-file-144",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-144-23e3eb",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 2,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 338.6,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-145-912ace",
+  "name": "iic-etl-145-912ace",
+  "properties": {
+   "displayName": "iic-etl-145",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-145-912ace",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 131072,
+   "storageInUseGB": 113.1,
+   "operatingSystemName": "Windows Server 2008 R2 Enterprise"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-146-016307",
+  "name": "iic-sql-146-016307",
+  "properties": {
+   "displayName": "iic-sql-146",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-146-016307",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 214.6,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-147-55228c",
+  "name": "iic-etl-147-55228c",
+  "properties": {
+   "displayName": "iic-etl-147",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-147-55228c",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 364.5,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-etl-148-ca0322",
+  "name": "iic-etl-148-ca0322",
+  "properties": {
+   "displayName": "iic-etl-148",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-etl-148-ca0322",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 91.9,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-149-0871c2",
+  "name": "iic-file-149-0871c2",
+  "properties": {
+   "displayName": "iic-file-149",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-149-0871c2",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 47.5,
+   "operatingSystemName": "Windows Server 2012 R2 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-150-f03cd1",
+  "name": "iic-api-150-f03cd1",
+  "properties": {
+   "displayName": "iic-api-150",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-150-f03cd1",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 389.5,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-151-bff137",
+  "name": "iic-sql-151-bff137",
+  "properties": {
+   "displayName": "iic-sql-151",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-151-bff137",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 253.9,
+   "operatingSystemName": "Red Hat Enterprise Linux 7.9"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-batch-152-4e5453",
+  "name": "iic-batch-152-4e5453",
+  "properties": {
+   "displayName": "iic-batch-152",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-batch-152-4e5453",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 70.7,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-153-720457",
+  "name": "iic-file-153-720457",
+  "properties": {
+   "displayName": "iic-file-153",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-153-720457",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 291.5,
+   "operatingSystemName": "Windows Server 2019 Standard"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-154-da7b48",
+  "name": "iic-file-154-da7b48",
+  "properties": {
+   "displayName": "iic-file-154",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-154-da7b48",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 329.3,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-file-155-e9eee6",
+  "name": "iic-file-155-e9eee6",
+  "properties": {
+   "displayName": "iic-file-155",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-file-155-e9eee6",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 16384,
+   "storageInUseGB": 128.6,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-156-95e247",
+  "name": "iic-sql-156-95e247",
+  "properties": {
+   "displayName": "iic-sql-156",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-156-95e247",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 116.0,
+   "operatingSystemName": "Ubuntu 20.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-157-8dde7a",
+  "name": "iic-api-157-8dde7a",
+  "properties": {
+   "displayName": "iic-api-157",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-157-8dde7a",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 87.1,
+   "operatingSystemName": "SUSE Linux Enterprise Server 15 SP4"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-158-90c6ca",
+  "name": "iic-sql-158-90c6ca",
+  "properties": {
+   "displayName": "iic-sql-158",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-158-90c6ca",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 16,
+   "megabytesOfMemory": 32768,
+   "storageInUseGB": 322.9,
+   "operatingSystemName": "Ubuntu 20.04 LTS"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-sql-159-8a4860",
+  "name": "iic-sql-159-8a4860",
+  "properties": {
+   "displayName": "iic-sql-159",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-159-8a4860",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 4,
+   "megabytesOfMemory": 8192,
+   "storageInUseGB": 100.3,
+   "operatingSystemName": "Windows Server 2016 Datacenter"
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "vmware-to-avs",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs/avsAssessedMachines/iic-api-160-c7209a",
+  "name": "iic-api-160-c7209a",
+  "properties": {
+   "displayName": "iic-api-160",
+   "datacenterMachineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-160-c7209a",
+   "suitability": "Suitable",
+   "suitabilityExplanation": "NotApplicable",
+   "numberOfCores": 8,
+   "megabytesOfMemory": 65536,
+   "storageInUseGB": 90.3,
+   "operatingSystemName": "Windows Server 2019 Datacenter"
+  }
+ }
+]

@@ -1,0 +1,2708 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-011-auth-1",
+  "name": "iic-api-011-auth-1",
+  "properties": {
+   "displayName": "auth-1",
+   "webServerName": "iic-api-011-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-011-fad503"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-027-partner-api-1",
+  "name": "iic-web-027-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-web-027-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-027-b1c949"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-028-portal-1",
+  "name": "iic-web-028-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-web-028-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-028-6c687f"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-031-catalog-1",
+  "name": "iic-web-031-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-web-031-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-031-3f9d94"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-031-portal-2",
+  "name": "iic-web-031-portal-2",
+  "properties": {
+   "displayName": "portal-2",
+   "webServerName": "iic-web-031-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-031-3f9d94"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-032-catalog-1",
+  "name": "iic-api-032-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-api-032-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-032-4f80ea"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-032-auth-2",
+  "name": "iic-api-032-auth-2",
+  "properties": {
+   "displayName": "auth-2",
+   "webServerName": "iic-api-032-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-032-4f80ea"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-032-catalog-3",
+  "name": "iic-api-032-catalog-3",
+  "properties": {
+   "displayName": "catalog-3",
+   "webServerName": "iic-api-032-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-032-4f80ea"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-036-portal-1",
+  "name": "iic-api-036-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-api-036-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-036-c0e9d9"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-036-partner-api-2",
+  "name": "iic-api-036-partner-api-2",
+  "properties": {
+   "displayName": "partner-api-2",
+   "webServerName": "iic-api-036-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-036-c0e9d9"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-055-catalog-1",
+  "name": "iic-api-055-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-api-055-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-055-39c880"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-055-portal-2",
+  "name": "iic-api-055-portal-2",
+  "properties": {
+   "displayName": "portal-2",
+   "webServerName": "iic-api-055-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-055-39c880"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-056-portal-1",
+  "name": "iic-api-056-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-api-056-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-056-730c79"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-056-partner-api-2",
+  "name": "iic-api-056-partner-api-2",
+  "properties": {
+   "displayName": "partner-api-2",
+   "webServerName": "iic-api-056-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-056-730c79"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-061-auth-1",
+  "name": "iic-web-061-auth-1",
+  "properties": {
+   "displayName": "auth-1",
+   "webServerName": "iic-web-061-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-061-29e021"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-061-intranet-2",
+  "name": "iic-web-061-intranet-2",
+  "properties": {
+   "displayName": "intranet-2",
+   "webServerName": "iic-web-061-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-061-29e021"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\intranet-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-064-reports-1",
+  "name": "iic-api-064-reports-1",
+  "properties": {
+   "displayName": "reports-1",
+   "webServerName": "iic-api-064-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-064-44bbbd"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\reports-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-064-auth-2",
+  "name": "iic-api-064-auth-2",
+  "properties": {
+   "displayName": "auth-2",
+   "webServerName": "iic-api-064-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-064-44bbbd"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-071-partner-api-1",
+  "name": "iic-api-071-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-api-071-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-071-a950ab"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-073-partner-api-1",
+  "name": "iic-api-073-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-api-073-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-073-47529b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-073-checkout-2",
+  "name": "iic-api-073-checkout-2",
+  "properties": {
+   "displayName": "checkout-2",
+   "webServerName": "iic-api-073-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-073-47529b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-073-auth-3",
+  "name": "iic-api-073-auth-3",
+  "properties": {
+   "displayName": "auth-3",
+   "webServerName": "iic-api-073-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-073-47529b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-074-partner-api-1",
+  "name": "iic-api-074-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-api-074-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-074-19eb8f"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-074-portal-2",
+  "name": "iic-api-074-portal-2",
+  "properties": {
+   "displayName": "portal-2",
+   "webServerName": "iic-api-074-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-074-19eb8f"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-076-intranet-1",
+  "name": "iic-web-076-intranet-1",
+  "properties": {
+   "displayName": "intranet-1",
+   "webServerName": "iic-web-076-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-076-241f4d"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\intranet-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-090-catalog-1",
+  "name": "iic-api-090-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-api-090-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-090-13c550"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-090-reports-2",
+  "name": "iic-api-090-reports-2",
+  "properties": {
+   "displayName": "reports-2",
+   "webServerName": "iic-api-090-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-090-13c550"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\reports-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-101-portal-1",
+  "name": "iic-api-101-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-api-101-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-101-c3cdd0"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-101-checkout-2",
+  "name": "iic-api-101-checkout-2",
+  "properties": {
+   "displayName": "checkout-2",
+   "webServerName": "iic-api-101-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-101-c3cdd0"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-105-checkout-1",
+  "name": "iic-api-105-checkout-1",
+  "properties": {
+   "displayName": "checkout-1",
+   "webServerName": "iic-api-105-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-105-97d2e4"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-105-catalog-2",
+  "name": "iic-api-105-catalog-2",
+  "properties": {
+   "displayName": "catalog-2",
+   "webServerName": "iic-api-105-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-105-97d2e4"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-105-intranet-3",
+  "name": "iic-api-105-intranet-3",
+  "properties": {
+   "displayName": "intranet-3",
+   "webServerName": "iic-api-105-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-105-97d2e4"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\intranet-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-109-partner-api-1",
+  "name": "iic-web-109-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-web-109-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-109-6e78c6"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-109-checkout-2",
+  "name": "iic-web-109-checkout-2",
+  "properties": {
+   "displayName": "checkout-2",
+   "webServerName": "iic-web-109-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-109-6e78c6"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-115-partner-api-1",
+  "name": "iic-api-115-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-api-115-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-115-8ea5ef"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-115-checkout-2",
+  "name": "iic-api-115-checkout-2",
+  "properties": {
+   "displayName": "checkout-2",
+   "webServerName": "iic-api-115-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-115-8ea5ef"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-122-portal-1",
+  "name": "iic-web-122-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-web-122-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-122-edb2bf"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-123-portal-1",
+  "name": "iic-api-123-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-api-123-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-123-d5cf2b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-127-reports-1",
+  "name": "iic-api-127-reports-1",
+  "properties": {
+   "displayName": "reports-1",
+   "webServerName": "iic-api-127-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-127-e20ef0"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\reports-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-127-partner-api-2",
+  "name": "iic-api-127-partner-api-2",
+  "properties": {
+   "displayName": "partner-api-2",
+   "webServerName": "iic-api-127-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-127-e20ef0"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-131-portal-1",
+  "name": "iic-web-131-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-web-131-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-131-7a1ea0"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-131-partner-api-2",
+  "name": "iic-web-131-partner-api-2",
+  "properties": {
+   "displayName": "partner-api-2",
+   "webServerName": "iic-web-131-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-131-7a1ea0"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-133-auth-1",
+  "name": "iic-web-133-auth-1",
+  "properties": {
+   "displayName": "auth-1",
+   "webServerName": "iic-web-133-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-133-0ad74b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-134-checkout-1",
+  "name": "iic-api-134-checkout-1",
+  "properties": {
+   "displayName": "checkout-1",
+   "webServerName": "iic-api-134-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-134-4c3d5e"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-142-catalog-1",
+  "name": "iic-web-142-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-web-142-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-142-7d4059"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-142-portal-2",
+  "name": "iic-web-142-portal-2",
+  "properties": {
+   "displayName": "portal-2",
+   "webServerName": "iic-web-142-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-web-142-7d4059"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-150-reports-1",
+  "name": "iic-api-150-reports-1",
+  "properties": {
+   "displayName": "reports-1",
+   "webServerName": "iic-api-150-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-150-f03cd1"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\reports-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-160-intranet-1",
+  "name": "iic-api-160-intranet-1",
+  "properties": {
+   "displayName": "intranet-1",
+   "webServerName": "iic-api-160-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-160-c7209a"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\intranet-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-160-portal-2",
+  "name": "iic-api-160-portal-2",
+  "properties": {
+   "displayName": "portal-2",
+   "webServerName": "iic-api-160-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-160-c7209a"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-160-partner-api-3",
+  "name": "iic-api-160-partner-api-3",
+  "properties": {
+   "displayName": "partner-api-3",
+   "webServerName": "iic-api-160-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-api-160-c7209a"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-163-portal-1",
+  "name": "iic-api-163-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-api-163-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-163-03ac2b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-171-partner-api-1",
+  "name": "iic-api-171-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-api-171-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-171-e98afe"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-176-catalog-1",
+  "name": "iic-web-176-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-web-176-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-176-1ce946"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-176-intranet-2",
+  "name": "iic-web-176-intranet-2",
+  "properties": {
+   "displayName": "intranet-2",
+   "webServerName": "iic-web-176-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-176-1ce946"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\intranet-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-176-portal-3",
+  "name": "iic-web-176-portal-3",
+  "properties": {
+   "displayName": "portal-3",
+   "webServerName": "iic-web-176-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-176-1ce946"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-185-catalog-1",
+  "name": "iic-web-185-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-web-185-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-185-7c256b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-189-catalog-1",
+  "name": "iic-web-189-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-web-189-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-189-af58cb"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-190-auth-1",
+  "name": "iic-web-190-auth-1",
+  "properties": {
+   "displayName": "auth-1",
+   "webServerName": "iic-web-190-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-190-90764b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-190-reports-2",
+  "name": "iic-web-190-reports-2",
+  "properties": {
+   "displayName": "reports-2",
+   "webServerName": "iic-web-190-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-190-90764b"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\reports-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-195-reports-1",
+  "name": "iic-api-195-reports-1",
+  "properties": {
+   "displayName": "reports-1",
+   "webServerName": "iic-api-195-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-195-d984e8"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\reports-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-204-checkout-1",
+  "name": "iic-web-204-checkout-1",
+  "properties": {
+   "displayName": "checkout-1",
+   "webServerName": "iic-web-204-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-204-cd6b72"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-204-catalog-2",
+  "name": "iic-web-204-catalog-2",
+  "properties": {
+   "displayName": "catalog-2",
+   "webServerName": "iic-web-204-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-204-cd6b72"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-204-checkout-3",
+  "name": "iic-web-204-checkout-3",
+  "properties": {
+   "displayName": "checkout-3",
+   "webServerName": "iic-web-204-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-204-cd6b72"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-207-partner-api-1",
+  "name": "iic-web-207-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-web-207-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-207-12acc8"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-207-catalog-2",
+  "name": "iic-web-207-catalog-2",
+  "properties": {
+   "displayName": "catalog-2",
+   "webServerName": "iic-web-207-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-207-12acc8"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-207-partner-api-3",
+  "name": "iic-web-207-partner-api-3",
+  "properties": {
+   "displayName": "partner-api-3",
+   "webServerName": "iic-web-207-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-web-207-12acc8"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-210-portal-1",
+  "name": "iic-api-210-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-api-210-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-210-7e1230"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-210-intranet-2",
+  "name": "iic-api-210-intranet-2",
+  "properties": {
+   "displayName": "intranet-2",
+   "webServerName": "iic-api-210-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-210-7e1230"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\intranet-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-210-checkout-3",
+  "name": "iic-api-210-checkout-3",
+  "properties": {
+   "displayName": "checkout-3",
+   "webServerName": "iic-api-210-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-210-7e1230"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-211-catalog-1",
+  "name": "iic-api-211-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-api-211-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-211-121bb0"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-216-catalog-1",
+  "name": "iic-api-216-catalog-1",
+  "properties": {
+   "displayName": "catalog-1",
+   "webServerName": "iic-api-216-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-216-ac47d3"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-216-catalog-2",
+  "name": "iic-api-216-catalog-2",
+  "properties": {
+   "displayName": "catalog-2",
+   "webServerName": "iic-api-216-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-216-ac47d3"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\catalog-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-216-checkout-3",
+  "name": "iic-api-216-checkout-3",
+  "properties": {
+   "displayName": "checkout-3",
+   "webServerName": "iic-api-216-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-api-216-ac47d3"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\checkout-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-230-partner-api-1",
+  "name": "iic-web-230-partner-api-1",
+  "properties": {
+   "displayName": "partner-api-1",
+   "webServerName": "iic-web-230-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-web-230-a3982c"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-230-portal-2",
+  "name": "iic-web-230-portal-2",
+  "properties": {
+   "displayName": "portal-2",
+   "webServerName": "iic-web-230-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-web-230-a3982c"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-230-auth-3",
+  "name": "iic-web-230-auth-3",
+  "properties": {
+   "displayName": "auth-3",
+   "webServerName": "iic-web-230-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-web-230-a3982c"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-3"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-235-auth-1",
+  "name": "iic-web-235-auth-1",
+  "properties": {
+   "displayName": "auth-1",
+   "webServerName": "iic-web-235-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-web-235-b01a31"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.7.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\auth-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-236-portal-1",
+  "name": "iic-web-236-portal-1",
+  "properties": {
+   "displayName": "portal-1",
+   "webServerName": "iic-web-236-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-web-236-001b60"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\portal-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-web-236-partner-api-2",
+  "name": "iic-web-236-partner-api-2",
+  "properties": {
+   "displayName": "partner-api-2",
+   "webServerName": "iic-web-236-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-web-236-001b60"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-238-intranet-1",
+  "name": "iic-api-238-intranet-1",
+  "properties": {
+   "displayName": "intranet-1",
+   "webServerName": "iic-api-238-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-api-238-448d17"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.8"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\intranet-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-239-reports-1",
+  "name": "iic-api-239-reports-1",
+  "properties": {
+   "displayName": "reports-1",
+   "webServerName": "iic-api-239-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-api-239-bf114e"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\reports-1"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_Site": "iic-master-site",
+  "_WebAppSite": "iic-webapp-site",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/MasterSites/iic-master-site/WebAppSites/iic-webapp-site/iisWebApplications/iic-api-239-partner-api-2",
+  "name": "iic-api-239-partner-api-2",
+  "properties": {
+   "displayName": "partner-api-2",
+   "webServerName": "iic-api-239-iis",
+   "serverType": "IIS",
+   "machineArmIds": [
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/ServerSites/iic-server-site/machines/iic-api-239-bf114e"
+   ],
+   "frameworks": [
+    {
+     "name": ".NET Framework",
+     "version": "4.6.2"
+    }
+   ],
+   "virtualApplications": [
+    {
+     "virtualPath": "/",
+     "physicalPath": "D:\\inetpub\\partner-api-2"
+    }
+   ],
+   "bindings": [
+    {
+     "protocol": "https",
+     "port": "443"
+    }
+   ]
+  }
+ }
+]

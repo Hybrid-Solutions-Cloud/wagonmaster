@@ -20,11 +20,15 @@ If the HCS Governance MCP server is available (`.mcp.json`), call `bootstrap` fo
 
 Manifest (`src/manifest/Export-WagonmasterManifest.ps1`) parses and passes static tests in CI, but has never been run against Azure. The open work list is in `.ai/state/HANDOFF.md`.
 
+Waypoint (`src/waypoint/`) is a preview built on the sample export in `samples/`. It has never read an export from a real project. All field access in the report goes through the `MAP` table in `template/waypoint.html`: fix paths there, never in a view. Values from the export must only ever be written with text nodes, never as HTML.
+
 ## Commands
 
 - Docs: `cd docs && npm ci && npm run docs:build`
 - Lint: `Invoke-ScriptAnalyzer -Path src -Recurse -Settings ./PSScriptAnalyzerSettings.psd1`
 - Tests: `Invoke-Pester -Path tests`
+- Waypoint template tests: `cd tests/waypoint && npm ci && npm test`
+- Sample data: `python3 tools/New-SampleExport.py samples/manifest-export`
 - Word downloads: `bash tools/Build-WordDocs.sh`
 
 ## Confirm with the owner before

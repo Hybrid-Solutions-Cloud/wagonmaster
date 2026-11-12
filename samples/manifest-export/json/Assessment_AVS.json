@@ -1,0 +1,27 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/avsAssessments/vmware-to-avs",
+  "name": "vmware-to-avs",
+  "properties": {
+   "azureLocation": "EastUs",
+   "currency": "USD",
+   "nodeType": "AV36P",
+   "numberOfNodes": 5,
+   "numberOfMachines": 160,
+   "totalMonthlyCost": 41250.0,
+   "cpuUtilization": 61.4,
+   "ramUtilization": 72.9,
+   "storageUtilization": 48.2,
+   "failuresToTolerateAndRaidLevel": "Ftt1Raid1",
+   "memOvercommit": 1,
+   "vcpuOversubscription": 4,
+   "suitability": "Suitable",
+   "status": "Completed",
+   "confidenceRatingInPercentage": 70,
+   "updatedTimestamp": "2026-11-10T14:00:00Z"
+  }
+ }
+]

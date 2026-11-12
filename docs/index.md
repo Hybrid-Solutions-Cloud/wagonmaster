@@ -29,8 +29,8 @@ features:
     details: Every tool states exactly what access it needs. Manifest needs only the Reader role on one resource group, for a person, a managed identity or a service principal.
     link: /manifest/security
     linkText: Security and access
-  - title: More tools on the way
-    details: Dashboards and wave planning tools are planned under the same name, each built on the data Manifest produces.
-    link: /project/roadmap
-    linkText: See the roadmap
+  - title: Waypoint
+    details: Turn a Manifest export into one HTML dashboard. Readiness, cost, SQL, web apps, software and migration progress, plus a data explorer for every field. No server needed.
+    link: /waypoint/
+    linkText: Explore Waypoint
 ---

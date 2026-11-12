@@ -1,0 +1,26 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/businessCases/iic-business-case",
+  "name": "iic-business-case",
+  "properties": {
+   "state": "Completed",
+   "settings": {
+    "azureSettings": {
+     "targetLocation": "eastus",
+     "currency": "USD",
+     "discountPercentage": 0,
+     "businessCaseType": "OptimizeForCost",
+     "savingsOption": "RI3Year"
+    }
+   },
+   "reportStatusDetails": [
+    {
+     "reportType": "OverviewSummary",
+     "reportStatus": "Completed"
+    }
+   ]
+  }
+ }
+]

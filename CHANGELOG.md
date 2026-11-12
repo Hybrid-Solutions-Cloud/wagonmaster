@@ -2,6 +2,15 @@
 
 All notable changes to this repository are recorded here. Each tool is versioned on its own.
 
+## Wagonmaster Waypoint
+
+### 0.1.0 (2026-11-12)
+
+- Initial preview: `New-WagonmasterWaypoint.ps1` builds one self contained HTML dashboard from a Manifest export.
+- Views: overview, servers, assessments, SQL Server, web apps, software, migration, project, data explorer, data quality.
+- Field mapping layer with a coverage report, so differences in real exports are visible and quick to fix.
+- Fictional sample export under `samples/` with its generator, used by tests and the live demo.
+
 ## Wagonmaster Manifest
 
 ### 1.2.1 (2026-11-12)

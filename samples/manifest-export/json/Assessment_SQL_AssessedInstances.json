@@ -1,0 +1,422 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-003-mssqlserver",
+  "name": "iic-sql-003-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-003",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-003-7746f0",
+   "sqlEdition": "Standard",
+   "sqlVersion": "SQL Server 2016",
+   "numberOfCoresAllocated": 4,
+   "percentageCoresUtilization": 64.7,
+   "recommendedAzureSqlTargetType": "AzureSqlVirtualMachine",
+   "recommendedSuitability": "ConditionallySuitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "ConditionallySuitable",
+    "monthlyComputeCost": 2084.03,
+    "monthlyStorageCost": 250.08,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 3,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-010-mssqlserver",
+  "name": "iic-sql-010-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-010",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-010-4df9f7",
+   "sqlEdition": "Developer",
+   "sqlVersion": "SQL Server 2017",
+   "numberOfCoresAllocated": 4,
+   "percentageCoresUtilization": 65.6,
+   "recommendedAzureSqlTargetType": "AzureSqlDatabase",
+   "recommendedSuitability": "ConditionallySuitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "ConditionallySuitable",
+    "monthlyComputeCost": 1725.03,
+    "monthlyStorageCost": 207.0,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 2,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-019-mssqlserver",
+  "name": "iic-sql-019-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-019",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-019-614604",
+   "sqlEdition": "Developer",
+   "sqlVersion": "SQL Server 2016",
+   "numberOfCoresAllocated": 8,
+   "percentageCoresUtilization": 51.1,
+   "recommendedAzureSqlTargetType": "AzureSqlManagedInstance",
+   "recommendedSuitability": "ConditionallySuitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "ConditionallySuitable",
+    "monthlyComputeCost": 2629.39,
+    "monthlyStorageCost": 315.53,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 8,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-040-mssqlserver",
+  "name": "iic-sql-040-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-040",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-040-75937c",
+   "sqlEdition": "Enterprise",
+   "sqlVersion": "SQL Server 2016",
+   "numberOfCoresAllocated": 4,
+   "percentageCoresUtilization": 56.1,
+   "recommendedAzureSqlTargetType": "AzureSqlVirtualMachine",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 1090.32,
+    "monthlyStorageCost": 130.84,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 5,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-054-mssqlserver",
+  "name": "iic-sql-054-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-054",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-054-ea6a2b",
+   "sqlEdition": "Enterprise",
+   "sqlVersion": "SQL Server 2019",
+   "numberOfCoresAllocated": 8,
+   "percentageCoresUtilization": 48.8,
+   "recommendedAzureSqlTargetType": "AzureSqlVirtualMachine",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 2650.49,
+    "monthlyStorageCost": 318.06,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 1,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-080-mssqlserver",
+  "name": "iic-sql-080-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-080",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-080-c44933",
+   "sqlEdition": "Enterprise",
+   "sqlVersion": "SQL Server 2017",
+   "numberOfCoresAllocated": 16,
+   "percentageCoresUtilization": 59.4,
+   "recommendedAzureSqlTargetType": "AzureSqlManagedInstance",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 2042.03,
+    "monthlyStorageCost": 245.04,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 8,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-092-mssqlserver",
+  "name": "iic-sql-092-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-092",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-092-47af62",
+   "sqlEdition": "Developer",
+   "sqlVersion": "SQL Server 2017",
+   "numberOfCoresAllocated": 8,
+   "percentageCoresUtilization": 39.8,
+   "recommendedAzureSqlTargetType": "AzureSqlVirtualMachine",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 1200.57,
+    "monthlyStorageCost": 144.07,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 3,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-099-mssqlserver",
+  "name": "iic-sql-099-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-099",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-099-602949",
+   "sqlEdition": "Standard",
+   "sqlVersion": "SQL Server 2017",
+   "numberOfCoresAllocated": 16,
+   "percentageCoresUtilization": 40.8,
+   "recommendedAzureSqlTargetType": "AzureSqlDatabase",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 1302.16,
+    "monthlyStorageCost": 156.26,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 1,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-126-mssqlserver",
+  "name": "iic-sql-126-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-126",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-126-ff7874",
+   "sqlEdition": "Standard",
+   "sqlVersion": "SQL Server 2012",
+   "numberOfCoresAllocated": 2,
+   "percentageCoresUtilization": 21.4,
+   "recommendedAzureSqlTargetType": "AzureSqlManagedInstance",
+   "recommendedSuitability": "ConditionallySuitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "ConditionallySuitable",
+    "monthlyComputeCost": 1963.42,
+    "monthlyStorageCost": 235.61,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 2,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-128-mssqlserver",
+  "name": "iic-sql-128-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-128",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-128-1a98ec",
+   "sqlEdition": "Developer",
+   "sqlVersion": "SQL Server 2012",
+   "numberOfCoresAllocated": 8,
+   "percentageCoresUtilization": 14.4,
+   "recommendedAzureSqlTargetType": "AzureSqlManagedInstance",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 947.78,
+    "monthlyStorageCost": 113.73,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 2,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-146-mssqlserver",
+  "name": "iic-sql-146-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-146",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-146-016307",
+   "sqlEdition": "Standard",
+   "sqlVersion": "SQL Server 2012",
+   "numberOfCoresAllocated": 4,
+   "percentageCoresUtilization": 9.8,
+   "recommendedAzureSqlTargetType": "AzureSqlVirtualMachine",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 1371.16,
+    "monthlyStorageCost": 164.54,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 5,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-159-mssqlserver",
+  "name": "iic-sql-159-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-159",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/VMwareSites/iic-vmware-site/machines/iic-sql-159-8a4860",
+   "sqlEdition": "Enterprise",
+   "sqlVersion": "SQL Server 2019",
+   "numberOfCoresAllocated": 4,
+   "percentageCoresUtilization": 6.1,
+   "recommendedAzureSqlTargetType": "AzureSqlManagedInstance",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 2609.73,
+    "monthlyStorageCost": 313.17,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 1,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-208-mssqlserver",
+  "name": "iic-sql-208-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-208",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-sql-208-147742",
+   "sqlEdition": "Developer",
+   "sqlVersion": "SQL Server 2012",
+   "numberOfCoresAllocated": 2,
+   "percentageCoresUtilization": 40.5,
+   "recommendedAzureSqlTargetType": "AzureSqlManagedInstance",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 1654.91,
+    "monthlyStorageCost": 198.59,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 1,
+   "confidenceRatingInPercentage": 60
+  }
+ },
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "_Assessment": "sql-estate",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate/assessedSqlInstances/iic-sql-220-mssqlserver",
+  "name": "iic-sql-220-mssqlserver",
+  "properties": {
+   "instanceName": "MSSQLSERVER",
+   "machineName": "iic-sql-220",
+   "machineArmId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.OffAzure/HyperVSites/iic-hyperv-site/machines/iic-sql-220-a22b1c",
+   "sqlEdition": "Standard",
+   "sqlVersion": "SQL Server 2012",
+   "numberOfCoresAllocated": 8,
+   "percentageCoresUtilization": 33.0,
+   "recommendedAzureSqlTargetType": "AzureSqlManagedInstance",
+   "recommendedSuitability": "Suitable",
+   "azureSqlMISuitabilityDetails": {
+    "suitability": "Suitable",
+    "monthlyComputeCost": 356.13,
+    "monthlyStorageCost": 42.74,
+    "azureSqlSku": {
+     "azureSqlServiceTier": "GeneralPurpose",
+     "cores": 8
+    }
+   },
+   "userDatabaseCount": 4,
+   "confidenceRatingInPercentage": 60
+  }
+ }
+]

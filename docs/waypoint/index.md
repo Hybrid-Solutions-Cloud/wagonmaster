@@ -1,0 +1,83 @@
+# Wagonmaster Waypoint
+
+Waypoint turns a Wagonmaster Manifest export into one HTML dashboard. The file needs no server, no internet access and no sign in: open it in any browser, email it, or put it on a file share.
+
+<a href="/wagonmaster/waypoint-demo/index.html" target="_blank" rel="noopener"><strong>Open the live demo</strong></a>, built from a fictional estate of 240 servers.
+
+::: warning Preview, built on sample data
+Waypoint was built against sample data that follows Microsoft's published API schemas. It has not yet been run on an export from a real Azure Migrate project. The Data quality tab shows how well it could read each field, so any mismatch with real data is visible and quick to fix.
+:::
+
+## What it shows
+
+Waypoint includes every dataset in the export. Curated views sit on top, and the Data explorer shows every field of every record.
+
+| Tab | Contents |
+| --- | --- |
+| Overview | Server, core, memory and disk totals, SQL and web app counts, Azure readiness, operating system support status, estimated monthly cost, migration state |
+| Servers | Every discovered server joined to its assessment, SQL, web app and migration data. Select a row for everything known about that server. |
+| Assessments | Per assessment: cost and its split, readiness, readiness issues, recommended VM sizes, CPU and memory utilization bands, every assessed server. AVS, SQL and web app assessments are listed too. |
+| SQL Server | Instances by version, edition and support status, databases with sizes, recommended Azure SQL targets and cost |
+| Web apps | IIS and Tomcat apps by server type and framework |
+| Software | Most installed software and publishers, with the servers each is installed on. Needs an export made with `-IncludeSoftwareInventory`. |
+| Migration | Replication and migration state, test migrations, items needing attention |
+| Project | The project, its registered tools, discovery sites, vCenters, Hyper-V hosts and business cases |
+| Data explorer | Any dataset, every field. Search, sort, open a full record, download the filtered view as CSV. |
+| Data quality | Which datasets the export contained, which were missing or errored, and field coverage |
+
+Every table can be searched, sorted, filtered and downloaded as CSV. The report follows your light or dark setting and can be printed.
+
+## Create a report
+
+You need PowerShell 7 and a Manifest export. Waypoint never contacts Azure, so it needs no Azure access at all.
+
+```powershell
+cd wagonmaster/src/waypoint
+./New-WagonmasterWaypoint.ps1 -ExportPath <path-to-export-folder> -Open
+```
+
+The export folder is the timestamped folder Manifest writes, the one that holds `_Manifest.json` and the `json` folder. The report is written into that folder as `Waypoint.html`.
+
+To try it without an export, use the sample data in the repository:
+
+```powershell
+./New-WagonmasterWaypoint.ps1 -ExportPath ../../samples/manifest-export -OutputPath ./demo.html -Open
+```
+
+## Parameters
+
+| Parameter | What it does | Environment variable |
+| --- | --- | --- |
+| `-ExportPath` | The Manifest export folder. If omitted, the newest export under `.\WagonmasterManifest` is used, then you are prompted. | `WAGONMASTER_EXPORT_PATH` |
+| `-OutputPath` | The HTML file to write. Default: `Waypoint.html` in the export folder. | `WAGONMASTER_WAYPOINT_OUTPUT` |
+| `-Title` | The title at the top of the report | |
+| `-ExcludeDataset` | Dataset names to leave out. Wildcards are allowed. | |
+| `-Open` | Opens the report in the default browser when done | |
+| `-NonInteractive` | Never prompts. A missing value is an error. | |
+
+## Large estates
+
+The report embeds the data, so its size follows the export. Software inventory is the largest dataset by far. If the report is slow to open, leave it out:
+
+```powershell
+./New-WagonmasterWaypoint.ps1 -ExportPath <path> -ExcludeDataset Discovery_SoftwareInventory
+```
+
+## Handle the report as confidential
+
+The report holds the same data as the export: server names, IP addresses, software, SQL Server details and cost estimates. Share it the way you would share the export. Values from the export are always shown as text and never run as code.
+
+## How Waypoint reads the data
+
+Waypoint reads fields through one mapping table at the top of the report script, never by a fixed path. Each logical field, such as a server's operating system, lists the paths to try in order. If a real export names a field differently, one line in that table fixes every view that uses it.
+
+The **Data quality** tab reports, for every mapped field, how many records it matched and which path it used. After your first report on real data, check that tab. A field at 0% is a path to add.
+
+## Sample data
+
+`samples/manifest-export` is a fictional export for Infinite Improbability Corp: 240 servers across VMware, Hyper-V and physical sites, with SQL Server, web apps, assessments, a business case and migration items. It is generated by `tools/New-SampleExport.py` and is the same every time. The tests and the live demo both use it.
+
+## Source
+
+- Script: [`src/waypoint/New-WagonmasterWaypoint.ps1`](https://github.com/Hybrid-Solutions-Cloud/wagonmaster/blob/main/src/waypoint/New-WagonmasterWaypoint.ps1)
+- Report template: [`src/waypoint/template/waypoint.html`](https://github.com/Hybrid-Solutions-Cloud/wagonmaster/blob/main/src/waypoint/template/waypoint.html)

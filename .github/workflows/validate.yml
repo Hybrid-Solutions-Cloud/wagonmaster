@@ -6,6 +6,7 @@ on:
     paths:
       - 'src/**'
       - 'tests/**'
+      - 'samples/**'
       - 'PSScriptAnalyzerSettings.psd1'
       - '.github/workflows/validate.yml'
   push:
@@ -13,6 +14,7 @@ on:
     paths:
       - 'src/**'
       - 'tests/**'
+      - 'samples/**'
       - 'PSScriptAnalyzerSettings.psd1'
       - '.github/workflows/validate.yml'
   workflow_dispatch:
@@ -48,3 +50,25 @@ jobs:
           $findings | Format-Table RuleName, Severity, ScriptName, Line, Message -AutoSize | Out-String -Width 220 | Write-Host
           $errors = @($findings | Where-Object Severity -eq 'Error')
           if ($errors.Count -gt 0) { throw "$($errors.Count) PSScriptAnalyzer error(s)." }
+
+  waypoint-template:
+    name: Waypoint report template
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tests/waypoint/package-lock.json
+
+      - name: Install dependencies
+        working-directory: tests/waypoint
+        run: npm ci
+
+      - name: Render the report against the sample export
+        working-directory: tests/waypoint
+        run: npm test

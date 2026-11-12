@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Wagonmaster Waypoint">
+<title>Wagonmaster Waypoint</title>
+<style>
+.viz-root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface-1: #fcfcfb; --surface-2: #f0efec;
+  --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
+  --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a;
+  --good: #0ca30c; --warning: #fab219; --serious: #ec835a; --critical: #d03b3b; --unknown: #898781;
+  --brand: #0b2a4a; --brand-accent: #f2c46d; --link: #0067b8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .viz-root {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface-1: #1a1a19; --surface-2: #2c2c2a;
+    --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --link: #4aa8ff;
+  }
+}
+:root[data-theme="dark"] .viz-root {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface-1: #1a1a19; --surface-2: #2c2c2a;
+  --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --link: #4aa8ff;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.45; }
+.viz-root { background: var(--page); color: var(--text-primary); min-height: 100vh; }
+a { color: var(--link); }
+header.top { background: var(--brand); color: #fff; padding: 14px 20px; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+header.top svg { width: 34px; height: 34px; flex: none; }
+header.top h1 { font-size: 18px; margin: 0; font-weight: 600; }
+header.top .meta { font-size: 12px; opacity: .85; }
+header.top .grow { flex: 1; min-width: 200px; }
+header.top button { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.4); border-radius: 6px; padding: 6px 10px; cursor: pointer; font: inherit; font-size: 12px; }
+.banner { background: var(--brand-accent); color: #0b0b0b; padding: 8px 20px; font-size: 13px; }
+nav.tabs { display: flex; gap: 2px; overflow-x: auto; padding: 0 12px; background: var(--surface-1); border-bottom: 1px solid var(--grid); position: sticky; top: 0; z-index: 5; }
+nav.tabs button { background: none; border: 0; border-bottom: 3px solid transparent; padding: 12px 12px 9px; font: inherit; color: var(--text-secondary); cursor: pointer; white-space: nowrap; }
+nav.tabs button[aria-selected="true"] { color: var(--text-primary); border-bottom-color: var(--series-1); font-weight: 600; }
+nav.tabs button .count { color: var(--text-muted); font-weight: 400; margin-left: 4px; font-size: 12px; }
+main { padding: 20px; max-width: 1500px; margin: 0 auto; }
+h2 { font-size: 18px; margin: 4px 0 4px; }
+h3 { font-size: 14px; margin: 0 0 10px; font-weight: 600; }
+p.lead { color: var(--text-secondary); margin: 0 0 16px; max-width: 900px; }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom: 14px; }
+.tiles { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin-bottom: 14px; }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; min-width: 0; }
+.tile .label { color: var(--text-secondary); font-size: 12px; }
+.tile .value { font-size: 24px; font-weight: 600; line-height: 1.2; margin-top: 2px; overflow-wrap: anywhere; }
+.tile .sub { color: var(--text-muted); font-size: 12px; }
+.bars { display: grid; grid-template-columns: fit-content(62%) minmax(90px, 1fr); gap: 6px 10px; align-items: center; }
+.bars .lbl { color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+.bars .track { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.bars .bar { height: 14px; background: var(--series-1); border-radius: 0 4px 4px 0; min-width: 2px; }
+.bars .val { font-variant-numeric: tabular-nums; font-size: 12px; color: var(--text-primary); white-space: nowrap; }
+.bars .row { display: contents; }
+.bars .row:hover .bar { filter: brightness(1.15); }
+.stack { display: flex; gap: 2px; height: 22px; margin: 4px 0 10px; }
+.stack .seg { min-width: 3px; border-radius: 3px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--text-secondary); }
+.legend .key { display: inline-flex; align-items: center; gap: 6px; }
+.swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; flex: none; }
+.chip { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.chip .dot { width: 14px; height: 14px; border-radius: 50%; color: #fff; font-size: 10px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.chip .dot.warning { color: #0b0b0b; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
+.controls input[type=search], .controls select { font: inherit; padding: 6px 8px; border: 1px solid var(--axis); border-radius: 6px; background: var(--surface-1); color: var(--text-primary); max-width: 100%; }
+.controls input[type=search] { min-width: 220px; flex: 1; }
+.controls button, .pager button { font: inherit; padding: 6px 10px; border: 1px solid var(--axis); border-radius: 6px; background: var(--surface-1); color: var(--text-primary); cursor: pointer; }
+.controls .info { color: var(--text-muted); font-size: 12px; margin-left: auto; }
+.tablewrap { overflow: auto; border: 1px solid var(--border); border-radius: 8px; max-height: 70vh; background: var(--surface-1); }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--grid); vertical-align: top; max-width: 380px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-secondary); font-weight: 600; cursor: pointer; user-select: none; z-index: 1; }
+th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+tbody tr.click { cursor: pointer; }
+tbody tr:hover { background: var(--surface-2); }
+.pager { display: flex; gap: 8px; align-items: center; margin-top: 8px; color: var(--text-muted); font-size: 12px; }
+.empty { color: var(--text-muted); padding: 18px; text-align: center; }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 20; display: flex; justify-content: flex-end; }
+.drawer { background: var(--surface-1); width: min(760px, 100%); height: 100%; overflow: auto; padding: 18px 20px; box-shadow: -8px 0 30px rgba(0,0,0,.25); }
+.drawer .close { float: right; }
+.kv { display: grid; grid-template-columns: minmax(140px, 34%) 1fr; gap: 3px 12px; font-size: 13px; margin: 0 0 6px; }
+.kv dt { color: var(--text-secondary); overflow-wrap: anywhere; }
+.kv dd { margin: 0; overflow-wrap: anywhere; }
+details { margin: 4px 0 4px 0; }
+details > summary { cursor: pointer; color: var(--text-secondary); }
+details > .inner { border-left: 2px solid var(--grid); margin-left: 4px; padding-left: 10px; }
+.note { color: var(--text-muted); font-size: 12px; margin-top: 8px; }
+.muted { color: var(--text-muted); }
+footer { color: var(--text-muted); font-size: 12px; padding: 10px 20px 30px; text-align: center; }
+@media print { nav.tabs, header.top button, .controls, .pager { display: none !important; } .tablewrap { max-height: none; } }
+</style>
+</head>
+<body>
+<div class="viz-root" id="app"></div>
+<script id="wm-data" type="application/json">__WAGONMASTER_DATA__</script>
+<script>
+(function () {
+'use strict';
+
+// ---------------------------------------------------------------------------
+// Data
+// ---------------------------------------------------------------------------
+var DATA;
+try { DATA = JSON.parse(document.getElementById('wm-data').textContent); }
+catch (e) { DATA = { meta: {}, manifest: {}, summary: [], datasets: {}, loadError: String(e) }; }
+var DS = DATA.datasets || {};
+function ds(name) { return Array.isArray(DS[name]) ? DS[name] : []; }
+
+// ---------------------------------------------------------------------------
+// Field mapping layer
+//
+// Every curated view reads fields through this map, never by a hard coded
+// path. Each logical field lists candidate paths, tried in order. If a real
+// export names a field differently, add the path here and nothing else
+// changes. The Data quality tab reports how many records each field matched.
+// ---------------------------------------------------------------------------
+var MAP = {
+  machine: {
+    id: ['id'], name: ['properties.displayName', 'properties.name', 'name'],
+    fqdn: ['properties.vmFqdn', 'properties.fqdn', 'properties.hydratedFqdn'],
+    osName: ['properties.operatingSystemDetails.osName', 'properties.guestOSDetails.osName', 'properties.operatingSystemName'],
+    osType: ['properties.operatingSystemDetails.osType', 'properties.guestOSDetails.osType', 'properties.operatingSystemType'],
+    osVersion: ['properties.operatingSystemDetails.osVersion', 'properties.guestOSDetails.osVersion'],
+    cores: ['properties.numberOfProcessorCore', 'properties.numberOfCores'],
+    memoryMb: ['properties.allocatedMemoryInMB', 'properties.allocatedMemoryInMb', 'properties.megabytesOfMemory'],
+    disks: ['properties.disks'], nics: ['properties.networkAdapters'],
+    power: ['properties.powerStatus', 'properties.powerState'],
+    support: ['properties.productSupportStatus.supportStatus'],
+    host: ['properties.hostName', 'properties.hostFqdn'], site: ['_Site'],
+    apps: ['properties.numberOfApplications'], dependency: ['properties.dependencyMapping']
+  },
+  assessment: {
+    id: ['id'], name: ['name'], group: ['_Group'], location: ['properties.azureLocation'], currency: ['properties.currency'],
+    sizing: ['properties.sizingCriterion'], machines: ['properties.numberOfMachines'], status: ['properties.status'],
+    compute: ['properties.monthlyComputeCost'], storage: ['properties.monthlyStorageCost'], bandwidth: ['properties.monthlyBandwidthCost'],
+    confidence: ['properties.confidenceRatingInPercentage'], updated: ['properties.updatedTimestamp'], prices: ['properties.pricesTimestamp'],
+    reserved: ['properties.reservedInstance'], hybrid: ['properties.azureHybridUseBenefit'], timeRange: ['properties.timeRange'], percentile: ['properties.percentile']
+  },
+  assessed: {
+    machineId: ['properties.datacenterMachineArmId', 'properties.discoveryMachineArmId'], name: ['properties.displayName', 'name'],
+    assessment: ['_Assessment'], group: ['_Group'], os: ['properties.operatingSystemName'],
+    suitability: ['properties.suitability'], explanation: ['properties.suitabilityExplanation'], detail: ['properties.suitabilityDetail'],
+    size: ['properties.recommendedSize'], cores: ['properties.numberOfCores'], memoryMb: ['properties.megabytesOfMemory'],
+    cpuPct: ['properties.percentageCoresUtilization'], memPct: ['properties.percentageMemoryUtilization'],
+    compute: ['properties.monthlyComputeCostForRecommendedSize', 'properties.monthlyComputeCost'],
+    storage: ['properties.monthlyStorageCost'], bandwidth: ['properties.monthlyBandwidthCost'],
+    confidence: ['properties.confidenceRatingInPercentage']
+  },
+  sqlServer: {
+    name: ['properties.sqlServerName', 'properties.instanceName', 'name'], host: ['properties.hostName', 'properties.machineName'],
+    version: ['properties.sqlServerVersion', 'properties.version'], build: ['properties.version'], edition: ['properties.edition', 'properties.sqlEdition'],
+    databases: ['properties.numberOfUserDatabases', 'properties.userDatabaseCount'], ha: ['properties.isHighAvailabilityEnabled'],
+    support: ['properties.productSupportStatus.supportStatus'], status: ['properties.status']
+  },
+  sqlDatabase: {
+    name: ['properties.databaseName', 'name'], server: ['properties.sqlServerName'], host: ['properties.hostName'],
+    sizeMb: ['properties.sizeMb', 'properties.sizeMB'], compat: ['properties.compatibilityLevel'], status: ['properties.status']
+  },
+  sqlAssessed: {
+    instance: ['properties.instanceName', 'name'], machine: ['properties.machineName'], version: ['properties.sqlVersion'], edition: ['properties.sqlEdition'],
+    target: ['properties.recommendedAzureSqlTargetType'], suitability: ['properties.recommendedSuitability', 'properties.azureSqlMISuitabilityDetails.suitability', 'properties.suitability'],
+    compute: ['properties.azureSqlMISuitabilityDetails.monthlyComputeCost', 'properties.monthlyComputeCost'],
+    storage: ['properties.azureSqlMISuitabilityDetails.monthlyStorageCost', 'properties.monthlyStorageCost'],
+    databases: ['properties.userDatabaseCount'], assessment: ['_Assessment']
+  },
+  webApp: {
+    name: ['properties.displayName', 'name'], server: ['properties.webServerName'], type: ['properties.serverType'],
+    frameworks: ['properties.frameworks'], bindings: ['properties.bindings'], machineIds: ['properties.machineArmIds']
+  },
+  migration: {
+    name: ['properties.machineName', 'properties.friendlyName', 'name'], state: ['properties.migrationState', 'properties.protectionState'],
+    description: ['properties.migrationStateDescription', 'properties.protectionStateDescription'], test: ['properties.testMigrateState'],
+    health: ['properties.health', 'properties.replicationHealth'], lastTest: ['properties.lastTestMigrationTime'], lastMigration: ['properties.lastMigrationTime'],
+    targetSize: ['properties.providerSpecificDetails.targetVmSize'], targetLocation: ['properties.providerSpecificDetails.targetLocation'], vault: ['_Vault']
+  },
+  software: {
+    machine: ['_Machine'], machineId: ['_MachineId'],
+    apps: ['properties.appsAndRoles.applications', 'properties.applications'], features: ['properties.appsAndRoles.features', 'properties.features']
+  }
+};
+var coverage = {};
+function get(obj, path) {
+  var cur = obj, parts = path.split('.');
+  for (var i = 0; i < parts.length; i++) { if (cur == null || typeof cur !== 'object') return undefined; cur = cur[parts[i]]; }
+  return cur;
+}
+function F(rec, entity, field) {
+  var paths = MAP[entity][field], key = entity + '.' + field;
+  var c = coverage[key] || (coverage[key] = { seen: 0, hit: 0, paths: {} });
+  c.seen++;
+  for (var i = 0; i < paths.length; i++) {
+    var v = get(rec, paths[i]);
+    if (v !== undefined && v !== null && v !== '') { c.hit++; c.paths[paths[i]] = (c.paths[paths[i]] || 0) + 1; return v; }
+  }
+  return null;
+}
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+function h(tag, props) {
+  var node = document.createElement(tag), i;
+  if (props) for (var k in props) {
+    var v = props[k];
+    if (v == null || v === false) continue;
+    if (k === 'class') node.className = v;
+    else if (k === 'text') node.textContent = v;
+    else if (k === 'style') node.setAttribute('style', v);
+    else if (k.slice(0, 2) === 'on') node.addEventListener(k.slice(2), v);
+    else node.setAttribute(k, v === true ? '' : v);
+  }
+  for (i = 2; i < arguments.length; i++) append(node, arguments[i]);
+  return node;
+}
+function append(node, child) {
+  if (child == null || child === false) return;
+  if (Array.isArray(child)) { child.forEach(function (c) { append(node, c); }); return; }
+  node.appendChild(typeof child === 'object' ? child : document.createTextNode(String(child)));
+}
+function num(v) { var n = typeof v === 'number' ? v : parseFloat(v); return isFinite(n) ? n : 0; }
+function fmtInt(v) { return Math.round(num(v)).toLocaleString('en-US'); }
+function fmt1(v) { return num(v).toLocaleString('en-US', { maximumFractionDigits: 1 }); }
+function fmtMoney(v, currency) {
+  try { return num(v).toLocaleString('en-US', { style: 'currency', currency: currency || 'USD', maximumFractionDigits: 0 }); }
+  catch (e) { return fmtInt(v) + ' ' + (currency || ''); }
+}
+function fmtDate(v) { if (!v) return ''; var d = new Date(v); return isNaN(d) ? String(v) : d.toISOString().slice(0, 16).replace('T', ' ') + ' UTC'; }
+function countBy(rows, fn) {
+  var m = {}; rows.forEach(function (r) { var k = fn(r); if (k == null || k === '') k = 'Unknown'; m[k] = (m[k] || 0) + 1; });
+  return Object.keys(m).map(function (k) { return { label: k, value: m[k] }; }).sort(function (a, b) { return b.value - a.value || (a.label < b.label ? -1 : 1); });
+}
+function sumBy(rows, fn) { var t = 0; rows.forEach(function (r) { t += num(fn(r)); }); return t; }
+function lower(v) { return v == null ? '' : String(v).toLowerCase(); }
+function flatten(obj, prefix, out) {
+  if (obj == null) { if (prefix) out[prefix] = ''; return out; }
+  if (Array.isArray(obj)) {
+    var simple = obj.every(function (x) { return x === null || typeof x !== 'object'; });
+    out[prefix] = obj.length === 0 ? '' : (simple ? obj.join('; ') : JSON.stringify(obj));
+    return out;
+  }
+  if (typeof obj === 'object') { for (var k in obj) flatten(obj[k], prefix ? prefix + '.' + k : k, out); return out; }
+  out[prefix] = obj; return out;
+}
+
+var STATUS = {
+  good: { color: 'var(--good)', icon: '✓' }, warning: { color: 'var(--warning)', icon: '!' },
+  serious: { color: 'var(--serious)', icon: '!' }, critical: { color: 'var(--critical)', icon: '✕' },
+  unknown: { color: 'var(--unknown)', icon: '?' }
+};
+function chip(label, level) {
+  var s = STATUS[level] || STATUS.unknown;
+  return h('span', { class: 'chip' }, h('span', { class: 'dot ' + level, style: 'background:' + s.color, 'aria-hidden': 'true', text: s.icon }), label);
+}
+var READINESS = {
+  suitable: ['Ready', 'good'], conditionallysuitable: ['Ready with conditions', 'warning'],
+  notsuitable: ['Not ready', 'critical'], readinessunknown: ['Unknown', 'unknown']
+};
+function readiness(v) { return READINESS[lower(v)] || [v ? String(v) : 'Not assessed', 'unknown']; }
+function supportLevel(v) { var s = lower(v); return s === 'mainstream' || s === 'supported' ? 'good' : s === 'extended' ? 'warning' : s === 'unsupported' || s === 'outofsupport' ? 'critical' : 'unknown'; }
+function osFamily(type, name) {
+  var s = lower(type) + ' ' + lower(name);
+  if (/windows/.test(s)) return 'Windows';
+  if (/linux|ubuntu|red hat|rhel|centos|suse|debian|oracle|rocky|alma/.test(s)) return 'Linux';
+  return 'Other or unknown';
+}
+
+// ---------------------------------------------------------------------------
+// Components
+// ---------------------------------------------------------------------------
+function card(title) {
+  var c = h('section', { class: 'card' }, title ? h('h3', { text: title }) : null);
+  for (var i = 1; i < arguments.length; i++) append(c, arguments[i]);
+  return c;
+}
+function tile(label, value, sub) {
+  return h('div', { class: 'card tile' }, h('div', { class: 'label', text: label }), h('div', { class: 'value', text: value }), sub ? h('div', { class: 'sub', text: sub }) : null);
+}
+function barList(items, opts) {
+  opts = opts || {};
+  var limit = opts.limit || 10, fmt = opts.fmt || fmtInt, shown = items.slice(0, limit), rest = items.slice(limit);
+  if (rest.length) shown.push({ label: 'Other (' + rest.length + ')', value: rest.reduce(function (t, r) { return t + r.value; }, 0) });
+  if (!shown.length) return h('div', { class: 'empty', text: 'No data' });
+  var max = Math.max.apply(null, shown.map(function (s) { return s.value; })) || 1;
+  var wrap = h('div', { class: 'bars', role: 'list' });
+  shown.forEach(function (s) {
+    var tip = s.label + ': ' + fmt(s.value);
+    wrap.appendChild(h('div', { class: 'row', role: 'listitem', title: tip },
+      h('div', { class: 'lbl', text: s.label, title: tip }),
+      h('div', { class: 'track', title: tip },
+        h('div', { class: 'bar', style: 'width:' + Math.max(1, s.value / max * 78) + '%' + (opts.color ? ';background:' + opts.color : '') }),
+        h('span', { class: 'val', text: fmt(s.value) }))));
+  });
+  return wrap;
+}
+function stackBar(segments, fmt) {
+  fmt = fmt || fmtInt;
+  var total = segments.reduce(function (t, s) { return t + s.value; }, 0);
+  if (!total) return h('div', { class: 'empty', text: 'No data' });
+  var bar = h('div', { class: 'stack', role: 'img', 'aria-label': segments.map(function (s) { return s.label + ' ' + fmt(s.value); }).join(', ') });
+  var legend = h('div', { class: 'legend' });
+  segments.forEach(function (s) {
+    if (!s.value) return;
+    var pct = Math.round(s.value / total * 100), tip = s.label + ': ' + fmt(s.value) + ' (' + pct + '%)';
+    bar.appendChild(h('div', { class: 'seg', style: 'flex:' + s.value + ';background:' + s.color, title: tip }));
+    legend.appendChild(h('span', { class: 'key', title: tip },
+      s.level ? chip(s.label, s.level) : [h('span', { class: 'swatch', style: 'background:' + s.color }), s.label],
+      h('b', { text: ' ' + fmt(s.value) }), h('span', { class: 'muted', text: ' ' + pct + '%' })));
+  });
+  return h('div', null, bar, legend);
+}
+function downloadCsv(name, columns, rows) {
+  var esc = function (v) {
+    v = v == null ? '' : String(v);
+    if (/^[=+\-@\t\r]/.test(v)) v = "'" + v;
+    return /[",\r\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+  };
+  var lines = [columns.map(function (c) { return esc(c.label); }).join(',')];
+  rows.forEach(function (r) { lines.push(columns.map(function (c) { return esc(c.text(r)); }).join(',')); });
+  var blob = new Blob(['﻿' + lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+  var a = h('a', { href: URL.createObjectURL(blob), download: name + '.csv' });
+  document.body.appendChild(a); a.click(); a.remove();
+}
+// columns: [{ key, label, get(row) -> raw, render(row) -> node|string (optional), num (bool), fmt(raw) }]
+function dataTable(columns, rows, opts) {
+  opts = opts || {};
+  columns.forEach(function (c) {
+    c.text = function (r) { var v = c.get(r); if (v == null) return ''; return c.fmt ? c.fmt(v) : (typeof v === 'object' ? JSON.stringify(v) : String(v)); };
+  });
+  var state = { q: '', sort: opts.sort || null, dir: opts.dir || 1, page: 0, size: opts.pageSize || 50, filters: {} };
+  var root = h('div'), controls = h('div', { class: 'controls' }), info = h('span', { class: 'info' });
+  var search = h('input', { type: 'search', placeholder: opts.placeholder || 'Search', 'aria-label': 'Search' });
+  search.addEventListener('input', function () { state.q = search.value.toLowerCase(); state.page = 0; draw(); });
+  controls.appendChild(search);
+  (opts.filters || []).forEach(function (f) {
+    var values = countBy(rows, f.get).map(function (x) { return x.label; }).sort();
+    var sel = h('select', { 'aria-label': f.label }, h('option', { value: '', text: f.label + ': all' }));
+    values.forEach(function (v) { sel.appendChild(h('option', { value: v, text: v })); });
+    sel.addEventListener('change', function () { state.filters[f.label] = sel.value; state.page = 0; draw(); });
+    controls.appendChild(sel);
+  });
+  var current = rows;
+  controls.appendChild(h('button', { type: 'button', text: 'Download CSV', onclick: function () { downloadCsv(opts.csvName || 'waypoint', columns, current); } }));
+  controls.appendChild(info);
+  var table = h('table'), thead = h('thead'), tbody = h('tbody'), headRow = h('tr');
+  columns.forEach(function (c) {
+    var th = h('th', { class: c.num ? 'num' : null, text: c.label, title: 'Sort by ' + c.label, scope: 'col' });
+    th.addEventListener('click', function () { if (state.sort === c.key) state.dir = -state.dir; else { state.sort = c.key; state.dir = c.num ? -1 : 1; } draw(); });
+    headRow.appendChild(th);
+  });
+  thead.appendChild(headRow); table.appendChild(thead); table.appendChild(tbody);
+  var pager = h('div', { class: 'pager' });
+  root.appendChild(controls); root.appendChild(h('div', { class: 'tablewrap' }, table)); root.appendChild(pager);
+  function draw() {
+    var out = rows.filter(function (r) {
+      for (var i = 0; i < (opts.filters || []).length; i++) {
+        var f = opts.filters[i], want = state.filters[f.label];
+        if (want) { var v = f.get(r); if ((v == null || v === '' ? 'Unknown' : String(v)) !== want) return false; }
+      }
+      if (!state.q) return true;
+      for (var j = 0; j < columns.length; j++) if (columns[j].text(r).toLowerCase().indexOf(state.q) !== -1) return true;
+      return false;
+    });
+    if (state.sort) {
+      var col = columns.filter(function (c) { return c.key === state.sort; })[0];
+      if (col) out.sort(function (a, b) {
+        var x = col.get(a), y = col.get(b);
+        if (col.num) return (num(x) - num(y)) * state.dir;
+        x = x == null ? '' : String(x).toLowerCase(); y = y == null ? '' : String(y).toLowerCase();
+        return (x < y ? -1 : x > y ? 1 : 0) * state.dir;
+      });
+    }
+    current = out;
+    var pages = Math.max(1, Math.ceil(out.length / state.size));
+    if (state.page >= pages) state.page = pages - 1;
+    var slice = out.slice(state.page * state.size, (state.page + 1) * state.size);
+    tbody.textContent = '';
+    if (!slice.length) tbody.appendChild(h('tr', null, h('td', { colspan: columns.length, class: 'empty', text: 'No rows match' })));
+    slice.forEach(function (r) {
+      var tr = h('tr', { class: opts.onRow ? 'click' : null, tabindex: opts.onRow ? '0' : null });
+      columns.forEach(function (c) {
+        var text = c.text(r);
+        tr.appendChild(h('td', { class: c.num ? 'num' : null, title: text }, c.render ? c.render(r) : text));
+      });
+      if (opts.onRow) {
+        tr.addEventListener('click', function () { opts.onRow(r); });
+        tr.addEventListener('keydown', function (e) { if (e.key === 'Enter') opts.onRow(r); });
+      }
+      tbody.appendChild(tr);
+    });
+    info.textContent = fmtInt(out.length) + ' of ' + fmtInt(rows.length) + ' rows';
+    pager.textContent = '';
+    if (pages > 1) {
+      pager.appendChild(h('button', { type: 'button', text: 'Previous', disabled: state.page === 0, onclick: function () { state.page--; draw(); } }));
+      pager.appendChild(h('span', { text: 'Page ' + (state.page + 1) + ' of ' + pages }));
+      pager.appendChild(h('button', { type: 'button', text: 'Next', disabled: state.page >= pages - 1, onclick: function () { state.page++; draw(); } }));
+    }
+  }
+  draw();
+  return root;
+}
+function renderValue(v) {
+  if (v === null || v === undefined || v === '') return h('span', { class: 'muted', text: 'none' });
+  if (Array.isArray(v)) {
+    if (!v.length) return h('span', { class: 'muted', text: 'empty list' });
+    if (v.every(function (x) { return x === null || typeof x !== 'object'; })) return v.join(', ');
+    var d = h('details', null, h('summary', { text: v.length + ' items' })), inner = h('div', { class: 'inner' });
+    v.forEach(function (item, i) { inner.appendChild(h('div', { class: 'muted', text: '#' + (i + 1) })); inner.appendChild(renderValue(item)); });
+    d.appendChild(inner); return d;
+  }
+  if (typeof v === 'object') {
+    var dl = h('dl', { class: 'kv' });
+    Object.keys(v).forEach(function (k) { dl.appendChild(h('dt', { text: k })); dl.appendChild(h('dd', null, renderValue(v[k]))); });
+    return dl;
+  }
+  return String(v);
+}
+function openDrawer(title, sections) {
+  var overlay = h('div', { class: 'overlay', role: 'dialog', 'aria-modal': 'true', 'aria-label': title });
+  function close() { overlay.remove(); document.removeEventListener('keydown', onKey); }
+  function onKey(e) { if (e.key === 'Escape') close(); }
+  var drawer = h('div', { class: 'drawer' }, h('button', { type: 'button', class: 'close', text: 'Close', onclick: close }), h('h2', { text: title }));
+  sections.forEach(function (s) {
+    if (!s.value || (Array.isArray(s.value) && !s.value.length)) return;
+    var d = h('details', { open: s.open !== false }, h('summary', null, h('b', { text: s.title })));
+    d.appendChild(h('div', { class: 'inner' }, renderValue(s.value)));
+    drawer.appendChild(d);
+  });
+  overlay.appendChild(drawer);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', onKey);
+  document.body.querySelector('.viz-root').appendChild(overlay);
+}
+
+// ---------------------------------------------------------------------------
+// Model
+// ---------------------------------------------------------------------------
+var SOURCE_LABEL = { VMware: 'VMware', HyperV: 'Hyper-V', Physical: 'Physical or other cloud', Imported: 'Imported' };
+var machines = [], machineById = {};
+Object.keys(DS).forEach(function (name) {
+  var m = /^Discovery_(.+)_Machines$/.exec(name);
+  if (!m) return;
+  ds(name).forEach(function (rec) {
+    var disks = F(rec, 'machine', 'disks'), nics = F(rec, 'machine', 'nics');
+    disks = Array.isArray(disks) ? disks : (disks && typeof disks === 'object' ? Object.keys(disks).map(function (k) { return disks[k]; }) : []);
+    nics = Array.isArray(nics) ? nics : (nics && typeof nics === 'object' ? Object.keys(nics).map(function (k) { return nics[k]; }) : []);
+    var ips = [];
+    nics.forEach(function (n) { (n && (n.ipAddressList || n.ipAddresses) || []).forEach(function (ip) { ips.push(ip); }); });
+    var osName = F(rec, 'machine', 'osName'), osType = F(rec, 'machine', 'osType');
+    var row = {
+      rec: rec, id: F(rec, 'machine', 'id'), name: F(rec, 'machine', 'name') || '(unnamed)', fqdn: F(rec, 'machine', 'fqdn'),
+      source: SOURCE_LABEL[m[1]] || m[1], site: F(rec, 'machine', 'site'), osName: osName || 'Unknown', osFamily: osFamily(osType, osName),
+      osVersion: F(rec, 'machine', 'osVersion'), cores: num(F(rec, 'machine', 'cores')), memoryGb: num(F(rec, 'machine', 'memoryMb')) / 1024,
+      diskCount: disks.length, diskGb: disks.reduce(function (t, d) { return t + num(d && (d.maxSizeInBytes || d.capacityInBytes)) / 1073741824; }, 0),
+      ips: ips.join(', '), power: F(rec, 'machine', 'power'), support: F(rec, 'machine', 'support') || 'Unknown',
+      host: F(rec, 'machine', 'host'), apps: F(rec, 'machine', 'apps'), dependency: F(rec, 'machine', 'dependency'),
+      assessed: [], sql: [], web: [], migration: null, software: null
+    };
+    machines.push(row);
+    if (row.id) machineById[lower(row.id)] = row;
+  });
+});
+var machineByName = {};
+machines.forEach(function (m) { machineByName[lower(m.name)] = m; });
+
+var assessments = ds('Assessment_AzureVM').map(function (rec) {
+  var a = { rec: rec, name: F(rec, 'assessment', 'name'), group: F(rec, 'assessment', 'group'), location: F(rec, 'assessment', 'location'),
+    currency: F(rec, 'assessment', 'currency') || 'USD', sizing: F(rec, 'assessment', 'sizing'), machines: num(F(rec, 'assessment', 'machines')),
+    compute: num(F(rec, 'assessment', 'compute')), storage: num(F(rec, 'assessment', 'storage')), bandwidth: num(F(rec, 'assessment', 'bandwidth')),
+    confidence: F(rec, 'assessment', 'confidence'), updated: F(rec, 'assessment', 'updated'), status: F(rec, 'assessment', 'status'),
+    reserved: F(rec, 'assessment', 'reserved'), hybrid: F(rec, 'assessment', 'hybrid'), rows: [] };
+  a.key = lower(a.group) + '|' + lower(a.name);
+  return a;
+});
+var assessmentByKey = {};
+assessments.forEach(function (a) { assessmentByKey[a.key] = a; });
+ds('Assessment_AzureVM_AssessedMachines').forEach(function (rec) {
+  var r = { rec: rec, name: F(rec, 'assessed', 'name'), machineId: F(rec, 'assessed', 'machineId'), assessment: F(rec, 'assessed', 'assessment'),
+    group: F(rec, 'assessed', 'group'), os: F(rec, 'assessed', 'os'), suitability: F(rec, 'assessed', 'suitability'),
+    explanation: F(rec, 'assessed', 'explanation'), size: F(rec, 'assessed', 'size'), cores: F(rec, 'assessed', 'cores'),
+    memoryGb: num(F(rec, 'assessed', 'memoryMb')) / 1024, cpuPct: F(rec, 'assessed', 'cpuPct'), memPct: F(rec, 'assessed', 'memPct'),
+    compute: num(F(rec, 'assessed', 'compute')), storage: num(F(rec, 'assessed', 'storage')), bandwidth: num(F(rec, 'assessed', 'bandwidth')),
+    confidence: F(rec, 'assessed', 'confidence') };
+  r.total = r.compute + r.storage + r.bandwidth;
+  var key = lower(r.group) + '|' + lower(r.assessment), a = assessmentByKey[key];
+  if (!a) { a = { rec: null, name: r.assessment || 'Unnamed assessment', group: r.group, currency: 'USD', machines: 0, compute: 0, storage: 0, bandwidth: 0, rows: [], key: key, derived: true }; assessmentByKey[key] = a; assessments.push(a); }
+  a.rows.push(r);
+  var m = machineById[lower(r.machineId)] || machineByName[lower(r.name)];
+  if (m) m.assessed.push(r);
+});
+assessments.forEach(function (a) {
+  if (!a.machines) a.machines = a.rows.length;
+  if (!a.compute && !a.storage) { a.compute = sumBy(a.rows, function (r) { return r.compute; }); a.storage = sumBy(a.rows, function (r) { return r.storage; }); a.bandwidth = sumBy(a.rows, function (r) { return r.bandwidth; }); }
+  a.total = a.compute + a.storage + a.bandwidth;
+});
+assessments.sort(function (a, b) { return b.rows.length - a.rows.length; });
+var primary = assessments[0] || null;
+function primaryRow(m) {
+  if (!primary) return null;
+  for (var i = 0; i < m.assessed.length; i++) if (lower(m.assessed[i].group) + '|' + lower(m.assessed[i].assessment) === primary.key) return m.assessed[i];
+  return m.assessed[0] || null;
+}
+
+var sqlServers = ds('Discovery_Sql_Servers').map(function (rec) {
+  var s = { rec: rec, name: F(rec, 'sqlServer', 'name'), host: F(rec, 'sqlServer', 'host'), version: F(rec, 'sqlServer', 'version') || 'Unknown',
+    build: F(rec, 'sqlServer', 'build'), edition: F(rec, 'sqlServer', 'edition') || 'Unknown', databases: num(F(rec, 'sqlServer', 'databases')),
+    ha: F(rec, 'sqlServer', 'ha'), support: F(rec, 'sqlServer', 'support') || 'Unknown', status: F(rec, 'sqlServer', 'status') };
+  var m = machineByName[lower(s.host)]; if (m) m.sql.push(rec);
+  return s;
+});
+var sqlDatabases = ds('Discovery_Sql_Databases').map(function (rec) {
+  return { rec: rec, name: F(rec, 'sqlDatabase', 'name'), server: F(rec, 'sqlDatabase', 'server'), host: F(rec, 'sqlDatabase', 'host'),
+    sizeGb: num(F(rec, 'sqlDatabase', 'sizeMb')) / 1024, compat: F(rec, 'sqlDatabase', 'compat'), status: F(rec, 'sqlDatabase', 'status') };
+});
+var sqlAssessed = ds('Assessment_SQL_AssessedInstances').map(function (rec) {
+  var r = { rec: rec, instance: F(rec, 'sqlAssessed', 'instance'), machine: F(rec, 'sqlAssessed', 'machine'), version: F(rec, 'sqlAssessed', 'version'),
+    edition: F(rec, 'sqlAssessed', 'edition'), target: F(rec, 'sqlAssessed', 'target') || 'Unknown', suitability: F(rec, 'sqlAssessed', 'suitability'),
+    compute: num(F(rec, 'sqlAssessed', 'compute')), storage: num(F(rec, 'sqlAssessed', 'storage')), databases: F(rec, 'sqlAssessed', 'databases'),
+    assessment: F(rec, 'sqlAssessed', 'assessment') };
+  r.total = r.compute + r.storage; return r;
+});
+var webApps = [];
+['Discovery_IIS_WebApps', 'Discovery_Tomcat_WebApps'].forEach(function (name) {
+  ds(name).forEach(function (rec) {
+    var fw = F(rec, 'webApp', 'frameworks'), ids = F(rec, 'webApp', 'machineIds') || [];
+    var w = { rec: rec, name: F(rec, 'webApp', 'name'), server: F(rec, 'webApp', 'server'), type: F(rec, 'webApp', 'type') || (/IIS/.test(name) ? 'IIS' : 'Tomcat'),
+      framework: Array.isArray(fw) ? fw.map(function (f) { return [f.name, f.version].filter(Boolean).join(' '); }).join(', ') : (fw || ''), machine: '' };
+    (Array.isArray(ids) ? ids : [ids]).forEach(function (id) { var m = machineById[lower(id)]; if (m) { m.web.push(rec); w.machine = m.name; } });
+    webApps.push(w);
+  });
+});
+var migrations = [];
+['Migration_ReplicationMigrationItems', 'Migration_ReplicationProtectedItems', 'Migration_DataReplication_ProtectedItems'].forEach(function (name) {
+  ds(name).forEach(function (rec) {
+    var g = { rec: rec, dataset: name, name: F(rec, 'migration', 'name'), state: F(rec, 'migration', 'state') || 'Unknown', description: F(rec, 'migration', 'description'),
+      test: F(rec, 'migration', 'test'), health: F(rec, 'migration', 'health'), lastTest: F(rec, 'migration', 'lastTest'), lastMigration: F(rec, 'migration', 'lastMigration'),
+      targetSize: F(rec, 'migration', 'targetSize'), targetLocation: F(rec, 'migration', 'targetLocation'), vault: F(rec, 'migration', 'vault') };
+    migrations.push(g);
+    var m = machineByName[lower(g.name)]; if (m && !m.migration) m.migration = g;
+  });
+});
+var softwareRows = [], softwareIndex = {};
+ds('Discovery_SoftwareInventory').forEach(function (rec) {
+  var apps = F(rec, 'software', 'apps'), machine = F(rec, 'software', 'machine'), m = machineById[lower(F(rec, 'software', 'machineId'))] || machineByName[lower(machine)];
+  if (m) m.software = rec;
+  (Array.isArray(apps) ? apps : []).forEach(function (a) {
+    var key = lower(a.name) + '|' + lower(a.version);
+    var s = softwareIndex[key] || (softwareIndex[key] = { name: a.name, version: a.version || '', provider: a.provider || a.publisher || '', servers: 0, machines: [] });
+    s.servers++; s.machines.push(machine || (m && m.name) || '');
+  });
+});
+softwareRows = Object.keys(softwareIndex).map(function (k) { return softwareIndex[k]; }).sort(function (a, b) { return b.servers - a.servers; });
+
+function isMigrated(g) { return /succe|complete|migrated/i.test(g.state) && /migrat/i.test(g.state + ' ' + (g.description || '')); }
+
+// ---------------------------------------------------------------------------
+// Views
+// ---------------------------------------------------------------------------
+function readinessSegments(rows, getSuit) {
+  var counts = { good: ['Ready', 0], warning: ['Ready with conditions', 0], critical: ['Not ready', 0], unknown: ['Unknown or not assessed', 0] };
+  rows.forEach(function (r) { var x = readiness(getSuit(r)); counts[x[1]][1]++; });
+  return ['good', 'warning', 'critical', 'unknown'].map(function (k) { return { label: counts[k][0], value: counts[k][1], color: STATUS[k].color, level: k }; });
+}
+function supportSegments(rows) {
+  var c = { good: 0, warning: 0, critical: 0, unknown: 0 };
+  rows.forEach(function (r) { c[supportLevel(r.support)]++; });
+  return [{ label: 'Mainstream support', value: c.good, level: 'good' }, { label: 'Extended support', value: c.warning, level: 'warning' },
+    { label: 'Out of support', value: c.critical, level: 'critical' }, { label: 'Unknown', value: c.unknown, level: 'unknown' }]
+    .map(function (s) { s.color = STATUS[s.level].color; return s; });
+}
+function costSegments(a) {
+  return [{ label: 'Compute', value: a.compute, color: 'var(--series-1)' }, { label: 'Storage', value: a.storage, color: 'var(--series-2)' },
+    { label: 'Bandwidth', value: a.bandwidth, color: 'var(--series-3)' }];
+}
+
+function viewOverview() {
+  var totalCores = sumBy(machines, function (m) { return m.cores; }), totalMem = sumBy(machines, function (m) { return m.memoryGb; }), totalDisk = sumBy(machines, function (m) { return m.diskGb; });
+  var migrated = migrations.filter(isMigrated).length;
+  var root = h('div', null, h('h2', { text: 'Overview' }),
+    h('p', { class: 'lead', text: 'A summary of everything discovered, assessed and migrated in this Azure Migrate project. Use the tabs for detail, or the Data explorer to see every field of every dataset.' }));
+  root.appendChild(h('div', { class: 'tiles' },
+    tile('Servers discovered', fmtInt(machines.length), countBy(machines, function (m) { return m.source; }).length + ' source types'),
+    tile('Cores', fmtInt(totalCores)), tile('Memory', fmtInt(totalMem) + ' GB'), tile('Disk allocated', fmt1(totalDisk / 1024) + ' TB'),
+    tile('SQL Server instances', fmtInt(sqlServers.length), fmtInt(sqlDatabases.length) + ' databases'),
+    tile('Web apps', fmtInt(webApps.length)),
+    tile('Assessments', fmtInt(assessments.length + ds('Assessment_AVS').length + ds('Assessment_SQL').length + ds('Assessment_WebApp').length)),
+    primary ? tile('Estimated monthly cost', fmtMoney(primary.total, primary.currency), 'Assessment: ' + primary.name) : tile('Estimated monthly cost', 'No assessment'),
+    tile('Servers in migration', fmtInt(migrations.length), fmtInt(migrated) + ' migrated')));
+  var grid = h('div', { class: 'grid' });
+  grid.appendChild(card('Azure readiness' + (primary ? ' (' + primary.name + ')' : ''), stackBar(readinessSegments(machines, function (m) { var r = primaryRow(m); return r && r.suitability; }))));
+  grid.appendChild(card('Operating system support status', stackBar(supportSegments(machines))));
+  grid.appendChild(card('Servers by source', barList(countBy(machines, function (m) { return m.source; }))));
+  grid.appendChild(card('Servers by operating system family', barList(countBy(machines, function (m) { return m.osFamily; }))));
+  grid.appendChild(card('Top operating systems', barList(countBy(machines, function (m) { return m.osName; }), { limit: 10 })));
+  if (primary) grid.appendChild(card('Monthly cost split (' + primary.name + ')', stackBar(costSegments(primary), function (v) { return fmtMoney(v, primary.currency); })));
+  if (migrations.length) grid.appendChild(card('Migration state', barList(countBy(migrations, function (g) { return g.description || g.state; }))));
+  root.appendChild(grid);
+  return root;
+}
+
+function showMachine(m) {
+  openDrawer(m.name, [
+    { title: 'Summary', value: { Source: m.source, Site: m.site, FQDN: m.fqdn, 'Operating system': m.osName, 'OS version': m.osVersion, Cores: m.cores,
+        'Memory (GB)': fmt1(m.memoryGb), Disks: m.diskCount, 'Disk allocated (GB)': fmt1(m.diskGb), 'IP addresses': m.ips, Power: m.power, 'Support status': m.support, Host: m.host } },
+    { title: 'Assessment results (' + m.assessed.length + ')', value: m.assessed.map(function (r) { return r.rec; }), open: true },
+    { title: 'Migration', value: m.migration && m.migration.rec },
+    { title: 'SQL Server instances (' + m.sql.length + ')', value: m.sql, open: false },
+    { title: 'Web apps (' + m.web.length + ')', value: m.web, open: false },
+    { title: 'Installed software', value: m.software && m.software.properties, open: false },
+    { title: 'Full discovery record', value: m.rec, open: false }
+  ]);
+}
+function viewServers() {
+  var cur = primary ? primary.currency : 'USD';
+  var cols = [
+    { key: 'name', label: 'Server', get: function (m) { return m.name; } },
+    { key: 'source', label: 'Source', get: function (m) { return m.source; } },
+    { key: 'os', label: 'Operating system', get: function (m) { return m.osName; } },
+    { key: 'cores', label: 'Cores', num: true, get: function (m) { return m.cores; }, fmt: fmtInt },
+    { key: 'mem', label: 'Memory GB', num: true, get: function (m) { return m.memoryGb; }, fmt: fmt1 },
+    { key: 'disk', label: 'Disk GB', num: true, get: function (m) { return m.diskGb; }, fmt: fmt1 },
+    { key: 'ip', label: 'IP addresses', get: function (m) { return m.ips; } },
+    { key: 'power', label: 'Power', get: function (m) { return m.power; } },
+    { key: 'support', label: 'Support', get: function (m) { return m.support; }, render: function (m) { return chip(m.support, supportLevel(m.support)); } },
+    { key: 'ready', label: 'Readiness', get: function (m) { var r = primaryRow(m); return readiness(r && r.suitability)[0]; },
+      render: function (m) { var r = primaryRow(m), x = readiness(r && r.suitability); return chip(x[0], x[1]); } },
+    { key: 'size', label: 'Recommended size', get: function (m) { var r = primaryRow(m); return r && r.size; } },
+    { key: 'cost', label: 'Monthly cost', num: true, get: function (m) { var r = primaryRow(m); return r ? r.total : null; }, fmt: function (v) { return fmtMoney(v, cur); } },
+    { key: 'sql', label: 'SQL', num: true, get: function (m) { return m.sql.length; }, fmt: fmtInt },
+    { key: 'web', label: 'Web apps', num: true, get: function (m) { return m.web.length; }, fmt: fmtInt },
+    { key: 'mig', label: 'Migration', get: function (m) { return m.migration ? (m.migration.description || m.migration.state) : ''; } },
+    { key: 'site', label: 'Site', get: function (m) { return m.site; } }
+  ];
+  return h('div', null, h('h2', { text: 'Servers' }),
+    h('p', { class: 'lead', text: 'Every discovered server, joined to its assessment, SQL, web app and migration data. Select a row to see everything known about that server.' }),
+    dataTable(cols, machines, { csvName: 'waypoint-servers', sort: 'name', onRow: showMachine, placeholder: 'Search servers, operating systems, IP addresses',
+      filters: [{ label: 'Source', get: function (m) { return m.source; } }, { label: 'OS family', get: function (m) { return m.osFamily; } },
+        { label: 'Support', get: function (m) { return m.support; } }, { label: 'Readiness', get: function (m) { var r = primaryRow(m); return readiness(r && r.suitability)[0]; } }] }));
+}
+
+function viewAssessments() {
+  var root = h('div', null, h('h2', { text: 'Assessments' }));
+  if (!assessments.length && !ds('Assessment_AVS').length) { root.appendChild(h('div', { class: 'card empty', text: 'This export contains no Azure VM or AVS assessments.' })); return root; }
+  root.appendChild(h('p', { class: 'lead', text: 'Sizing, readiness and cost as calculated by Azure Migrate. Assessments are point in time snapshots: recalculate in the portal and export again for fresh numbers.' }));
+  var body = h('div');
+  if (assessments.length) {
+    var sel = h('select', { 'aria-label': 'Assessment' });
+    assessments.forEach(function (a, i) { sel.appendChild(h('option', { value: i, text: a.name + (a.group ? '  (group: ' + a.group + ', ' + a.rows.length + ' servers)' : '') })); });
+    sel.addEventListener('change', function () { draw(assessments[sel.value]); });
+    root.appendChild(h('div', { class: 'controls' }, h('label', null, 'Azure VM assessment: ', sel)));
+  }
+  root.appendChild(body);
+  function draw(a) {
+    body.textContent = '';
+    if (a) {
+      var cur = a.currency;
+      body.appendChild(h('div', { class: 'tiles' },
+        tile('Servers assessed', fmtInt(a.rows.length || a.machines)), tile('Monthly cost', fmtMoney(a.total, cur), fmtMoney(a.total * 12, cur) + ' per year'),
+        tile('Average per server', a.rows.length ? fmtMoney(a.total / a.rows.length, cur) : 'n/a'),
+        tile('Target region', a.location || 'n/a'), tile('Sizing', a.sizing || 'n/a', [a.reserved, a.hybrid ? 'Hybrid Benefit: ' + a.hybrid : ''].filter(Boolean).join(', ')),
+        tile('Confidence', a.confidence != null ? a.confidence + '%' : 'n/a', a.updated ? 'Updated ' + fmtDate(a.updated) : '')));
+      var grid = h('div', { class: 'grid' });
+      grid.appendChild(card('Readiness', stackBar(readinessSegments(a.rows, function (r) { return r.suitability; }))));
+      grid.appendChild(card('Monthly cost split', stackBar(costSegments(a), function (v) { return fmtMoney(v, cur); })));
+      grid.appendChild(card('Recommended VM sizes', barList(countBy(a.rows.filter(function (r) { return r.size && r.size !== 'Unknown'; }), function (r) { return r.size; }), { limit: 12 })));
+      grid.appendChild(card('Readiness issues', barList(countBy(a.rows.filter(function (r) { return r.explanation && r.explanation !== 'NotApplicable'; }), function (r) { return r.explanation; }), { limit: 12, color: 'var(--series-2)' })));
+      var buckets = ['0 to 20%', '20 to 40%', '40 to 60%', '60 to 80%', '80 to 100%'];
+      function bucket(v) { return buckets[Math.min(4, Math.floor(num(v) / 20))]; }
+      function hist(get) { var c = {}; a.rows.forEach(function (r) { var v = get(r); if (v != null) c[bucket(v)] = (c[bucket(v)] || 0) + 1; }); return buckets.map(function (b) { return { label: b, value: c[b] || 0 }; }); }
+      grid.appendChild(card('CPU utilization (servers per band)', barList(hist(function (r) { return r.cpuPct; }), { limit: 5 })));
+      grid.appendChild(card('Memory utilization (servers per band)', barList(hist(function (r) { return r.memPct; }), { limit: 5 })));
+      body.appendChild(grid);
+      body.appendChild(card('Assessed servers', dataTable([
+        { key: 'name', label: 'Server', get: function (r) { return r.name; } },
+        { key: 'os', label: 'Operating system', get: function (r) { return r.os; } },
+        { key: 'ready', label: 'Readiness', get: function (r) { return readiness(r.suitability)[0]; }, render: function (r) { var x = readiness(r.suitability); return chip(x[0], x[1]); } },
+        { key: 'why', label: 'Issue', get: function (r) { return r.explanation === 'NotApplicable' ? '' : r.explanation; } },
+        { key: 'size', label: 'Recommended size', get: function (r) { return r.size; } },
+        { key: 'cores', label: 'Cores', num: true, get: function (r) { return r.cores; }, fmt: fmtInt },
+        { key: 'mem', label: 'Memory GB', num: true, get: function (r) { return r.memoryGb; }, fmt: fmt1 },
+        { key: 'cpu', label: 'CPU %', num: true, get: function (r) { return r.cpuPct; }, fmt: fmt1 },
+        { key: 'memp', label: 'Memory %', num: true, get: function (r) { return r.memPct; }, fmt: fmt1 },
+        { key: 'compute', label: 'Compute', num: true, get: function (r) { return r.compute; }, fmt: function (v) { return fmtMoney(v, cur); } },
+        { key: 'storage', label: 'Storage', num: true, get: function (r) { return r.storage; }, fmt: function (v) { return fmtMoney(v, cur); } },
+        { key: 'total', label: 'Monthly total', num: true, get: function (r) { return r.total; }, fmt: function (v) { return fmtMoney(v, cur); } },
+        { key: 'conf', label: 'Confidence %', num: true, get: function (r) { return r.confidence; }, fmt: fmtInt }
+      ], a.rows, { csvName: 'waypoint-assessment-' + a.name, sort: 'total', dir: -1,
+        onRow: function (r) { openDrawer(r.name, [{ title: 'Assessed machine record', value: r.rec }]); },
+        filters: [{ label: 'Readiness', get: function (r) { return readiness(r.suitability)[0]; } }, { label: 'Size', get: function (r) { return r.size; } }] })));
+    }
+    ['Assessment_AVS', 'Assessment_SQL', 'Assessment_WebApp'].forEach(function (name) {
+      if (!ds(name).length) return;
+      var label = { Assessment_AVS: 'Azure VMware Solution assessments', Assessment_SQL: 'SQL assessments', Assessment_WebApp: 'Web app assessments' }[name];
+      body.appendChild(h('div', { style: 'height:14px' }));
+      body.appendChild(card(label, explorerTable(name, ds(name))));
+    });
+  }
+  draw(assessments[0]);
+  return root;
+}
+
+function viewSql() {
+  var root = h('div', null, h('h2', { text: 'SQL Server' }));
+  if (!sqlServers.length && !sqlAssessed.length) { root.appendChild(h('div', { class: 'card empty', text: 'No SQL Server instances were discovered. Check that the appliance has SQL credentials.' })); return root; }
+  root.appendChild(h('div', { class: 'tiles' }, tile('Instances', fmtInt(sqlServers.length)), tile('Databases', fmtInt(sqlDatabases.length)),
+    tile('Database size', fmt1(sumBy(sqlDatabases, function (d) { return d.sizeGb; }) / 1024) + ' TB'),
+    tile('Highly available', fmtInt(sqlServers.filter(function (s) { return s.ha === true || s.ha === 'true'; }).length)),
+    sqlAssessed.length ? tile('Assessed monthly cost', fmtMoney(sumBy(sqlAssessed, function (r) { return r.total; }), primary ? primary.currency : 'USD')) : null));
+  var grid = h('div', { class: 'grid' });
+  grid.appendChild(card('Support status', stackBar(supportSegments(sqlServers))));
+  grid.appendChild(card('Instances by version', barList(countBy(sqlServers, function (s) { return s.version; }))));
+  grid.appendChild(card('Instances by edition', barList(countBy(sqlServers, function (s) { return s.edition; }))));
+  if (sqlAssessed.length) {
+    grid.appendChild(card('Recommended Azure SQL target', barList(countBy(sqlAssessed, function (r) { return r.target; }))));
+    grid.appendChild(card('SQL readiness', stackBar(readinessSegments(sqlAssessed, function (r) { return r.suitability; }))));
+  }
+  root.appendChild(grid);
+  root.appendChild(card('Instances', dataTable([
+    { key: 'host', label: 'Server', get: function (s) { return s.host; } }, { key: 'name', label: 'Instance', get: function (s) { return s.name; } },
+    { key: 'version', label: 'Version', get: function (s) { return s.version; } }, { key: 'edition', label: 'Edition', get: function (s) { return s.edition; } },
+    { key: 'db', label: 'Databases', num: true, get: function (s) { return s.databases; }, fmt: fmtInt },
+    { key: 'ha', label: 'High availability', get: function (s) { return s.ha == null ? '' : (s.ha === true || s.ha === 'true' ? 'Yes' : 'No'); } },
+    { key: 'support', label: 'Support', get: function (s) { return s.support; }, render: function (s) { return chip(s.support, supportLevel(s.support)); } }
+  ], sqlServers, { csvName: 'waypoint-sql-instances', sort: 'host', onRow: function (s) { openDrawer(s.host + ' ' + s.name, [{ title: 'Instance record', value: s.rec }]); } })));
+  if (sqlDatabases.length) {
+    root.appendChild(h('div', { style: 'height:14px' }));
+    root.appendChild(card('Databases', dataTable([
+      { key: 'name', label: 'Database', get: function (d) { return d.name; } }, { key: 'host', label: 'Server', get: function (d) { return d.host; } },
+      { key: 'server', label: 'Instance', get: function (d) { return d.server; } }, { key: 'size', label: 'Size GB', num: true, get: function (d) { return d.sizeGb; }, fmt: fmt1 },
+      { key: 'compat', label: 'Compatibility', get: function (d) { return d.compat; } }, { key: 'status', label: 'Status', get: function (d) { return d.status; } }
+    ], sqlDatabases, { csvName: 'waypoint-sql-databases', sort: 'size', dir: -1 })));
+  }
+  if (sqlAssessed.length) {
+    root.appendChild(h('div', { style: 'height:14px' }));
+    root.appendChild(card('Assessed instances', dataTable([
+      { key: 'machine', label: 'Server', get: function (r) { return r.machine; } }, { key: 'instance', label: 'Instance', get: function (r) { return r.instance; } },
+      { key: 'version', label: 'Version', get: function (r) { return r.version; } }, { key: 'target', label: 'Recommended target', get: function (r) { return r.target; } },
+      { key: 'ready', label: 'Readiness', get: function (r) { return readiness(r.suitability)[0]; }, render: function (r) { var x = readiness(r.suitability); return chip(x[0], x[1]); } },
+      { key: 'total', label: 'Monthly cost', num: true, get: function (r) { return r.total; }, fmt: function (v) { return fmtMoney(v, primary ? primary.currency : 'USD'); } }
+    ], sqlAssessed, { csvName: 'waypoint-sql-assessed', sort: 'total', dir: -1, onRow: function (r) { openDrawer(r.machine + ' ' + r.instance, [{ title: 'Assessed instance record', value: r.rec }]); } })));
+  }
+  return root;
+}
+
+function viewWeb() {
+  var root = h('div', null, h('h2', { text: 'Web apps' }));
+  if (!webApps.length) { root.appendChild(h('div', { class: 'card empty', text: 'No web apps were discovered.' })); return root; }
+  root.appendChild(h('div', { class: 'tiles' }, tile('Web apps', fmtInt(webApps.length)), tile('Web servers', fmtInt(countBy(webApps, function (w) { return w.server; }).length))));
+  root.appendChild(h('div', { class: 'grid' }, card('By web server type', barList(countBy(webApps, function (w) { return w.type; }))),
+    card('By framework', barList(countBy(webApps, function (w) { return w.framework; })))));
+  root.appendChild(card('Web apps', dataTable([
+    { key: 'name', label: 'Web app', get: function (w) { return w.name; } }, { key: 'machine', label: 'Server', get: function (w) { return w.machine; } },
+    { key: 'server', label: 'Web server', get: function (w) { return w.server; } }, { key: 'type', label: 'Type', get: function (w) { return w.type; } },
+    { key: 'fw', label: 'Framework', get: function (w) { return w.framework; } }
+  ], webApps, { csvName: 'waypoint-web-apps', sort: 'name', filters: [{ label: 'Type', get: function (w) { return w.type; } }],
+    onRow: function (w) { openDrawer(w.name, [{ title: 'Web app record', value: w.rec }]); } })));
+  return root;
+}
+
+function viewSoftware() {
+  var root = h('div', null, h('h2', { text: 'Software' }));
+  if (!softwareRows.length) { root.appendChild(h('div', { class: 'card empty', text: 'This export has no software inventory. Run Manifest with -IncludeSoftwareInventory to add it.' })); return root; }
+  root.appendChild(h('div', { class: 'tiles' }, tile('Distinct software versions', fmtInt(softwareRows.length)), tile('Servers with inventory', fmtInt(ds('Discovery_SoftwareInventory').length))));
+  root.appendChild(h('div', { class: 'grid' }, card('Most installed software', barList(softwareRows.map(function (s) { return { label: s.name + (s.version ? ' ' + s.version : ''), value: s.servers }; }), { limit: 15 })),
+    card('By publisher', barList(countBy(softwareRows, function (s) { return s.provider; }), { limit: 15 }))));
+  root.appendChild(card('Software', dataTable([
+    { key: 'name', label: 'Software', get: function (s) { return s.name; } }, { key: 'version', label: 'Version', get: function (s) { return s.version; } },
+    { key: 'provider', label: 'Publisher', get: function (s) { return s.provider; } }, { key: 'servers', label: 'Servers', num: true, get: function (s) { return s.servers; }, fmt: fmtInt }
+  ], softwareRows, { csvName: 'waypoint-software', sort: 'servers', dir: -1, onRow: function (s) { openDrawer(s.name + ' ' + s.version, [{ title: 'Installed on ' + s.servers + ' servers', value: s.machines.slice().sort() }]); } })));
+  return root;
+}
+
+function viewMigration() {
+  var root = h('div', null, h('h2', { text: 'Migration' }));
+  if (!migrations.length) { root.appendChild(h('div', { class: 'card empty', text: 'No replication or migration items were found. Replication has not started, or the project has no linked vault.' })); return root; }
+  var migrated = migrations.filter(isMigrated).length, failed = migrations.filter(function (g) { return /fail|critical/i.test(g.state + ' ' + (g.health || '')); }).length;
+  root.appendChild(h('div', { class: 'tiles' }, tile('Servers in migration', fmtInt(migrations.length), machines.length ? Math.round(migrations.length / machines.length * 100) + '% of discovered servers' : ''),
+    tile('Migrated', fmtInt(migrated)), tile('Test migrated', fmtInt(migrations.filter(function (g) { return /succe/i.test(g.test || ''); }).length)), tile('Needs attention', fmtInt(failed))));
+  root.appendChild(h('div', { class: 'grid' }, card('By migration state', barList(countBy(migrations, function (g) { return g.description || g.state; }))),
+    card('By target size', barList(countBy(migrations.filter(function (g) { return g.targetSize; }), function (g) { return g.targetSize; })))));
+  root.appendChild(card('Replication and migration items', dataTable([
+    { key: 'name', label: 'Server', get: function (g) { return g.name; } }, { key: 'state', label: 'State', get: function (g) { return g.description || g.state; } },
+    { key: 'health', label: 'Health', get: function (g) { return g.health; }, render: function (g) { return g.health ? chip(g.health, /crit|fail/i.test(g.health) ? 'critical' : /warn/i.test(g.health) ? 'warning' : 'good') : ''; } },
+    { key: 'test', label: 'Test migration', get: function (g) { return g.test; } }, { key: 'lastTest', label: 'Last test', get: function (g) { return fmtDate(g.lastTest); } },
+    { key: 'last', label: 'Migrated', get: function (g) { return fmtDate(g.lastMigration); } }, { key: 'size', label: 'Target size', get: function (g) { return g.targetSize; } },
+    { key: 'loc', label: 'Target region', get: function (g) { return g.targetLocation; } }
+  ], migrations, { csvName: 'waypoint-migration', sort: 'name', filters: [{ label: 'State', get: function (g) { return g.description || g.state; } }],
+    onRow: function (g) { openDrawer(g.name, [{ title: 'Migration item record', value: g.rec }]); } })));
+  return root;
+}
+
+function explorerTable(name, records) {
+  var flat = records.map(function (r) { return flatten(r, '', {}); }), seen = {}, keys = [];
+  flat.forEach(function (f) { for (var k in f) if (!seen[k]) { seen[k] = 1; keys.push(k); } });
+  var cols = keys.map(function (k) {
+    var numeric = flat.length > 0 && flat.every(function (f) { return f[k] === '' || f[k] === undefined || typeof f[k] === 'number'; }) && flat.some(function (f) { return typeof f[k] === 'number'; });
+    return { key: k, label: k.indexOf('properties.') === 0 ? k.slice(11) : k, num: numeric, get: function (f) { return f[k]; } };
+  });
+  return dataTable(cols, flat, { csvName: 'waypoint-' + name, pageSize: 50, onRow: function (f) { openDrawer(name, [{ title: 'Record', value: records[flat.indexOf(f)] }]); } });
+}
+function viewExplorer() {
+  var names = Object.keys(DS).sort();
+  var root = h('div', null, h('h2', { text: 'Data explorer' }),
+    h('p', { class: 'lead', text: 'Every dataset in the export, with every field. Search, sort, open a row for the full record, or download the filtered view as CSV.' }));
+  if (!names.length) { root.appendChild(h('div', { class: 'card empty', text: 'The export contains no datasets.' })); return root; }
+  var sel = h('select', { 'aria-label': 'Dataset' }), body = h('div');
+  names.forEach(function (n) { sel.appendChild(h('option', { value: n, text: n + ' (' + fmtInt(ds(n).length) + ')' })); });
+  function draw() { body.textContent = ''; body.appendChild(explorerTable(sel.value, ds(sel.value))); }
+  sel.addEventListener('change', draw);
+  root.appendChild(h('div', { class: 'controls' }, h('label', null, 'Dataset: ', sel)));
+  root.appendChild(body); draw();
+  return root;
+}
+
+function viewOther() {
+  var root = h('div', null, h('h2', { text: 'Project and business case' }),
+    h('p', { class: 'lead', text: 'The Azure Migrate project, its registered tools, discovery sites and business cases, as returned by Azure.' }));
+  [['Project', 'Project'], ['Project_Solutions', 'Registered tools'], ['Discovery_Sites', 'Discovery sites'], ['Discovery_VMware_vCenters', 'vCenter servers'],
+    ['Discovery_HyperV_Hosts', 'Hyper-V hosts'], ['Discovery_HyperV_Clusters', 'Hyper-V clusters'], ['BusinessCase', 'Business cases'],
+    ['BusinessCase_EvaluatedMachines', 'Business case: evaluated servers'], ['BusinessCase_EvaluatedAvsMachines', 'Business case: evaluated AVS servers'],
+    ['BusinessCase_EvaluatedSqlEntities', 'Business case: evaluated SQL'], ['BusinessCase_EvaluatedWebApps', 'Business case: evaluated web apps']].forEach(function (p) {
+    if (!ds(p[0]).length) return;
+    root.appendChild(card(p[1] + ' (' + fmtInt(ds(p[0]).length) + ')', explorerTable(p[0], ds(p[0]))));
+    root.appendChild(h('div', { style: 'height:14px' }));
+  });
+  return root;
+}
+
+function viewQuality() {
+  var root = h('div', null, h('h2', { text: 'Data quality' }),
+    h('p', { class: 'lead', text: 'What the export contained, what was missing, and how well the report could read each field. Low field coverage means the export names a field differently than expected.' }));
+  var man = DATA.manifest || {};
+  root.appendChild(card('Export', renderValue({ Project: man.Project, 'Resource group': man.ResourceGroup, Subscription: man.SubscriptionId, 'Exported at': fmtDate(man.ExportedAtUtc),
+    'Exported by': man.SignedInAs, 'Sign in method': man.AuthMethod, 'Manifest version': man.ScriptVersion, 'Report generated': fmtDate((DATA.meta || {}).generatedAtUtc),
+    'Waypoint version': (DATA.meta || {}).waypointVersion, Notes: man.Notes })));
+  root.appendChild(h('div', { style: 'height:14px' }));
+  var summary = Array.isArray(DATA.summary) ? DATA.summary : [];
+  if (summary.length) {
+    root.appendChild(card('Datasets in the export', dataTable([
+      { key: 'd', label: 'Dataset', get: function (s) { return s.Dataset; } }, { key: 'r', label: 'Records', num: true, get: function (s) { return s.Records; }, fmt: fmtInt },
+      { key: 's', label: 'Status', get: function (s) { return s.Status; }, render: function (s) { return chip(s.Status, s.Status === 'OK' ? 'good' : s.Status === 'Error' ? 'critical' : s.Status === 'Partial' ? 'warning' : 'unknown'); } },
+      { key: 'e', label: 'Errors', get: function (s) { return s.Errors; } }, { key: 'in', label: 'In this report', get: function (s) { return DS[s.Dataset] ? 'Yes' : (num(s.Records) ? 'No' : ''); } }
+    ], summary, { csvName: 'waypoint-datasets', sort: 'd', pageSize: 100, filters: [{ label: 'Status', get: function (s) { return s.Status; } }] })));
+    root.appendChild(h('div', { style: 'height:14px' }));
+  }
+  var cov = Object.keys(coverage).sort().map(function (k) {
+    var c = coverage[k]; return { field: k, seen: c.seen, hit: c.hit, pct: c.seen ? c.hit / c.seen * 100 : 0, paths: Object.keys(c.paths).join(', ') || '(no match)', expected: MAP[k.split('.')[0]][k.split('.')[1]].join(', ') };
+  });
+  root.appendChild(card('Field coverage', dataTable([
+    { key: 'f', label: 'Field', get: function (c) { return c.field; } }, { key: 'p', label: 'Matched %', num: true, get: function (c) { return c.pct; }, fmt: function (v) { return Math.round(v) + '%'; } },
+    { key: 'h', label: 'Matched', num: true, get: function (c) { return c.hit; }, fmt: fmtInt }, { key: 'n', label: 'Records', num: true, get: function (c) { return c.seen; }, fmt: fmtInt },
+    { key: 'u', label: 'Path used', get: function (c) { return c.paths; } }, { key: 'x', label: 'Paths tried', get: function (c) { return c.expected; } }
+  ], cov, { csvName: 'waypoint-field-coverage', sort: 'p', dir: 1, pageSize: 200 })));
+  return root;
+}
+
+// ---------------------------------------------------------------------------
+// Shell
+// ---------------------------------------------------------------------------
+var TABS = [
+  { id: 'overview', label: 'Overview', view: viewOverview },
+  { id: 'servers', label: 'Servers', count: machines.length, view: viewServers },
+  { id: 'assessments', label: 'Assessments', count: assessments.length + ds('Assessment_AVS').length + ds('Assessment_SQL').length + ds('Assessment_WebApp').length, view: viewAssessments },
+  { id: 'sql', label: 'SQL Server', count: sqlServers.length, view: viewSql },
+  { id: 'web', label: 'Web apps', count: webApps.length, view: viewWeb },
+  { id: 'software', label: 'Software', count: softwareRows.length, view: viewSoftware },
+  { id: 'migration', label: 'Migration', count: migrations.length, view: viewMigration },
+  { id: 'project', label: 'Project', view: viewOther },
+  { id: 'explorer', label: 'Data explorer', count: Object.keys(DS).length, view: viewExplorer },
+  { id: 'quality', label: 'Data quality', view: viewQuality }
+];
+function start() {
+  var app = document.getElementById('app'), meta = DATA.meta || {}, man = DATA.manifest || {};
+  var title = meta.title || ('Wagonmaster Waypoint' + (man.Project ? ': ' + man.Project : ''));
+  document.title = title;
+  var wheel = '<svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="#f2c46d" stroke-linecap="round"><circle cx="32" cy="32" r="21" stroke-width="5"/><g stroke-width="3"><line x1="32" y1="11" x2="32" y2="53"/><line x1="11" y1="32" x2="53" y2="32"/><line x1="17.2" y1="17.2" x2="46.8" y2="46.8"/><line x1="46.8" y1="17.2" x2="17.2" y2="46.8"/></g></g><circle cx="32" cy="32" r="6.5" fill="#0078d4" stroke="#f2c46d" stroke-width="2.5"/></svg>';
+  var logo = h('span'); logo.innerHTML = wheel;
+  var themeBtn = h('button', { type: 'button', text: 'Light or dark', title: 'Switch between light and dark', onclick: function () {
+    var rootEl = document.documentElement, cur = rootEl.getAttribute('data-theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    rootEl.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+  } });
+  app.appendChild(h('header', { class: 'top' }, logo.firstChild,
+    h('div', { class: 'grow' }, h('h1', { text: title }),
+      h('div', { class: 'meta', text: [man.Project ? 'Project ' + man.Project : '', man.ExportedAtUtc ? 'exported ' + fmtDate(man.ExportedAtUtc) : '', fmtInt(machines.length) + ' servers'].filter(Boolean).join('  ·  ') })),
+    themeBtn, h('button', { type: 'button', text: 'Print', onclick: function () { window.print(); } })));
+  if (man.SampleData) app.appendChild(h('div', { class: 'banner', text: 'Sample data. This report shows a fictional estate, not a real Azure Migrate project.' }));
+  if (DATA.loadError) app.appendChild(h('div', { class: 'banner', text: 'The embedded data could not be read: ' + DATA.loadError }));
+  var nav = h('nav', { class: 'tabs', role: 'tablist', 'aria-label': 'Report sections' }), main = h('main', { role: 'tabpanel' }), built = {};
+  function show(id) {
+    var tab = TABS.filter(function (t) { return t.id === id; })[0] || TABS[0];
+    Array.prototype.forEach.call(nav.children, function (b) { b.setAttribute('aria-selected', b.getAttribute('data-tab') === tab.id ? 'true' : 'false'); });
+    main.textContent = '';
+    if (!built[tab.id]) { try { built[tab.id] = tab.view(); } catch (e) { built[tab.id] = h('div', { class: 'card empty', text: 'This section could not be drawn: ' + e.message }); } }
+    main.appendChild(built[tab.id]);
+    try { history.replaceState(null, '', '#' + tab.id); } catch (e) { /* file URLs in some browsers */ }
+  }
+  TABS.forEach(function (t) {
+    nav.appendChild(h('button', { type: 'button', role: 'tab', 'data-tab': t.id, onclick: function () { show(t.id); } }, t.label,
+      t.count != null ? h('span', { class: 'count', text: fmtInt(t.count) }) : null));
+  });
+  app.appendChild(nav); app.appendChild(main);
+  app.appendChild(h('footer', { text: 'Wagonmaster Waypoint ' + (meta.waypointVersion || '') + '. Generated from a Wagonmaster Manifest export. This file contains project data: handle it as confidential.' }));
+  show((location.hash || '').slice(1) || 'overview');
+  window.WagonmasterWaypoint = { tabs: TABS.map(function (t) { return t.id; }), show: show, machines: machines.length, coverage: coverage, model: { assessments: assessments.length, sql: sqlServers.length, web: webApps.length, migrations: migrations.length, software: softwareRows.length } };
+}
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+</body>
+</html>

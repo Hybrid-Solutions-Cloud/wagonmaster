@@ -1,0 +1,18 @@
+[
+ {
+  "_Project": "iic-migrate",
+  "_AssessmentProject": "iic-migrate-assessment",
+  "_Group": "all-servers",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-iic-migrate-01/providers/Microsoft.Migrate/assessmentProjects/iic-migrate-assessment/groups/all-servers/sqlAssessments/sql-estate",
+  "name": "sql-estate",
+  "properties": {
+   "azureLocation": "EastUs",
+   "currency": "USD",
+   "sizingCriterion": "PerformanceBased",
+   "status": "Completed",
+   "optimizationLogic": "MinimizeCost",
+   "confidenceRatingInPercentage": 65,
+   "updatedTimestamp": "2026-11-10T14:00:00Z"
+  }
+ }
+]
